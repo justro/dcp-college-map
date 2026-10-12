@@ -1,0 +1,21 @@
+{
+  "_comment": "Manual fixes applied on top of the automatic build. 'aliases' maps a name in the export to the canonical school name (the two are merged). 'schools' is keyed by school name and may set lat, lon, website, logo (a URL, or a filename already placed in web/logos/) and name (display name).",
+  "aliases": {
+    "Catholic University of the Sacred Heart": "Universita Cattolica del Sacro Cuore"
+  },
+  "schools": {
+    "Universita Cattolica del Sacro Cuore": { "name": "Università Cattolica del Sacro Cuore", "lat": 45.4627, "lon": 9.1766, "website": "unicatt.it" },
+    "Bocconi University": { "website": "unibocconi.eu" },
+    "Franklin University Switzerland": { "website": "fus.edu" },
+    "IE University - Madrid Campus": { "website": "ie.edu" },
+    "John Cabot University": { "website": "johncabot.edu" },
+    "Queen's University": { "website": "queensu.ca" },
+    "Richmond American University London": { "website": "richmond.ac.uk", "lat": 51.4935, "lon": -0.2743 },
+    "RIT Croatia": { "website": "croatia.rit.edu" },
+    "The American University of Paris": { "website": "aup.edu" },
+    "University College Dublin": { "website": "ucd.ie" },
+    "University of Amsterdam": { "website": "uva.nl" },
+    "University of Guelph": { "website": "uoguelph.ca" },
+    "University of Toronto": { "website": "utoronto.ca" }
+  }
+}

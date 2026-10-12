@@ -1,0 +1,4038 @@
+{
+ "generated": "2026-10-12",
+ "source": "college_matriculation_summary_202609211435.xlsx",
+ "years": [
+  "2024",
+  "2025",
+  "2026"
+ ],
+ "totalStudents": 880,
+ "schools": [
+  {
+   "id": "university-of-illinois-urbana-champaign",
+   "name": "University of Illinois Urbana-Champaign",
+   "city": "Champaign",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 100,
+   "byYear": {
+    "2024": 18,
+    "2025": 39,
+    "2026": 43
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.104718,
+   "lon": -88.229114,
+   "website": "illinois.edu",
+   "logo": "logos/university-of-illinois-urbana-champaign.png"
+  },
+  {
+   "id": "indiana-university-bloomington",
+   "name": "Indiana University-Bloomington",
+   "city": "Bloomington",
+   "state": "IN",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 48,
+   "byYear": {
+    "2024": 7,
+    "2025": 17,
+    "2026": 24
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.16609,
+   "lon": -86.526559,
+   "website": "indiana.edu",
+   "logo": "logos/indiana-university-bloomington.png"
+  },
+  {
+   "id": "university-of-wisconsin-madison",
+   "name": "University of Wisconsin-Madison",
+   "city": "Madison",
+   "state": "WI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 42,
+   "byYear": {
+    "2024": 4,
+    "2025": 23,
+    "2026": 15
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.075409,
+   "lon": -89.404098,
+   "website": "wisc.edu",
+   "logo": "logos/university-of-wisconsin-madison.png"
+  },
+  {
+   "id": "university-of-iowa",
+   "name": "University of Iowa",
+   "city": "Iowa City",
+   "state": "IA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 34,
+   "byYear": {
+    "2024": 13,
+    "2025": 12,
+    "2026": 9
+   },
+   "stateName": "Iowa",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.661935,
+   "lon": -91.536425,
+   "website": "uiowa.edu",
+   "logo": "logos/university-of-iowa.svg"
+  },
+  {
+   "id": "marquette-university",
+   "name": "Marquette University",
+   "city": "Milwaukee",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 29,
+   "byYear": {
+    "2024": 15,
+    "2025": 8,
+    "2026": 6
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.03903,
+   "lon": -87.927961,
+   "website": "marquette.edu",
+   "logo": "logos/marquette-university.png"
+  },
+  {
+   "id": "depaul-university",
+   "name": "DePaul University",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 27,
+   "byYear": {
+    "2024": 10,
+    "2025": 11,
+    "2026": 6
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.877618,
+   "lon": -87.62724,
+   "website": "depaul.edu",
+   "logo": "logos/depaul-university.png"
+  },
+  {
+   "id": "miami-university-oxford",
+   "name": "Miami University-Oxford",
+   "city": "Oxford",
+   "state": "OH",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 25,
+   "byYear": {
+    "2024": 9,
+    "2025": 7,
+    "2026": 9
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.507757,
+   "lon": -84.732954,
+   "website": "miamioh.edu",
+   "logo": "logos/miami-university-oxford.png"
+  },
+  {
+   "id": "michigan-state-university",
+   "name": "Michigan State University",
+   "city": "East Lansing",
+   "state": "MI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 25,
+   "byYear": {
+    "2024": 10,
+    "2025": 8,
+    "2026": 7
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.73212,
+   "lon": -84.476111,
+   "website": "msu.edu",
+   "logo": "logos/michigan-state-university.png"
+  },
+  {
+   "id": "university-of-michigan-ann-arbor",
+   "name": "University of Michigan-Ann Arbor",
+   "city": "Ann Arbor",
+   "state": "MI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 18,
+   "byYear": {
+    "2024": 5,
+    "2025": 5,
+    "2026": 8
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.278374,
+   "lon": -83.73481,
+   "website": "umich.edu",
+   "logo": "logos/university-of-michigan-ann-arbor.png"
+  },
+  {
+   "id": "university-of-missouri-columbia",
+   "name": "University of Missouri-Columbia",
+   "city": "Columbia",
+   "state": "MO",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 18,
+   "byYear": {
+    "2024": 1,
+    "2025": 13,
+    "2026": 4
+   },
+   "stateName": "Missouri",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.94531,
+   "lon": -92.328843,
+   "website": "missouri.edu",
+   "logo": "logos/university-of-missouri-columbia.png"
+  },
+  {
+   "id": "loyola-university-chicago",
+   "name": "Loyola University Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 17,
+   "byYear": {
+    "2024": 5,
+    "2025": 5,
+    "2026": 7
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.000765,
+   "lon": -87.656872,
+   "website": "luc.edu",
+   "logo": "logos/loyola-university-chicago.png"
+  },
+  {
+   "id": "university-of-illinois-chicago",
+   "name": "University of Illinois Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 17,
+   "byYear": {
+    "2024": 5,
+    "2025": 5,
+    "2026": 7
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.871837,
+   "lon": -87.650503,
+   "website": "uic.edu",
+   "logo": "logos/university-of-illinois-chicago.png"
+  },
+  {
+   "id": "university-of-kansas",
+   "name": "University of Kansas",
+   "city": "Lawrence",
+   "state": "KS",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 17,
+   "byYear": {
+    "2024": 3,
+    "2025": 8,
+    "2026": 6
+   },
+   "stateName": "Kansas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.958549,
+   "lon": -95.247567,
+   "website": "ku.edu",
+   "logo": "logos/university-of-kansas.png"
+  },
+  {
+   "id": "university-of-arizona",
+   "name": "University of Arizona",
+   "city": "Tucson",
+   "state": "AZ",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 15,
+   "byYear": {
+    "2024": 5,
+    "2025": 7,
+    "2026": 3
+   },
+   "stateName": "Arizona",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.232672,
+   "lon": -110.950815,
+   "website": "arizona.edu",
+   "logo": "logos/university-of-arizona.png"
+  },
+  {
+   "id": "university-of-dayton",
+   "name": "University of Dayton",
+   "city": "Dayton",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 11,
+   "byYear": {
+    "2024": 6,
+    "2025": 1,
+    "2026": 4
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.739547,
+   "lon": -84.176113,
+   "website": "udayton.edu",
+   "logo": "logos/university-of-dayton.png"
+  },
+  {
+   "id": "university-of-colorado-boulder",
+   "name": "University of Colorado Boulder",
+   "city": "Boulder",
+   "state": "CO",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 10,
+   "byYear": {
+    "2024": 3,
+    "2025": 4,
+    "2026": 3
+   },
+   "stateName": "Colorado",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.008781,
+   "lon": -105.270823,
+   "website": "colorado.edu",
+   "logo": "logos/university-of-colorado-boulder.png"
+  },
+  {
+   "id": "purdue-university-main-campus",
+   "name": "Purdue University-Main Campus",
+   "city": "West Lafayette",
+   "state": "IN",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 8,
+   "byYear": {
+    "2024": 3,
+    "2025": 4,
+    "2026": 1
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.428206,
+   "lon": -86.914435,
+   "website": "purdue.edu",
+   "logo": "logos/purdue-university-main-campus.png"
+  },
+  {
+   "id": "the-university-of-tennessee-knoxville",
+   "name": "The University of Tennessee-Knoxville",
+   "city": "Knoxville",
+   "state": "TN",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 8,
+   "byYear": {
+    "2025": 7,
+    "2026": 1
+   },
+   "stateName": "Tennessee",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 35.952082,
+   "lon": -83.925852,
+   "website": "utk.edu",
+   "logo": "logos/the-university-of-tennessee-knoxville.png"
+  },
+  {
+   "id": "university-of-miami",
+   "name": "University of Miami",
+   "city": "Coral Gables",
+   "state": "FL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 8,
+   "byYear": {
+    "2024": 1,
+    "2025": 2,
+    "2026": 5
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 25.72126,
+   "lon": -80.278662,
+   "website": "miami.edu",
+   "logo": null
+  },
+  {
+   "id": "university-of-notre-dame",
+   "name": "University of Notre Dame",
+   "city": "Notre Dame",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 8,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 4
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.703058,
+   "lon": -86.238959,
+   "website": "nd.edu",
+   "logo": "logos/university-of-notre-dame.png"
+  },
+  {
+   "id": "boston-college",
+   "name": "Boston College",
+   "city": "Chestnut Hill",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 7,
+   "byYear": {
+    "2024": 1,
+    "2025": 2,
+    "2026": 4
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.336213,
+   "lon": -71.169242,
+   "website": "bc.edu",
+   "logo": "logos/boston-college.png"
+  },
+  {
+   "id": "texas-christian-university",
+   "name": "Texas Christian University",
+   "city": "Fort Worth",
+   "state": "TX",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 7,
+   "byYear": {
+    "2024": 1,
+    "2025": 6
+   },
+   "stateName": "Texas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.70961,
+   "lon": -97.364758,
+   "website": "tcu.edu",
+   "logo": "logos/texas-christian-university.png"
+  },
+  {
+   "id": "university-of-kentucky",
+   "name": "University of Kentucky",
+   "city": "Lexington",
+   "state": "KY",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 7,
+   "byYear": {
+    "2024": 1,
+    "2025": 5,
+    "2026": 1
+   },
+   "stateName": "Kentucky",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.038911,
+   "lon": -84.504747,
+   "website": "uky.edu",
+   "logo": "logos/university-of-kentucky.png"
+  },
+  {
+   "id": "university-of-mississippi",
+   "name": "University of Mississippi",
+   "city": "University",
+   "state": "MS",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 7,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 3
+   },
+   "stateName": "Mississippi",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.365529,
+   "lon": -89.537434,
+   "website": "olemiss.edu",
+   "logo": "logos/university-of-mississippi.png"
+  },
+  {
+   "id": "university-of-south-carolina-columbia",
+   "name": "University of South Carolina-Columbia",
+   "city": "Columbia",
+   "state": "SC",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 7,
+   "byYear": {
+    "2024": 1,
+    "2025": 3,
+    "2026": 3
+   },
+   "stateName": "South Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.996788,
+   "lon": -81.026935,
+   "website": "sc.edu",
+   "logo": "logos/university-of-south-carolina-columbia.png"
+  },
+  {
+   "id": "arizona-state-university",
+   "name": "Arizona State University",
+   "city": "Tempe",
+   "state": "AZ",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 2
+   },
+   "stateName": "Arizona",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.417721,
+   "lon": -111.934383,
+   "website": "asu.edu",
+   "logo": "logos/arizona-state-university.png"
+  },
+  {
+   "id": "auburn-university",
+   "name": "Auburn University",
+   "city": "Auburn",
+   "state": "AL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 2,
+    "2025": 1,
+    "2026": 3
+   },
+   "stateName": "Alabama",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.599378,
+   "lon": -85.488258,
+   "website": "auburn.edu",
+   "logo": "logos/auburn-university.png"
+  },
+  {
+   "id": "butler-university",
+   "name": "Butler University",
+   "city": "Indianapolis",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 4,
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.8374,
+   "lon": -86.172167,
+   "website": "butler.edu",
+   "logo": "logos/butler-university.png"
+  },
+  {
+   "id": "illinois-state-university",
+   "name": "Illinois State University",
+   "city": "Normal",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 4,
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.509403,
+   "lon": -88.990058,
+   "website": "illinoisstate.edu",
+   "logo": "logos/illinois-state-university.png"
+  },
+  {
+   "id": "illinois-wesleyan-university",
+   "name": "Illinois Wesleyan University",
+   "city": "Bloomington",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 3,
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.489901,
+   "lon": -88.992014,
+   "website": "iwu.edu",
+   "logo": "logos/illinois-wesleyan-university.png"
+  },
+  {
+   "id": "loras-college",
+   "name": "Loras College",
+   "city": "Dubuque",
+   "state": "IA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2025": 6
+   },
+   "stateName": "Iowa",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.503908,
+   "lon": -90.679023,
+   "website": "loras.edu",
+   "logo": "logos/loras-college.png"
+  },
+  {
+   "id": "ohio-state-university-main-campus",
+   "name": "Ohio State University-Main Campus",
+   "city": "Columbus",
+   "state": "OH",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 3,
+    "2026": 3
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.999803,
+   "lon": -83.007525,
+   "website": "osu.edu",
+   "logo": "logos/ohio-state-university-main-campus.png"
+  },
+  {
+   "id": "pennsylvania-state-university-main-campus",
+   "name": "Pennsylvania State University - Main Campus",
+   "city": "University Park",
+   "state": "PA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 2,
+    "2025": 1,
+    "2026": 3
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.7965,
+   "lon": -77.862848,
+   "website": "psu.edu",
+   "logo": "logos/pennsylvania-state-university-main-campus.png"
+  },
+  {
+   "id": "saint-louis-university",
+   "name": "Saint Louis University",
+   "city": "Saint Louis",
+   "state": "MO",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 1,
+    "2025": 3,
+    "2026": 2
+   },
+   "stateName": "Missouri",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.636801,
+   "lon": -90.2351,
+   "website": "slu.edu",
+   "logo": "logos/saint-louis-university.svg"
+  },
+  {
+   "id": "san-diego-state-university",
+   "name": "San Diego State University",
+   "city": "San Diego",
+   "state": "CA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2025": 2,
+    "2026": 4
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.77525,
+   "lon": -117.071228,
+   "website": "sdsu.edu",
+   "logo": "logos/san-diego-state-university.svg"
+  },
+  {
+   "id": "syracuse-university",
+   "name": "Syracuse University",
+   "city": "Syracuse",
+   "state": "NY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 2
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.036644,
+   "lon": -76.133989,
+   "website": "syracuse.edu",
+   "logo": "logos/syracuse-university.svg"
+  },
+  {
+   "id": "the-university-of-tampa",
+   "name": "The University of Tampa",
+   "city": "Tampa",
+   "state": "FL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 3,
+    "2025": 3
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 27.948455,
+   "lon": -82.46483,
+   "website": "ut.edu",
+   "logo": "logos/the-university-of-tampa.png"
+  },
+  {
+   "id": "tulane-university-of-louisiana",
+   "name": "Tulane University of Louisiana",
+   "city": "New Orleans",
+   "state": "LA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 1,
+    "2025": 2,
+    "2026": 3
+   },
+   "stateName": "Louisiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 29.940069,
+   "lon": -90.122144,
+   "website": "tulane.edu",
+   "logo": "logos/tulane-university-of-louisiana.png"
+  },
+  {
+   "id": "western-michigan-university",
+   "name": "Western Michigan University",
+   "city": "Kalamazoo",
+   "state": "MI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 6,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 2
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.282194,
+   "lon": -85.613759,
+   "website": "wmich.edu",
+   "logo": "logos/western-michigan-university.svg"
+  },
+  {
+   "id": "creighton-university",
+   "name": "Creighton University",
+   "city": "Omaha",
+   "state": "NE",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 5,
+   "byYear": {
+    "2024": 2,
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Nebraska",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.265361,
+   "lon": -95.947811,
+   "website": "creighton.edu",
+   "logo": "logos/creighton-university.png"
+  },
+  {
+   "id": "fordham-university",
+   "name": "Fordham University",
+   "city": "Bronx",
+   "state": "NY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 5,
+   "byYear": {
+    "2024": 1,
+    "2025": 2,
+    "2026": 2
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.859354,
+   "lon": -73.882705,
+   "website": "fordham.edu",
+   "logo": "logos/fordham-university.png"
+  },
+  {
+   "id": "carthage-college",
+   "name": "Carthage College",
+   "city": "Kenosha",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 4,
+   "byYear": {
+    "2025": 3,
+    "2026": 1
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.622969,
+   "lon": -87.820924,
+   "website": "carthage.edu",
+   "logo": "logos/carthage-college.png"
+  },
+  {
+   "id": "holy-cross-college",
+   "name": "Holy Cross College",
+   "city": "Notre Dame",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 4,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.698996,
+   "lon": -86.253822,
+   "website": "hcc-nd.edu",
+   "logo": "logos/holy-cross-college.png"
+  },
+  {
+   "id": "kalamazoo-college",
+   "name": "Kalamazoo College",
+   "city": "Kalamazoo",
+   "state": "MI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 4,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.290789,
+   "lon": -85.601857,
+   "website": "kzoo.edu",
+   "logo": "logos/kalamazoo-college.png"
+  },
+  {
+   "id": "oberlin-college",
+   "name": "Oberlin College",
+   "city": "Oberlin",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 4,
+   "byYear": {
+    "2025": 3,
+    "2026": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.291992,
+   "lon": -82.216795,
+   "website": "oberlin.edu",
+   "logo": "logos/oberlin-college.png"
+  },
+  {
+   "id": "triton-college",
+   "name": "Triton College",
+   "city": "River Grove",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 4,
+   "byYear": {
+    "2024": 3,
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.916082,
+   "lon": -87.841056,
+   "website": "triton.edu",
+   "logo": "logos/triton-college.png"
+  },
+  {
+   "id": "university-of-denver",
+   "name": "University of Denver",
+   "city": "Denver",
+   "state": "CO",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 4,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "Colorado",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.678005,
+   "lon": -104.963259,
+   "website": "du.edu",
+   "logo": "logos/university-of-denver.svg"
+  },
+  {
+   "id": "american-university-district-of-columbia",
+   "name": "American University - District of Columbia",
+   "city": "Washington",
+   "state": "DC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "District of Columbia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.936005,
+   "lon": -77.088875,
+   "website": "american.edu",
+   "logo": "logos/american-university-district-of-columbia.png"
+  },
+  {
+   "id": "boston-university",
+   "name": "Boston University",
+   "city": "Boston",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2026": 3
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.351118,
+   "lon": -71.107942,
+   "website": "bu.edu",
+   "logo": "logos/boston-university.png"
+  },
+  {
+   "id": "college-of-charleston",
+   "name": "College of Charleston",
+   "city": "Charleston",
+   "state": "SC",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "South Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.784225,
+   "lon": -79.939794,
+   "website": "cofc.edu",
+   "logo": "logos/college-of-charleston.png"
+  },
+  {
+   "id": "columbia-college-chicago",
+   "name": "Columbia College Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2026": 2
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.874261,
+   "lon": -87.624667,
+   "website": "colum.edu",
+   "logo": "logos/columbia-college-chicago.png"
+  },
+  {
+   "id": "depauw-university",
+   "name": "DePauw University",
+   "city": "Greencastle",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 2,
+    "2025": 1
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.640904,
+   "lon": -86.860363,
+   "website": "depauw.edu",
+   "logo": "logos/depauw-university.png"
+  },
+  {
+   "id": "georgetown-university",
+   "name": "Georgetown University",
+   "city": "Washington",
+   "state": "DC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "District of Columbia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.908809,
+   "lon": -77.073463,
+   "website": "georgetown.edu",
+   "logo": "logos/georgetown-university.png"
+  },
+  {
+   "id": "howard-university",
+   "name": "Howard University",
+   "city": "Washington",
+   "state": "DC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "District of Columbia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.922392,
+   "lon": -77.018966,
+   "website": "howard.edu",
+   "logo": "logos/howard-university.png"
+  },
+  {
+   "id": "iowa-state-university",
+   "name": "Iowa State University",
+   "city": "Ames",
+   "state": "IA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2025": 2
+   },
+   "stateName": "Iowa",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.026212,
+   "lon": -93.648504,
+   "website": "iastate.edu",
+   "logo": "logos/iowa-state-university.svg"
+  },
+  {
+   "id": "lake-forest-college",
+   "name": "Lake Forest College",
+   "city": "Lake Forest",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.249574,
+   "lon": -87.827454,
+   "website": "lakeforest.edu",
+   "logo": "logos/lake-forest-college.png"
+  },
+  {
+   "id": "milwaukee-school-of-engineering",
+   "name": "Milwaukee School of Engineering",
+   "city": "Milwaukee",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2025": 2
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.045364,
+   "lon": -87.907691,
+   "website": "msoe.edu",
+   "logo": "logos/milwaukee-school-of-engineering.svg"
+  },
+  {
+   "id": "north-central-college",
+   "name": "North Central College",
+   "city": "Naperville",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.77576,
+   "lon": -88.14279,
+   "website": "northcentralcollege.edu",
+   "logo": "logos/north-central-college.png"
+  },
+  {
+   "id": "northwestern-university",
+   "name": "Northwestern University",
+   "city": "Evanston",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.050356,
+   "lon": -87.679858,
+   "website": "northwestern.edu",
+   "logo": "logos/northwestern-university.png"
+  },
+  {
+   "id": "saint-mary-s-college",
+   "name": "Saint Mary's College",
+   "city": "Notre Dame",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 3
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.707274,
+   "lon": -86.256947,
+   "website": "saintmarys.edu",
+   "logo": "logos/saint-mary-s-college.png"
+  },
+  {
+   "id": "saint-norbert-college",
+   "name": "Saint Norbert College",
+   "city": "De Pere",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.44483,
+   "lon": -88.067812,
+   "website": "snc.edu",
+   "logo": "logos/saint-norbert-college.svg"
+  },
+  {
+   "id": "southern-illinois-university-carbondale",
+   "name": "Southern Illinois University-Carbondale",
+   "city": "Carbondale",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 2,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.714193,
+   "lon": -89.217273,
+   "website": "siu.edu",
+   "logo": "logos/southern-illinois-university-carbondale.png"
+  },
+  {
+   "id": "southern-methodist-university",
+   "name": "Southern Methodist University",
+   "city": "Dallas",
+   "state": "TX",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 3
+   },
+   "stateName": "Texas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.843612,
+   "lon": -96.783365,
+   "website": "smu.edu",
+   "logo": "logos/southern-methodist-university.png"
+  },
+  {
+   "id": "st-olaf-college",
+   "name": "St Olaf College",
+   "city": "Northfield",
+   "state": "MN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Minnesota",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.461529,
+   "lon": -93.182039,
+   "website": "wp.stolaf.edu",
+   "logo": "logos/st-olaf-college.png"
+  },
+  {
+   "id": "tufts-university",
+   "name": "Tufts University",
+   "city": "Medford",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 3
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.40855,
+   "lon": -71.118293,
+   "website": "tufts.edu",
+   "logo": "logos/tufts-university.png"
+  },
+  {
+   "id": "university-college-dublin",
+   "name": "University College Dublin",
+   "city": "Dublin",
+   "state": "",
+   "country": "IE",
+   "type": "",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2026": 2
+   },
+   "stateName": "",
+   "countryName": "Ireland",
+   "region": "Europe",
+   "lat": 53.30708,
+   "lon": -6.22296,
+   "website": "ucd.ie",
+   "logo": "logos/university-college-dublin.png"
+  },
+  {
+   "id": "university-of-toronto",
+   "name": "University of Toronto",
+   "city": "Toronto",
+   "state": "Ontario",
+   "country": "CA",
+   "type": "",
+   "total": 3,
+   "byYear": {
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Ontario",
+   "countryName": "Canada",
+   "region": "Canada",
+   "lat": 43.66347,
+   "lon": -79.39682,
+   "website": "utoronto.ca",
+   "logo": "logos/university-of-toronto.png"
+  },
+  {
+   "id": "university-of-vermont",
+   "name": "University of Vermont",
+   "city": "Burlington",
+   "state": "VT",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 2,
+    "2026": 1
+   },
+   "stateName": "Vermont",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.477325,
+   "lon": -73.196646,
+   "website": "uvm.edu",
+   "logo": "logos/university-of-vermont.png"
+  },
+  {
+   "id": "university-of-wisconsin-milwaukee",
+   "name": "University of Wisconsin-Milwaukee",
+   "city": "Milwaukee",
+   "state": "WI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 2,
+    "2026": 1
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.076848,
+   "lon": -87.880488,
+   "website": "uwm.edu",
+   "logo": "logos/university-of-wisconsin-milwaukee.svg"
+  },
+  {
+   "id": "western-illinois-university",
+   "name": "Western Illinois University",
+   "city": "Macomb",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2024": 2,
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.468086,
+   "lon": -90.686899,
+   "website": "wiu.edu",
+   "logo": "logos/western-illinois-university.png"
+  },
+  {
+   "id": "bellarmine-university",
+   "name": "Bellarmine University",
+   "city": "Louisville",
+   "state": "KY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Kentucky",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.219279,
+   "lon": -85.704997,
+   "website": "bellarmine.edu",
+   "logo": "logos/bellarmine-university.png"
+  },
+  {
+   "id": "bradley-university",
+   "name": "Bradley University",
+   "city": "Peoria",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.696896,
+   "lon": -89.616786,
+   "website": "bradley.edu",
+   "logo": "logos/bradley-university.svg"
+  },
+  {
+   "id": "central-michigan-university",
+   "name": "Central Michigan University",
+   "city": "Mount Pleasant",
+   "state": "MI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.591203,
+   "lon": -84.77525,
+   "website": "cmich.edu",
+   "logo": "logos/central-michigan-university.png"
+  },
+  {
+   "id": "clemson-university",
+   "name": "Clemson University",
+   "city": "Clemson",
+   "state": "SC",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "South Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.679381,
+   "lon": -82.835114,
+   "website": "clemson.edu",
+   "logo": "logos/clemson-university.png"
+  },
+  {
+   "id": "denison-university",
+   "name": "Denison University",
+   "city": "Granville",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.071505,
+   "lon": -82.523272,
+   "website": "denison.edu",
+   "logo": "logos/denison-university.png"
+  },
+  {
+   "id": "drake-university",
+   "name": "Drake University",
+   "city": "Des Moines",
+   "state": "IA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Iowa",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.60129,
+   "lon": -93.652163,
+   "website": "drake.edu",
+   "logo": "logos/drake-university.png"
+  },
+  {
+   "id": "elon-university",
+   "name": "Elon University",
+   "city": "Elon",
+   "state": "NC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "North Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.104148,
+   "lon": -79.50344,
+   "website": "elon.edu",
+   "logo": "logos/elon-university.png"
+  },
+  {
+   "id": "george-washington-university",
+   "name": "George Washington University",
+   "city": "Washington",
+   "state": "DC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "District of Columbia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.89923,
+   "lon": -77.048363,
+   "website": "gwu.edu",
+   "logo": null
+  },
+  {
+   "id": "hampton-university",
+   "name": "Hampton University",
+   "city": "Hampton",
+   "state": "VA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 2
+   },
+   "stateName": "Virginia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.019944,
+   "lon": -76.339161,
+   "website": "hamptonu.edu",
+   "logo": "logos/hampton-university.png"
+  },
+  {
+   "id": "ie-university-madrid-campus",
+   "name": "IE University - Madrid Campus",
+   "city": "Madrid",
+   "state": "",
+   "country": "ES",
+   "type": "",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "",
+   "countryName": "Spain",
+   "region": "Europe",
+   "lat": 40.41678,
+   "lon": -3.70351,
+   "website": "ie.edu",
+   "logo": "logos/ie-university-madrid-campus.png"
+  },
+  {
+   "id": "john-carroll-university",
+   "name": "John Carroll University",
+   "city": "University Heights",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.490259,
+   "lon": -81.531224,
+   "website": "jcu.edu",
+   "logo": "logos/john-carroll-university.svg"
+  },
+  {
+   "id": "louisiana-state-university",
+   "name": "Louisiana State University",
+   "city": "Baton Rouge",
+   "state": "LA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Louisiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 30.414986,
+   "lon": -91.178921,
+   "website": "lsu.edu",
+   "logo": "logos/louisiana-state-university.png"
+  },
+  {
+   "id": "loyola-marymount-university",
+   "name": "Loyola Marymount University",
+   "city": "Los Angeles",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.97085,
+   "lon": -118.415744,
+   "website": "lmu.edu",
+   "logo": "logos/loyola-marymount-university.png"
+  },
+  {
+   "id": "loyola-university-maryland",
+   "name": "Loyola University Maryland",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Maryland",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.346358,
+   "lon": -76.621872,
+   "website": "loyola.edu",
+   "logo": "logos/loyola-university-maryland.png"
+  },
+  {
+   "id": "miami-dade-college",
+   "name": "Miami Dade College",
+   "city": "Miami",
+   "state": "FL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 25.777717,
+   "lon": -80.190856,
+   "website": "mdc.edu",
+   "logo": "logos/miami-dade-college.png"
+  },
+  {
+   "id": "michigan-technological-university",
+   "name": "Michigan Technological University",
+   "city": "Houghton",
+   "state": "MI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Michigan",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 47.11866,
+   "lon": -88.548092,
+   "website": "mtu.edu",
+   "logo": "logos/michigan-technological-university.png"
+  },
+  {
+   "id": "morehouse-college",
+   "name": "Morehouse College",
+   "city": "Atlanta",
+   "state": "GA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "Georgia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.745982,
+   "lon": -84.414917,
+   "website": "morehouse.edu",
+   "logo": "logos/morehouse-college.png"
+  },
+  {
+   "id": "northeastern-university",
+   "name": "Northeastern University",
+   "city": "Boston",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 2
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.339992,
+   "lon": -71.088782,
+   "website": "northeastern.edu",
+   "logo": "logos/northeastern-university.png"
+  },
+  {
+   "id": "northern-illinois-university",
+   "name": "Northern Illinois University",
+   "city": "Dekalb",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.933869,
+   "lon": -88.766428,
+   "website": "niu.edu",
+   "logo": "logos/northern-illinois-university.png"
+  },
+  {
+   "id": "occidental-college",
+   "name": "Occidental College",
+   "city": "Los Angeles",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.127124,
+   "lon": -118.210908,
+   "website": "oxy.edu",
+   "logo": "logos/occidental-college.png"
+  },
+  {
+   "id": "pepperdine-university",
+   "name": "Pepperdine University",
+   "city": "Malibu",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.037786,
+   "lon": -118.707077,
+   "website": "pepperdine.edu",
+   "logo": "logos/pepperdine-university.png"
+  },
+  {
+   "id": "school-of-the-art-institute-of-chicago",
+   "name": "School of the Art Institute of Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.88105,
+   "lon": -87.625758,
+   "website": "saic.edu",
+   "logo": "logos/school-of-the-art-institute-of-chicago.svg"
+  },
+  {
+   "id": "the-university-of-texas-at-austin",
+   "name": "The University of Texas at Austin",
+   "city": "Austin",
+   "state": "TX",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 2
+   },
+   "stateName": "Texas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 30.282825,
+   "lon": -97.738273,
+   "website": "utexas.edu",
+   "logo": "logos/the-university-of-texas-at-austin.png"
+  },
+  {
+   "id": "university-of-arkansas",
+   "name": "University of Arkansas",
+   "city": "Fayetteville",
+   "state": "AR",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Arkansas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.070009,
+   "lon": -94.176981,
+   "website": "uark.edu",
+   "logo": "logos/university-of-arkansas.png"
+  },
+  {
+   "id": "university-of-california-santa-barbara",
+   "name": "University of California-Santa Barbara",
+   "city": "Santa Barbara",
+   "state": "CA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.416297,
+   "lon": -119.846426,
+   "website": "ucsb.edu",
+   "logo": "logos/university-of-california-santa-barbara.png"
+  },
+  {
+   "id": "university-of-illinois-springfield",
+   "name": "University of Illinois Springfield",
+   "city": "Springfield",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.729524,
+   "lon": -89.616796,
+   "website": "uis.edu",
+   "logo": "logos/university-of-illinois-springfield.png"
+  },
+  {
+   "id": "university-of-louisville",
+   "name": "University of Louisville",
+   "city": "Louisville",
+   "state": "KY",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 2
+   },
+   "stateName": "Kentucky",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.216862,
+   "lon": -85.760412,
+   "website": "louisville.edu",
+   "logo": "logos/university-of-louisville.png"
+  },
+  {
+   "id": "university-of-nebraska-lincoln",
+   "name": "University of Nebraska-Lincoln",
+   "city": "Lincoln",
+   "state": "NE",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "Nebraska",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.817598,
+   "lon": -96.700508,
+   "website": "unl.edu",
+   "logo": "logos/university-of-nebraska-lincoln.svg"
+  },
+  {
+   "id": "university-of-oklahoma-norman-campus",
+   "name": "University of Oklahoma-Norman Campus",
+   "city": "Norman",
+   "state": "OK",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Oklahoma",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 35.209407,
+   "lon": -97.444211,
+   "website": "ou.edu",
+   "logo": "logos/university-of-oklahoma-norman-campus.png"
+  },
+  {
+   "id": "university-of-oregon",
+   "name": "University of Oregon",
+   "city": "Eugene",
+   "state": "OR",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Oregon",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.045146,
+   "lon": -123.075792,
+   "website": "uoregon.edu",
+   "logo": "logos/university-of-oregon.png"
+  },
+  {
+   "id": "university-of-san-diego",
+   "name": "University of San Diego",
+   "city": "San Diego",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.770816,
+   "lon": -117.192073,
+   "website": "sandiego.edu",
+   "logo": "logos/university-of-san-diego.png"
+  },
+  {
+   "id": "university-of-st-thomas",
+   "name": "University of St Thomas",
+   "city": "Saint Paul",
+   "state": "MN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2025": 1
+   },
+   "stateName": "Minnesota",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.943439,
+   "lon": -93.188986,
+   "website": "stthomas.edu",
+   "logo": "logos/university-of-st-thomas.svg"
+  },
+  {
+   "id": "university-of-virginia-main-campus",
+   "name": "University of Virginia-Main Campus",
+   "city": "Charlottesville",
+   "state": "VA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 1,
+    "2026": 1
+   },
+   "stateName": "Virginia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.035665,
+   "lon": -78.503428,
+   "website": "virginia.edu",
+   "logo": "logos/university-of-virginia-main-campus.png"
+  },
+  {
+   "id": "university-of-wisconsin-whitewater",
+   "name": "University of Wisconsin-Whitewater",
+   "city": "Whitewater",
+   "state": "WI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.835563,
+   "lon": -88.742368,
+   "website": "uww.edu",
+   "logo": "logos/university-of-wisconsin-whitewater.png"
+  },
+  {
+   "id": "universita-cattolica-del-sacro-cuore",
+   "name": "Università Cattolica del Sacro Cuore",
+   "city": "Milano",
+   "state": "",
+   "country": "IT",
+   "type": "",
+   "total": 2,
+   "byYear": {
+    "2026": 2
+   },
+   "stateName": "",
+   "countryName": "Italy",
+   "region": "Europe",
+   "lat": 45.4627,
+   "lon": 9.1766,
+   "website": "unicatt.it",
+   "logo": "logos/universita-cattolica-del-sacro-cuore.png"
+  },
+  {
+   "id": "vanderbilt-university",
+   "name": "Vanderbilt University",
+   "city": "Nashville",
+   "state": "TN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2024": 2
+   },
+   "stateName": "Tennessee",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.14659,
+   "lon": -86.803369,
+   "website": "vanderbilt.edu",
+   "logo": "logos/vanderbilt-university.png"
+  },
+  {
+   "id": "wake-forest-university",
+   "name": "Wake Forest University",
+   "city": "Winston-Salem",
+   "state": "NC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "North Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.133609,
+   "lon": -80.277446,
+   "website": "wfu.edu",
+   "logo": "logos/wake-forest-university.png"
+  },
+  {
+   "id": "wellesley-college",
+   "name": "Wellesley College",
+   "city": "Wellesley",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 2,
+   "byYear": {
+    "2025": 1,
+    "2026": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.291554,
+   "lon": -71.306605,
+   "website": "wellesley.edu",
+   "logo": "logos/wellesley-college.svg"
+  },
+  {
+   "id": "appalachian-state-university",
+   "name": "Appalachian State University",
+   "city": "Boone",
+   "state": "NC",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "North Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.215536,
+   "lon": -81.680583,
+   "website": "appstate.edu",
+   "logo": "logos/appalachian-state-university.png"
+  },
+  {
+   "id": "barton-county-community-college",
+   "name": "Barton County Community College",
+   "city": "Great Bend",
+   "state": "KS",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Kansas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.403529,
+   "lon": -98.731648,
+   "website": "bartonccc.edu",
+   "logo": "logos/barton-county-community-college.svg"
+  },
+  {
+   "id": "belmont-university",
+   "name": "Belmont University",
+   "city": "Nashville",
+   "state": "TN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Tennessee",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.135589,
+   "lon": -86.794807,
+   "website": "belmont.edu",
+   "logo": "logos/belmont-university.svg"
+  },
+  {
+   "id": "berea-college",
+   "name": "Berea College",
+   "city": "Berea",
+   "state": "KY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Kentucky",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.57202,
+   "lon": -84.292893,
+   "website": "berea.edu",
+   "logo": "logos/berea-college.svg"
+  },
+  {
+   "id": "bocconi-university",
+   "name": "Bocconi University",
+   "city": "Milan",
+   "state": "",
+   "country": "IT",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "",
+   "countryName": "Italy",
+   "region": "Europe",
+   "lat": 45.4499,
+   "lon": 9.18926,
+   "website": "unibocconi.eu",
+   "logo": null
+  },
+  {
+   "id": "brown-university",
+   "name": "Brown University",
+   "city": "Providence",
+   "state": "RI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Rhode Island",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.82617,
+   "lon": -71.40385,
+   "website": "brown.edu",
+   "logo": "logos/brown-university.svg"
+  },
+  {
+   "id": "bucknell-university",
+   "name": "Bucknell University",
+   "city": "Lewisburg",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.954317,
+   "lon": -76.882616,
+   "website": "bucknell.edu",
+   "logo": "logos/bucknell-university.svg"
+  },
+  {
+   "id": "california-baptist-university",
+   "name": "California Baptist University",
+   "city": "Riverside",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.929321,
+   "lon": -117.425619,
+   "website": "calbaptist.edu",
+   "logo": "logos/california-baptist-university.png"
+  },
+  {
+   "id": "carleton-college",
+   "name": "Carleton College",
+   "city": "Northfield",
+   "state": "MN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Minnesota",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.462318,
+   "lon": -93.154666,
+   "website": "carleton.edu",
+   "logo": "logos/carleton-college.png"
+  },
+  {
+   "id": "carnegie-mellon-university",
+   "name": "Carnegie Mellon University",
+   "city": "Pittsburgh",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.44357,
+   "lon": -79.941993,
+   "website": "cmu.edu",
+   "logo": "logos/carnegie-mellon-university.png"
+  },
+  {
+   "id": "case-western-reserve-university",
+   "name": "Case Western Reserve University",
+   "city": "Cleveland",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.507419,
+   "lon": -81.609596,
+   "website": "case.edu",
+   "logo": "logos/case-western-reserve-university.png"
+  },
+  {
+   "id": "central-connecticut-state-university",
+   "name": "Central Connecticut State University",
+   "city": "New Britain",
+   "state": "CT",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Connecticut",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.692502,
+   "lon": -72.765991,
+   "website": "ccsu.edu",
+   "logo": "logos/central-connecticut-state-university.png"
+  },
+  {
+   "id": "city-colleges-of-chicago-kennedy-king-college",
+   "name": "City Colleges of Chicago-Kennedy-King College",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.780253,
+   "lon": -87.643425,
+   "website": "ccc.edu",
+   "logo": "logos/city-colleges-of-chicago-kennedy-king-college.png"
+  },
+  {
+   "id": "city-colleges-of-chicago-richard-j-daley-college",
+   "name": "City Colleges of Chicago-Richard J Daley College",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.755955,
+   "lon": -87.723981,
+   "website": "ccc.edu",
+   "logo": "logos/city-colleges-of-chicago-richard-j-daley-college.png"
+  },
+  {
+   "id": "city-colleges-of-chicago-wilbur-wright-college",
+   "name": "City Colleges of Chicago-Wilbur Wright College",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.958774,
+   "lon": -87.787868,
+   "website": "ccc.edu",
+   "logo": "logos/city-colleges-of-chicago-wilbur-wright-college.png"
+  },
+  {
+   "id": "college-of-dupage",
+   "name": "College of DuPage",
+   "city": "Glen Ellyn",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.841577,
+   "lon": -88.071635,
+   "website": "cod.edu",
+   "logo": "logos/college-of-dupage.png"
+  },
+  {
+   "id": "college-of-lake-county",
+   "name": "College of Lake County",
+   "city": "Grayslake",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.354164,
+   "lon": -88.012291,
+   "website": "clcillinois.edu",
+   "logo": null
+  },
+  {
+   "id": "college-of-the-holy-cross",
+   "name": "College of the Holy Cross",
+   "city": "Worcester",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.23752,
+   "lon": -71.808214,
+   "website": "holycross.edu",
+   "logo": "logos/college-of-the-holy-cross.png"
+  },
+  {
+   "id": "colorado-college",
+   "name": "Colorado College",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Colorado",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.84886,
+   "lon": -104.822697,
+   "website": "coloradocollege.edu",
+   "logo": "logos/colorado-college.png"
+  },
+  {
+   "id": "colorado-state-university",
+   "name": "Colorado State University",
+   "city": "Fort Collins",
+   "state": "CO",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Colorado",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.574805,
+   "lon": -105.080732,
+   "website": "colostate.edu",
+   "logo": "logos/colorado-state-university.png"
+  },
+  {
+   "id": "columbia-university-in-the-city-of-new-york",
+   "name": "Columbia University in the City of New York",
+   "city": "New York",
+   "state": "NY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.808286,
+   "lon": -73.961885,
+   "website": "columbia.edu",
+   "logo": "logos/columbia-university-in-the-city-of-new-york.png"
+  },
+  {
+   "id": "connecticut-college",
+   "name": "Connecticut College",
+   "city": "New London",
+   "state": "CT",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Connecticut",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.379833,
+   "lon": -72.107321,
+   "website": "conncoll.edu",
+   "logo": null
+  },
+  {
+   "id": "davidson-college",
+   "name": "Davidson College",
+   "city": "Davidson",
+   "state": "NC",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "North Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 35.499767,
+   "lon": -80.843979,
+   "website": "davidson.edu",
+   "logo": "logos/davidson-college.png"
+  },
+  {
+   "id": "dominican-university",
+   "name": "Dominican University",
+   "city": "River Forest",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.902678,
+   "lon": -87.823003,
+   "website": "dom.edu",
+   "logo": "logos/dominican-university.png"
+  },
+  {
+   "id": "eastern-illinois-university",
+   "name": "Eastern Illinois University",
+   "city": "Charleston",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.479843,
+   "lon": -88.175658,
+   "website": "eiu.edu",
+   "logo": "logos/eastern-illinois-university.png"
+  },
+  {
+   "id": "edgewood-college",
+   "name": "Edgewood College",
+   "city": "Madison",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 43.057059,
+   "lon": -89.422884,
+   "website": "edgewood.edu",
+   "logo": "logos/edgewood-college.svg"
+  },
+  {
+   "id": "elmhurst-university",
+   "name": "Elmhurst University",
+   "city": "Elmhurst",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.897164,
+   "lon": -87.945369,
+   "website": "elmhurst.edu",
+   "logo": "logos/elmhurst-university.png"
+  },
+  {
+   "id": "emory-university",
+   "name": "Emory University",
+   "city": "Atlanta",
+   "state": "GA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Georgia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.790183,
+   "lon": -84.325512,
+   "website": "emory.edu",
+   "logo": "logos/emory-university.svg"
+  },
+  {
+   "id": "florida-state-university",
+   "name": "Florida State University",
+   "city": "Tallahassee",
+   "state": "FL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 30.443147,
+   "lon": -84.295064,
+   "website": "fsu.edu",
+   "logo": "logos/florida-state-university.png"
+  },
+  {
+   "id": "franklin-university-switzerland",
+   "name": "Franklin University Switzerland",
+   "city": "Lugano",
+   "state": "",
+   "country": "CH",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "",
+   "countryName": "Switzerland",
+   "region": "Europe",
+   "lat": 46.0015,
+   "lon": 8.93867,
+   "website": "fus.edu",
+   "logo": "logos/franklin-university-switzerland.png"
+  },
+  {
+   "id": "gettysburg-college",
+   "name": "Gettysburg College",
+   "city": "Gettysburg",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.836597,
+   "lon": -77.236792,
+   "website": "gettysburg.edu",
+   "logo": "logos/gettysburg-college.png"
+  },
+  {
+   "id": "glendale-community-college-arizona",
+   "name": "Glendale Community College - Arizona",
+   "city": "Glendale",
+   "state": "AZ",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Arizona",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.570226,
+   "lon": -112.190735,
+   "website": "gccaz.edu",
+   "logo": "logos/glendale-community-college-arizona.png"
+  },
+  {
+   "id": "hampden-sydney-college",
+   "name": "Hampden-Sydney College",
+   "city": "Hampden-Sydney",
+   "state": "VA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Virginia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.240615,
+   "lon": -78.464216,
+   "website": "hsc.edu",
+   "logo": "logos/hampden-sydney-college.png"
+  },
+  {
+   "id": "harvard-university",
+   "name": "Harvard University",
+   "city": "Cambridge",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.374471,
+   "lon": -71.118313,
+   "website": "harvard.edu",
+   "logo": "logos/harvard-university.png"
+  },
+  {
+   "id": "john-cabot-university",
+   "name": "John Cabot University",
+   "city": "Rome",
+   "state": "",
+   "country": "IT",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "",
+   "countryName": "Italy",
+   "region": "Europe",
+   "lat": 41.89024,
+   "lon": 12.47358,
+   "website": "johncabot.edu",
+   "logo": "logos/john-cabot-university.png"
+  },
+  {
+   "id": "johns-hopkins-university",
+   "name": "Johns Hopkins University",
+   "city": "Baltimore",
+   "state": "MD",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Maryland",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.328977,
+   "lon": -76.621595,
+   "website": "jhu.edu",
+   "logo": "logos/johns-hopkins-university.png"
+  },
+  {
+   "id": "lackawanna-college",
+   "name": "Lackawanna College",
+   "city": "Scranton",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.411556,
+   "lon": -75.658963,
+   "website": "lackawanna.edu",
+   "logo": "logos/lackawanna-college.png"
+  },
+  {
+   "id": "lawrence-university",
+   "name": "Lawrence University",
+   "city": "Appleton",
+   "state": "WI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.261323,
+   "lon": -88.397822,
+   "website": "lawrence.edu",
+   "logo": "logos/lawrence-university.png"
+  },
+  {
+   "id": "lewis-university",
+   "name": "Lewis University",
+   "city": "Romeoville",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.605432,
+   "lon": -88.079032,
+   "website": "lewisu.edu",
+   "logo": "logos/lewis-university.png"
+  },
+  {
+   "id": "maryville-university-of-saint-louis",
+   "name": "Maryville University of Saint Louis",
+   "city": "Saint Louis",
+   "state": "MO",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Missouri",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.644774,
+   "lon": -90.505998,
+   "website": "maryville.edu",
+   "logo": "logos/maryville-university-of-saint-louis.png"
+  },
+  {
+   "id": "merrimack-college",
+   "name": "Merrimack College",
+   "city": "North Andover",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.668344,
+   "lon": -71.124216,
+   "website": "merrimack.edu",
+   "logo": "logos/merrimack-college.png"
+  },
+  {
+   "id": "mississippi-state-university",
+   "name": "Mississippi State University",
+   "city": "Mississippi State",
+   "state": "MS",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Mississippi",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.454852,
+   "lon": -88.790139,
+   "website": "msstate.edu",
+   "logo": "logos/mississippi-state-university.png"
+  },
+  {
+   "id": "norfolk-state-university",
+   "name": "Norfolk State University",
+   "city": "Norfolk",
+   "state": "VA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Virginia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 36.848429,
+   "lon": -76.261375,
+   "website": "nsu.edu",
+   "logo": "logos/norfolk-state-university.png"
+  },
+  {
+   "id": "north-park-university",
+   "name": "North Park University",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.975268,
+   "lon": -87.709948,
+   "website": "northpark.edu",
+   "logo": "logos/north-park-university.png"
+  },
+  {
+   "id": "northeastern-illinois-university",
+   "name": "Northeastern Illinois University",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.980399,
+   "lon": -87.718983,
+   "website": "neiu.edu",
+   "logo": "logos/northeastern-illinois-university.png"
+  },
+  {
+   "id": "oakton-college",
+   "name": "Oakton College",
+   "city": "Des Plaines",
+   "state": "IL",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.061893,
+   "lon": -87.880644,
+   "website": "oakton.edu",
+   "logo": "logos/oakton-college.png"
+  },
+  {
+   "id": "ohio-university-main-campus",
+   "name": "Ohio University-Main Campus",
+   "city": "Athens",
+   "state": "OH",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.326798,
+   "lon": -82.100985,
+   "website": "ohio.edu",
+   "logo": "logos/ohio-university-main-campus.svg"
+  },
+  {
+   "id": "pace-university",
+   "name": "Pace University",
+   "city": "New York",
+   "state": "NY",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.711014,
+   "lon": -74.004719,
+   "website": "pace.edu",
+   "logo": "logos/pace-university.svg"
+  },
+  {
+   "id": "queen-s-university",
+   "name": "Queen's University",
+   "city": "Kingston",
+   "state": "Ontario",
+   "country": "CA",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Ontario",
+   "countryName": "Canada",
+   "region": "Canada",
+   "lat": 44.22635,
+   "lon": -76.49576,
+   "website": "queensu.ca",
+   "logo": "logos/queen-s-university.png"
+  },
+  {
+   "id": "rit-croatia",
+   "name": "RIT Croatia",
+   "city": "Dubrovnik",
+   "state": "",
+   "country": "HR",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "",
+   "countryName": "Croatia",
+   "region": "Europe",
+   "lat": 42.64206,
+   "lon": 18.10287,
+   "website": "croatia.rit.edu",
+   "logo": "logos/rit-croatia.png"
+  },
+  {
+   "id": "rhode-island-school-of-design",
+   "name": "Rhode Island School of Design",
+   "city": "Providence",
+   "state": "RI",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Rhode Island",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.827114,
+   "lon": -71.409309,
+   "website": "risd.edu",
+   "logo": "logos/rhode-island-school-of-design.png"
+  },
+  {
+   "id": "richmond-american-university-london",
+   "name": "Richmond American University London",
+   "city": "",
+   "state": "",
+   "country": "GB",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "",
+   "countryName": "United Kingdom",
+   "region": "Europe",
+   "lat": 51.4935,
+   "lon": -0.2743,
+   "website": "richmond.ac.uk",
+   "logo": "logos/richmond-american-university-london.png"
+  },
+  {
+   "id": "roosevelt-university",
+   "name": "Roosevelt University",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.876055,
+   "lon": -87.624952,
+   "website": "roosevelt.edu",
+   "logo": "logos/roosevelt-university.png"
+  },
+  {
+   "id": "rose-hulman-institute-of-technology",
+   "name": "Rose-Hulman Institute of Technology",
+   "city": "Terre Haute",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.483602,
+   "lon": -87.326749,
+   "website": "rose-hulman.edu",
+   "logo": "logos/rose-hulman-institute-of-technology.png"
+  },
+  {
+   "id": "saint-leo-university",
+   "name": "Saint Leo University",
+   "city": "Saint Leo",
+   "state": "FL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 28.336776,
+   "lon": -82.257801,
+   "website": "saintleo.edu",
+   "logo": "logos/saint-leo-university.svg"
+  },
+  {
+   "id": "saint-xavier-university",
+   "name": "Saint Xavier University",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.707199,
+   "lon": -87.714749,
+   "website": "sxu.edu",
+   "logo": "logos/saint-xavier-university.png"
+  },
+  {
+   "id": "santa-clara-university",
+   "name": "Santa Clara University",
+   "city": "Santa Clara",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.348362,
+   "lon": -121.93784,
+   "website": "scu.edu",
+   "logo": "logos/santa-clara-university.svg"
+  },
+  {
+   "id": "savannah-college-of-art-and-design",
+   "name": "Savannah College of Art and Design",
+   "city": "Savannah",
+   "state": "GA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Georgia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 32.072964,
+   "lon": -81.09395,
+   "website": "scad.edu",
+   "logo": "logos/savannah-college-of-art-and-design.png"
+  },
+  {
+   "id": "school-of-visual-arts",
+   "name": "School of Visual Arts",
+   "city": "New York",
+   "state": "NY",
+   "country": "US",
+   "type": "Private for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.738809,
+   "lon": -73.982359,
+   "website": "sva.edu",
+   "logo": "logos/school-of-visual-arts.png"
+  },
+  {
+   "id": "smith-college",
+   "name": "Smith College",
+   "city": "Northampton",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.318111,
+   "lon": -72.638097,
+   "website": "smith.edu",
+   "logo": "logos/smith-college.png"
+  },
+  {
+   "id": "southern-adventist-university",
+   "name": "Southern Adventist University",
+   "city": "Collegedale",
+   "state": "TN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Tennessee",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 35.048254,
+   "lon": -85.052088,
+   "website": "southern.edu",
+   "logo": "logos/southern-adventist-university.png"
+  },
+  {
+   "id": "southern-technical-college",
+   "name": "Southern Technical College",
+   "city": "Fort Myers",
+   "state": "FL",
+   "country": "US",
+   "type": "Private for-profit, 2-year",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 26.596097,
+   "lon": -81.877644,
+   "website": "southerntech.edu",
+   "logo": null
+  },
+  {
+   "id": "spelman-college",
+   "name": "Spelman College",
+   "city": "Atlanta",
+   "state": "GA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Georgia",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.745279,
+   "lon": -84.411527,
+   "website": "spelman.edu",
+   "logo": "logos/spelman-college.png"
+  },
+  {
+   "id": "suffolk-university",
+   "name": "Suffolk University",
+   "city": "Boston",
+   "state": "MA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Massachusetts",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.357945,
+   "lon": -71.060917,
+   "website": "suffolk.edu",
+   "logo": "logos/suffolk-university.png"
+  },
+  {
+   "id": "swarthmore-college",
+   "name": "Swarthmore College",
+   "city": "Swarthmore",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.905159,
+   "lon": -75.354278,
+   "website": "swarthmore.edu",
+   "logo": "logos/swarthmore-college.png"
+  },
+  {
+   "id": "temple-university",
+   "name": "Temple University",
+   "city": "Philadelphia",
+   "state": "PA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.980546,
+   "lon": -75.156859,
+   "website": "temple.edu",
+   "logo": "logos/temple-university.png"
+  },
+  {
+   "id": "texas-state-technical-college",
+   "name": "Texas State Technical College",
+   "city": "Waco",
+   "state": "TX",
+   "country": "US",
+   "type": "Public, 2-year",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Texas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 31.639295,
+   "lon": -97.08471,
+   "website": "tstc.edu",
+   "logo": "logos/texas-state-technical-college.png"
+  },
+  {
+   "id": "texas-tech-university",
+   "name": "Texas Tech University",
+   "city": "Lubbock",
+   "state": "TX",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Texas",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.583448,
+   "lon": -101.874783,
+   "website": "ttu.edu",
+   "logo": "logos/texas-tech-university.svg"
+  },
+  {
+   "id": "the-american-university-of-paris",
+   "name": "The American University of Paris",
+   "city": "Paris",
+   "state": "",
+   "country": "FR",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "",
+   "countryName": "France",
+   "region": "Europe",
+   "lat": 48.86158,
+   "lon": 2.31066,
+   "website": "aup.edu",
+   "logo": "logos/the-american-university-of-paris.png"
+  },
+  {
+   "id": "the-college-of-wooster",
+   "name": "The College of Wooster",
+   "city": "Wooster",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.81046,
+   "lon": -81.934674,
+   "website": "wooster.edu",
+   "logo": "logos/the-college-of-wooster.png"
+  },
+  {
+   "id": "the-university-of-alabama",
+   "name": "The University of Alabama",
+   "city": "Tuscaloosa",
+   "state": "AL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Alabama",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 33.211875,
+   "lon": -87.545978,
+   "website": "ua.edu",
+   "logo": "logos/the-university-of-alabama.svg"
+  },
+  {
+   "id": "united-states-merchant-marine-academy",
+   "name": "United States Merchant Marine Academy",
+   "city": "Kings Point",
+   "state": "NY",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "New York",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.81357,
+   "lon": -73.763004,
+   "website": "usmma.edu",
+   "logo": null
+  },
+  {
+   "id": "university-of-amsterdam",
+   "name": "University of Amsterdam",
+   "city": "Amsterdam",
+   "state": "",
+   "country": "NL",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "",
+   "countryName": "Netherlands",
+   "region": "Europe",
+   "lat": 52.36813,
+   "lon": 4.8898,
+   "website": "uva.nl",
+   "logo": "logos/university-of-amsterdam.svg"
+  },
+  {
+   "id": "university-of-california-berkeley",
+   "name": "University of California-Berkeley",
+   "city": "Berkeley",
+   "state": "CA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.871918,
+   "lon": -122.260463,
+   "website": "berkeley.edu",
+   "logo": "logos/university-of-california-berkeley.png"
+  },
+  {
+   "id": "university-of-california-los-angeles",
+   "name": "University of California-Los Angeles",
+   "city": "Los Angeles",
+   "state": "CA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.07178,
+   "lon": -118.442179,
+   "website": "ucla.edu",
+   "logo": "logos/university-of-california-los-angeles.png"
+  },
+  {
+   "id": "university-of-cincinnati-main-campus",
+   "name": "University of Cincinnati-Main Campus",
+   "city": "Cincinnati",
+   "state": "OH",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.131159,
+   "lon": -84.51428,
+   "website": "uc.edu",
+   "logo": "logos/university-of-cincinnati-main-campus.png"
+  },
+  {
+   "id": "university-of-guelph",
+   "name": "University of Guelph",
+   "city": "Guelph",
+   "state": "Ontario",
+   "country": "CA",
+   "type": "",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Ontario",
+   "countryName": "Canada",
+   "region": "Canada",
+   "lat": 43.53279,
+   "lon": -80.225,
+   "website": "uoguelph.ca",
+   "logo": "logos/university-of-guelph.png"
+  },
+  {
+   "id": "university-of-maine",
+   "name": "University of Maine",
+   "city": "Orono",
+   "state": "ME",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Maine",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.899257,
+   "lon": -68.669332,
+   "website": "umaine.edu",
+   "logo": "logos/university-of-maine.png"
+  },
+  {
+   "id": "university-of-maryland-college-park",
+   "name": "University of Maryland-College Park",
+   "city": "College Park",
+   "state": "MD",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Maryland",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 38.988178,
+   "lon": -76.944721,
+   "website": "umd.edu",
+   "logo": "logos/university-of-maryland-college-park.png"
+  },
+  {
+   "id": "university-of-minnesota-twin-cities",
+   "name": "University of Minnesota-Twin Cities",
+   "city": "Minneapolis",
+   "state": "MN",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Minnesota",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.972851,
+   "lon": -93.235464,
+   "website": "twin-cities.umn.edu",
+   "logo": "logos/university-of-minnesota-twin-cities.png"
+  },
+  {
+   "id": "university-of-nevada-reno",
+   "name": "University of Nevada-Reno",
+   "city": "Reno",
+   "state": "NV",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Nevada",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.543642,
+   "lon": -119.815377,
+   "website": "unr.edu",
+   "logo": "logos/university-of-nevada-reno.svg"
+  },
+  {
+   "id": "university-of-north-carolina-at-chapel-hill",
+   "name": "University of North Carolina at Chapel Hill",
+   "city": "Chapel Hill",
+   "state": "NC",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "North Carolina",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 35.911769,
+   "lon": -79.050969,
+   "website": "unc.edu",
+   "logo": "logos/university-of-north-carolina-at-chapel-hill.png"
+  },
+  {
+   "id": "university-of-north-dakota",
+   "name": "University of North Dakota",
+   "city": "Grand Forks",
+   "state": "ND",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "North Dakota",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 47.921654,
+   "lon": -97.071738,
+   "website": "und.edu",
+   "logo": "logos/university-of-north-dakota.svg"
+  },
+  {
+   "id": "university-of-north-florida",
+   "name": "University of North Florida",
+   "city": "Jacksonville",
+   "state": "FL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 30.27194,
+   "lon": -81.509144,
+   "website": "unf.edu",
+   "logo": "logos/university-of-north-florida.png"
+  },
+  {
+   "id": "university-of-pittsburgh-pittsburgh-campus",
+   "name": "University of Pittsburgh-Pittsburgh Campus",
+   "city": "Pittsburgh",
+   "state": "PA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.444388,
+   "lon": -79.953254,
+   "website": "pitt.edu",
+   "logo": "logos/university-of-pittsburgh-pittsburgh-campus.png"
+  },
+  {
+   "id": "university-of-rhode-island",
+   "name": "University of Rhode Island",
+   "city": "Kingston",
+   "state": "RI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Rhode Island",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.484691,
+   "lon": -71.527356,
+   "website": "web.uri.edu",
+   "logo": "logos/university-of-rhode-island.svg"
+  },
+  {
+   "id": "university-of-san-francisco",
+   "name": "University of San Francisco",
+   "city": "San Francisco",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 37.776618,
+   "lon": -122.450477,
+   "website": "usfca.edu",
+   "logo": "logos/university-of-san-francisco.svg"
+  },
+  {
+   "id": "university-of-south-florida",
+   "name": "University of South Florida",
+   "city": "Tampa",
+   "state": "FL",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Florida",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 28.061458,
+   "lon": -82.413232,
+   "website": "usf.edu",
+   "logo": "logos/university-of-south-florida.png"
+  },
+  {
+   "id": "university-of-southern-california",
+   "name": "University of Southern California",
+   "city": "Los Angeles",
+   "state": "CA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "California",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 34.021281,
+   "lon": -118.284169,
+   "website": "usc.edu",
+   "logo": "logos/university-of-southern-california.svg"
+  },
+  {
+   "id": "university-of-toledo",
+   "name": "University of Toledo",
+   "city": "Toledo",
+   "state": "OH",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.660572,
+   "lon": -83.614714,
+   "website": "utoledo.edu",
+   "logo": "logos/university-of-toledo.png"
+  },
+  {
+   "id": "university-of-utah",
+   "name": "University of Utah",
+   "city": "Salt Lake City",
+   "state": "UT",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Utah",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.762484,
+   "lon": -111.846044,
+   "website": "utah.edu",
+   "logo": "logos/university-of-utah.png"
+  },
+  {
+   "id": "university-of-washington-seattle-campus",
+   "name": "University of Washington-Seattle Campus",
+   "city": "Seattle",
+   "state": "WA",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Washington",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 47.65538,
+   "lon": -122.30514,
+   "website": "washington.edu",
+   "logo": "logos/university-of-washington-seattle-campus.png"
+  },
+  {
+   "id": "university-of-wisconsin-green-bay",
+   "name": "University of Wisconsin-Green Bay",
+   "city": "Green Bay",
+   "state": "WI",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Wisconsin",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 44.532298,
+   "lon": -87.919973,
+   "website": "uwgb.edu",
+   "logo": "logos/university-of-wisconsin-green-bay.svg"
+  },
+  {
+   "id": "valparaiso-university",
+   "name": "Valparaiso University",
+   "city": "Valparaiso",
+   "state": "IN",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Indiana",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.462239,
+   "lon": -87.040172,
+   "website": "valpo.edu",
+   "logo": "logos/valparaiso-university.png"
+  },
+  {
+   "id": "villanova-university",
+   "name": "Villanova University",
+   "city": "Villanova",
+   "state": "PA",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2026": 1
+   },
+   "stateName": "Pennsylvania",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 40.036463,
+   "lon": -75.340502,
+   "website": "villanova.edu",
+   "logo": "logos/villanova-university.png"
+  },
+  {
+   "id": "wayne-state-college",
+   "name": "Wayne State College",
+   "city": "Wayne",
+   "state": "NE",
+   "country": "US",
+   "type": "Public, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2024": 1
+   },
+   "stateName": "Nebraska",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.241556,
+   "lon": -97.015122,
+   "website": "wsc.edu",
+   "logo": "logos/wayne-state-college.png"
+  },
+  {
+   "id": "xavier-university",
+   "name": "Xavier University",
+   "city": "Cincinnati",
+   "state": "OH",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 1,
+   "byYear": {
+    "2025": 1
+   },
+   "stateName": "Ohio",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 39.149547,
+   "lon": -84.47465,
+   "website": "xavier.edu",
+   "logo": "logos/xavier-university.svg"
+  }
+ ]
+}

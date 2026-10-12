@@ -1,0 +1,514 @@
+/* DePaul College Prep — College Matriculation Map
+   All rules are scoped under .dcpcm so the control can be dropped into any page. */
+
+.dcpcm {
+  --dcp-navy: #0e406a;
+  --dcp-navy-ink: #0a2f4f;
+  --dcp-lake: #5fb3e4;
+  --dcp-lake-soft: #dff0fa;
+  --dcp-red: #bc312b;
+  --dcp-white: #ffffff;
+  --dcp-paper: #f6f8fa;
+  --dcp-line: #d9e1e8;
+  --dcp-text: #1d2a36;
+  --dcp-muted: #5c6b7a;
+  --dcp-font-body: "Source Sans 3", "Source Sans Pro", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+  --dcp-font-title: "Libre Bodoni", "Bodoni 72", "Bodoni MT", Georgia, serif;
+  --dcp-radius: 10px;
+
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 420px;
+  container-type: inline-size;
+  container-name: dcpcm;
+  color: var(--dcp-text);
+  font-family: var(--dcp-font-body);
+  font-size: 15px;
+  line-height: 1.4;
+  background: var(--dcp-white);
+  border: 1px solid var(--dcp-line);
+  border-radius: var(--dcp-radius);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.dcpcm *, .dcpcm *::before, .dcpcm *::after { box-sizing: inherit; }
+.dcpcm button { font: inherit; color: inherit; cursor: pointer; text-transform: none; letter-spacing: normal; }
+.dcpcm p, .dcpcm ol, .dcpcm h2, .dcpcm h3, .dcpcm h4, .dcpcm h5 { font-family: inherit; text-transform: none; letter-spacing: normal; }
+.dcpcm img { border: 0; box-shadow: none; }
+.dcpcm svg { display: block; }
+
+/* ---------- header ---------- */
+.dcpcm-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px 20px;
+  padding: 18px 22px 14px;
+  background: var(--dcp-navy);
+  color: var(--dcp-white);
+}
+.dcpcm-title {
+  margin: 0;
+  padding: 0;
+  color: var(--dcp-white);
+  font-family: var(--dcp-font-title);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+.dcpcm-subtitle {
+  margin: 4px 0 0;
+  color: var(--dcp-white);
+  font-size: 14px;
+  opacity: 0.85;
+}
+.dcpcm-years {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.dcpcm-years button {
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--dcp-white);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 0.15s, color 0.15s;
+}
+.dcpcm-years button:hover { background: rgba(255, 255, 255, 0.15); }
+.dcpcm-years button[aria-pressed="true"] {
+  background: var(--dcp-white);
+  border-color: var(--dcp-white);
+  color: var(--dcp-navy);
+}
+.dcpcm-years button:focus-visible,
+.dcpcm-back:focus-visible,
+.dcpcm-list button:focus-visible {
+  outline: 2px solid var(--dcp-lake);
+  outline-offset: 2px;
+}
+
+/* ---------- body layout ---------- */
+.dcpcm-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-rows: auto auto;
+  min-height: 460px;
+}
+.dcpcm-stage {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  min-height: 380px;
+  background: var(--dcp-paper);
+}
+.dcpcm-insets {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px 12px;
+  background: var(--dcp-paper);
+  border-top: 1px solid var(--dcp-line);
+  overflow-x: auto;
+}
+.dcpcm-insets:empty { display: none; }
+.dcpcm-panel {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-left: 1px solid var(--dcp-line);
+  background: var(--dcp-white);
+  overflow-y: auto;
+  max-height: 640px;
+}
+
+/* ---------- stage (main map) ---------- */
+.dcpcm-view {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.45s ease;
+}
+.dcpcm-view[hidden] { display: none; }
+.dcpcm-view.is-leaving { opacity: 0; pointer-events: none; }
+.dcpcm-view.is-entering { opacity: 0; }
+.dcpcm-view svg { width: 100%; height: 100%; }
+
+.dcpcm-state {
+  stroke: var(--dcp-white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: fill 0.25s, stroke 0.15s, stroke-width 0.15s;
+  outline: none;
+}
+.dcpcm-state.has-data:hover,
+.dcpcm-state.has-data:focus-visible,
+.dcpcm-state.is-hovered {
+  stroke: var(--dcp-lake);
+  stroke-width: 2.2;
+  filter: brightness(1.08);
+}
+.dcpcm-state.no-data { cursor: default; }
+.dcpcm-mesh {
+  fill: none;
+  stroke: var(--dcp-white);
+  stroke-width: 0.6;
+  pointer-events: none;
+}
+
+.dcpcm-legend {
+  position: absolute;
+  left: 14px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--dcp-muted);
+  pointer-events: none;
+}
+.dcpcm-legend .swatches { display: flex; }
+.dcpcm-legend .swatch {
+  position: relative;
+  width: 30px;
+  height: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.dcpcm-legend .swatch span {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.dcpcm-legend .swatch:first-child { border-radius: 3px 0 0 3px; }
+.dcpcm-legend .swatch:last-child { border-radius: 0 3px 3px 0; }
+.dcpcm-hint {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  font-size: 12px;
+  color: var(--dcp-muted);
+  pointer-events: none;
+}
+
+/* detail (state / country) view */
+.dcpcm-detail-bar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+}
+.dcpcm-back {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 9px;
+  border: 1px solid var(--dcp-line);
+  border-radius: 999px;
+  background: var(--dcp-white);
+  color: var(--dcp-navy);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(14, 64, 106, 0.12);
+}
+.dcpcm-back:hover { background: var(--dcp-lake-soft); }
+.dcpcm-detail-title {
+  font-family: var(--dcp-font-title);
+  font-size: 20px;
+  color: var(--dcp-navy);
+  text-shadow: 0 0 6px var(--dcp-paper), 0 0 2px var(--dcp-paper);
+}
+.dcpcm-detail-title small {
+  font-family: var(--dcp-font-body);
+  font-size: 14px;
+  color: var(--dcp-muted);
+  margin-left: 8px;
+}
+.dcpcm-context { fill: #e6ebf0; stroke: var(--dcp-white); stroke-width: 1; }
+.dcpcm-focus { fill: #c9dcea; stroke: var(--dcp-navy); stroke-width: 1.2; }
+
+/* pins ("flags") */
+.dcpcm-pin { cursor: pointer; outline: none; }
+.dcpcm-pin .pole { stroke: var(--dcp-navy); stroke-width: 1.6; stroke-linecap: round; }
+.dcpcm-pin .flag {
+  fill: var(--dcp-red);
+  stroke: var(--dcp-white);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  transition: fill 0.15s;
+}
+.dcpcm-pin .count {
+  fill: var(--dcp-white);
+  font-family: var(--dcp-font-body);
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.dcpcm-pin .leader { stroke: var(--dcp-navy); stroke-width: 0.8; stroke-dasharray: 2 2; opacity: 0.6; }
+.dcpcm-pin .base { fill: var(--dcp-navy); }
+.dcpcm-pin:hover .flag,
+.dcpcm-pin:focus-visible .flag,
+.dcpcm-pin.is-active .flag { fill: var(--dcp-lake); }
+.dcpcm-pin:hover .count,
+.dcpcm-pin:focus-visible .count,
+.dcpcm-pin.is-active .count { fill: var(--dcp-navy); }
+.dcpcm-home { pointer-events: none; }
+.dcpcm-home .star { fill: var(--dcp-red); stroke: var(--dcp-white); stroke-width: 1; }
+.dcpcm-home text {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--dcp-navy);
+  paint-order: stroke;
+  stroke: var(--dcp-paper);
+  stroke-width: 3px;
+}
+.dcpcm-city-label {
+  font-size: 11px;
+  fill: var(--dcp-muted);
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--dcp-paper);
+  stroke-width: 3px;
+}
+
+/* ---------- insets ---------- */
+.dcpcm-inset {
+  position: relative;
+  flex: 1 1 190px;
+  min-width: 170px;
+  max-width: 340px;
+  height: 128px;
+  background: var(--dcp-white);
+  border: 1px solid var(--dcp-line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.dcpcm-inset-label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dcp-navy);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.dcpcm-inset-label span { font-weight: 400; color: var(--dcp-muted); text-transform: none; letter-spacing: 0; }
+.dcpcm-inset svg { width: 100%; height: 100%; }
+.dcpcm-inset .dcpcm-state { stroke-width: 0.5; }
+.dcpcm-inset .dcpcm-state.has-data:hover,
+.dcpcm-inset .dcpcm-state.is-hovered { stroke-width: 1.5; }
+
+/* ---------- side panel ---------- */
+.dcpcm-panel-inner { padding: 16px 18px 20px; }
+.dcpcm-panel h3 {
+  margin: 0 0 4px;
+  padding: 0;
+  font-family: var(--dcp-font-title);
+  font-weight: 500;
+  font-size: 19px;
+  color: var(--dcp-navy);
+}
+.dcpcm-panel h4 {
+  margin: 18px 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dcp-muted);
+}
+.dcpcm-kicker { font-size: 13px; color: var(--dcp-muted); margin: 0 0 6px; }
+.dcpcm-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+.dcpcm-stat {
+  padding: 10px 12px;
+  background: var(--dcp-paper);
+  border-radius: 8px;
+}
+.dcpcm-stat b {
+  display: block;
+  font-family: var(--dcp-font-title);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1;
+  color: var(--dcp-navy);
+}
+.dcpcm-stat span { font-size: 12px; color: var(--dcp-muted); }
+.dcpcm-list { list-style: none; margin: 0; padding: 0; }
+.dcpcm-list li { margin: 0; }
+.dcpcm-list button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 6px 6px;
+  margin: 0 -6px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+}
+.dcpcm-list button:hover,
+.dcpcm-list button.is-active { background: var(--dcp-lake-soft); }
+.dcpcm-list .name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.dcpcm-list .name small { display: block; font-size: 12px; color: var(--dcp-muted); }
+.dcpcm-list .n {
+  flex: 0 0 auto;
+  min-width: 28px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--dcp-navy);
+  color: var(--dcp-white);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+.dcpcm-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+  background: var(--dcp-white);
+  border: 1px solid var(--dcp-line);
+  overflow: hidden;
+}
+.dcpcm-logo img { max-width: 80%; max-height: 80%; width: auto; height: auto; image-rendering: auto; }
+.dcpcm-logo img.is-tiny { max-width: none; max-height: none; width: 16px; height: 16px; }
+.dcpcm-logo.is-initials {
+  background: var(--dcp-navy);
+  color: var(--dcp-white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.dcpcm-more { font-size: 13px; color: var(--dcp-muted); margin: 8px 0 0; }
+.dcpcm-footnote {
+  margin: 18px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--dcp-line);
+  font-size: 12px;
+  color: var(--dcp-muted);
+}
+
+/* ---------- tooltip ---------- */
+.dcpcm-tip {
+  position: absolute;
+  z-index: 5;
+  max-width: 270px;
+  padding: 10px 12px;
+  background: var(--dcp-white);
+  border: 1px solid var(--dcp-line);
+  border-top: 3px solid var(--dcp-navy);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(14, 64, 106, 0.16);
+  font-size: 13px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.dcpcm-tip.is-visible { opacity: 1; }
+.dcpcm-tip.is-sticky { pointer-events: auto; }
+.dcpcm-tip h5 {
+  margin: 0 0 2px;
+  font-family: var(--dcp-font-title);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dcp-navy);
+}
+.dcpcm-tip .sub { color: var(--dcp-muted); margin: 0 0 6px; }
+.dcpcm-tip ol { margin: 6px 0 0; padding: 0 0 0 18px; }
+.dcpcm-tip ol li { margin: 1px 0; display: flex; justify-content: space-between; gap: 10px; }
+.dcpcm-tip ol li span:last-child { font-weight: 700; color: var(--dcp-navy); }
+.dcpcm-tip .school {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.dcpcm-tip .school .dcpcm-logo { width: 56px; height: 56px; border-radius: 10px; }
+.dcpcm-tip .school .dcpcm-logo img.is-tiny { width: 32px; height: 32px; image-rendering: pixelated; }
+.dcpcm-tip .big {
+  font-family: var(--dcp-font-title);
+  font-size: 22px;
+  color: var(--dcp-navy);
+  line-height: 1;
+}
+.dcpcm-tip .big small { font-family: var(--dcp-font-body); font-size: 12px; color: var(--dcp-muted); margin-left: 4px; }
+.dcpcm-tip .years { margin-top: 5px; font-size: 12px; color: var(--dcp-muted); }
+.dcpcm-tip .close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  color: var(--dcp-muted);
+}
+
+.dcpcm-loading, .dcpcm-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dcp-muted);
+  font-size: 14px;
+}
+.dcpcm-error { color: var(--dcp-red); padding: 20px; text-align: center; }
+.dcpcm-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- responsive ---------- */
+/* Layout responds to the width of the control itself (container queries), not the page,
+   so it behaves the same inside a narrow CMS column or an iframe. */
+@container dcpcm (max-width: 760px) {
+  .dcpcm-body { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .dcpcm-stage { grid-column: 1; grid-row: 1; min-height: 300px; height: 56cqw; }
+  .dcpcm-insets { grid-column: 1; grid-row: 2; }
+  .dcpcm-panel { grid-column: 1; grid-row: 3; border-left: 0; border-top: 1px solid var(--dcp-line); max-height: none; }
+  .dcpcm-panel .dcpcm-list { columns: 2; column-gap: 20px; }
+  .dcpcm-panel .dcpcm-list li { break-inside: avoid; }
+  .dcpcm-title { font-size: 20px; }
+  .dcpcm-hint { display: none; }
+}
+@container dcpcm (max-width: 480px) {
+  .dcpcm { font-size: 14px; }
+  .dcpcm-header { padding: 14px 16px 12px; }
+  .dcpcm-stage { min-height: 240px; height: 70cqw; }
+  .dcpcm-inset { min-width: 150px; height: 110px; }
+  .dcpcm-panel .dcpcm-list { columns: 1; }
+  .dcpcm-legend { display: none; }
+  .dcpcm-detail-title small { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dcpcm-view, .dcpcm-state, .dcpcm-tip { transition: none; }
+}

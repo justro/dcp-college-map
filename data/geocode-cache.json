@@ -1,0 +1,1438 @@
+{
+ "American University - District of Columbia": {
+  "lat": 38.936005,
+  "lon": -77.088875,
+  "website": "www.american.edu/",
+  "source": "ipeds-exact",
+  "matched": "American University"
+ },
+ "Appalachian State University": {
+  "lat": 36.215536,
+  "lon": -81.680583,
+  "website": "https://www.appstate.edu/",
+  "source": "ipeds-exact",
+  "matched": "Appalachian State University"
+ },
+ "Arizona State University": {
+  "lat": 33.417721,
+  "lon": -111.934383,
+  "website": "www.asu.edu/",
+  "source": "ipeds-prefix",
+  "matched": "Arizona State University Campus Immersion"
+ },
+ "Auburn University": {
+  "lat": 32.599378,
+  "lon": -85.488258,
+  "website": "www.auburn.edu/",
+  "source": "ipeds-exact",
+  "matched": "Auburn University"
+ },
+ "Barton County Community College": {
+  "lat": 38.403529,
+  "lon": -98.731648,
+  "website": "https://www.bartonccc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Barton County Community College"
+ },
+ "Bellarmine University": {
+  "lat": 38.219279,
+  "lon": -85.704997,
+  "website": "https://www.bellarmine.edu/",
+  "source": "ipeds-exact",
+  "matched": "Bellarmine University"
+ },
+ "Belmont University": {
+  "lat": 36.135589,
+  "lon": -86.794807,
+  "website": "https://www.belmont.edu/",
+  "source": "ipeds-exact",
+  "matched": "Belmont University"
+ },
+ "Berea College": {
+  "lat": 37.57202,
+  "lon": -84.292893,
+  "website": "https://www.berea.edu/",
+  "source": "ipeds-exact",
+  "matched": "Berea College"
+ },
+ "Bocconi University": {
+  "lat": 45.4499,
+  "lon": 9.18926,
+  "source": "nominatim",
+  "matched": "Milan, Italy",
+  "website": "unibocconi.eu"
+ },
+ "Boston College": {
+  "lat": 42.336213,
+  "lon": -71.169242,
+  "website": "www.bc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Boston College"
+ },
+ "Boston University": {
+  "lat": 42.351118,
+  "lon": -71.107942,
+  "website": "www.bu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Boston University"
+ },
+ "Bradley University": {
+  "lat": 40.696896,
+  "lon": -89.616786,
+  "website": "www.bradley.edu/",
+  "source": "ipeds-exact",
+  "matched": "Bradley University"
+ },
+ "Brown University": {
+  "lat": 41.82617,
+  "lon": -71.40385,
+  "website": "www.brown.edu/",
+  "source": "ipeds-exact",
+  "matched": "Brown University"
+ },
+ "Bucknell University": {
+  "lat": 40.954317,
+  "lon": -76.882616,
+  "website": "www.bucknell.edu/",
+  "source": "ipeds-exact",
+  "matched": "Bucknell University"
+ },
+ "Butler University": {
+  "lat": 39.8374,
+  "lon": -86.172167,
+  "website": "www.butler.edu/",
+  "source": "ipeds-exact",
+  "matched": "Butler University"
+ },
+ "California Baptist University": {
+  "lat": 33.929321,
+  "lon": -117.425619,
+  "website": "www.calbaptist.edu/",
+  "source": "ipeds-exact",
+  "matched": "California Baptist University"
+ },
+ "Carleton College": {
+  "lat": 44.462318,
+  "lon": -93.154666,
+  "website": "https://www.carleton.edu/",
+  "source": "ipeds-exact",
+  "matched": "Carleton College"
+ },
+ "Carnegie Mellon University": {
+  "lat": 40.44357,
+  "lon": -79.941993,
+  "website": "www.cmu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Carnegie Mellon University"
+ },
+ "Carthage College": {
+  "lat": 42.622969,
+  "lon": -87.820924,
+  "website": "www.carthage.edu/",
+  "source": "ipeds-exact",
+  "matched": "Carthage College"
+ },
+ "Case Western Reserve University": {
+  "lat": 41.507419,
+  "lon": -81.609596,
+  "website": "www.case.edu/",
+  "source": "ipeds-exact",
+  "matched": "Case Western Reserve University"
+ },
+ "Central Connecticut State University": {
+  "lat": 41.692502,
+  "lon": -72.765991,
+  "website": "www.ccsu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Central Connecticut State University"
+ },
+ "Central Michigan University": {
+  "lat": 43.591203,
+  "lon": -84.77525,
+  "website": "https://www.cmich.edu/",
+  "source": "ipeds-exact",
+  "matched": "Central Michigan University"
+ },
+ "City Colleges of Chicago-Kennedy-King College": {
+  "lat": 41.780253,
+  "lon": -87.643425,
+  "website": "www.ccc.edu/colleges/kennedy/pages/default.aspx",
+  "source": "ipeds-exact",
+  "matched": "City Colleges of Chicago-Kennedy-King College"
+ },
+ "City Colleges of Chicago-Richard J Daley College": {
+  "lat": 41.755955,
+  "lon": -87.723981,
+  "website": "ccc.edu/colleges/daley/pages/default.aspx",
+  "source": "ipeds-exact",
+  "matched": "City Colleges of Chicago-Richard J Daley College"
+ },
+ "City Colleges of Chicago-Wilbur Wright College": {
+  "lat": 41.958774,
+  "lon": -87.787868,
+  "website": "ccc.edu/colleges/wright/pages/default.aspx",
+  "source": "ipeds-exact",
+  "matched": "City Colleges of Chicago-Wilbur Wright College"
+ },
+ "Clemson University": {
+  "lat": 34.679381,
+  "lon": -82.835114,
+  "website": "www.clemson.edu/",
+  "source": "ipeds-exact",
+  "matched": "Clemson University"
+ },
+ "College of Charleston": {
+  "lat": 32.784225,
+  "lon": -79.939794,
+  "website": "https://www.cofc.edu/",
+  "source": "ipeds-exact",
+  "matched": "College of Charleston"
+ },
+ "College of DuPage": {
+  "lat": 41.841577,
+  "lon": -88.071635,
+  "website": "www.cod.edu/",
+  "source": "ipeds-exact",
+  "matched": "College of DuPage"
+ },
+ "College of Lake County": {
+  "lat": 42.354164,
+  "lon": -88.012291,
+  "website": "www.clcillinois.edu/",
+  "source": "ipeds-exact",
+  "matched": "College of Lake County"
+ },
+ "College of the Holy Cross": {
+  "lat": 42.23752,
+  "lon": -71.808214,
+  "website": "www.holycross.edu/",
+  "source": "ipeds-exact",
+  "matched": "College of the Holy Cross"
+ },
+ "Colorado College": {
+  "lat": 38.84886,
+  "lon": -104.822697,
+  "website": "www.coloradocollege.edu/",
+  "source": "ipeds-exact",
+  "matched": "Colorado College"
+ },
+ "Colorado State University": {
+  "lat": 40.574805,
+  "lon": -105.080732,
+  "website": "colostate.edu/",
+  "source": "ipeds-prefix",
+  "matched": "Colorado State University-Fort Collins"
+ },
+ "Columbia College Chicago": {
+  "lat": 41.874261,
+  "lon": -87.624667,
+  "website": "www.colum.edu/",
+  "source": "ipeds-exact",
+  "matched": "Columbia College Chicago"
+ },
+ "Columbia University in the City of New York": {
+  "lat": 40.808286,
+  "lon": -73.961885,
+  "website": "www.columbia.edu/",
+  "source": "ipeds-exact",
+  "matched": "Columbia University in the City of New York"
+ },
+ "Connecticut College": {
+  "lat": 41.379833,
+  "lon": -72.107321,
+  "website": "www.conncoll.edu/",
+  "source": "ipeds-exact",
+  "matched": "Connecticut College"
+ },
+ "Creighton University": {
+  "lat": 41.265361,
+  "lon": -95.947811,
+  "website": "https://www.creighton.edu/",
+  "source": "ipeds-exact",
+  "matched": "Creighton University"
+ },
+ "Davidson College": {
+  "lat": 35.499767,
+  "lon": -80.843979,
+  "website": "https://davidson.edu/",
+  "source": "ipeds-exact",
+  "matched": "Davidson College"
+ },
+ "DePaul University": {
+  "lat": 41.877618,
+  "lon": -87.62724,
+  "website": "https://www.depaul.edu/",
+  "source": "ipeds-exact",
+  "matched": "DePaul University"
+ },
+ "DePauw University": {
+  "lat": 39.640904,
+  "lon": -86.860363,
+  "website": "www.depauw.edu/",
+  "source": "ipeds-exact",
+  "matched": "DePauw University"
+ },
+ "Denison University": {
+  "lat": 40.071505,
+  "lon": -82.523272,
+  "website": "https://www.denison.edu/",
+  "source": "ipeds-exact",
+  "matched": "Denison University"
+ },
+ "Dominican University": {
+  "lat": 41.902678,
+  "lon": -87.823003,
+  "website": "https://www.dom.edu/",
+  "source": "ipeds-exact",
+  "matched": "Dominican University"
+ },
+ "Drake University": {
+  "lat": 41.60129,
+  "lon": -93.652163,
+  "website": "www.drake.edu/",
+  "source": "ipeds-exact",
+  "matched": "Drake University"
+ },
+ "Eastern Illinois University": {
+  "lat": 39.479843,
+  "lon": -88.175658,
+  "website": "https://www.eiu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Eastern Illinois University"
+ },
+ "Edgewood College": {
+  "lat": 43.057059,
+  "lon": -89.422884,
+  "website": "www.edgewood.edu/",
+  "source": "ipeds-exact",
+  "matched": "Edgewood College"
+ },
+ "Elmhurst University": {
+  "lat": 41.897164,
+  "lon": -87.945369,
+  "website": "www.elmhurst.edu/",
+  "source": "ipeds-exact",
+  "matched": "Elmhurst University"
+ },
+ "Elon University": {
+  "lat": 36.104148,
+  "lon": -79.50344,
+  "website": "www.elon.edu/",
+  "source": "ipeds-exact",
+  "matched": "Elon University"
+ },
+ "Emory University": {
+  "lat": 33.790183,
+  "lon": -84.325512,
+  "website": "www.emory.edu/",
+  "source": "ipeds-exact",
+  "matched": "Emory University"
+ },
+ "Florida State University": {
+  "lat": 30.443147,
+  "lon": -84.295064,
+  "website": "https://www.fsu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Florida State University"
+ },
+ "Fordham University": {
+  "lat": 40.859354,
+  "lon": -73.882705,
+  "website": "https://www.fordham.edu/",
+  "source": "ipeds-exact",
+  "matched": "Fordham University"
+ },
+ "Franklin University Switzerland": {
+  "lat": 46.0015,
+  "lon": 8.93867,
+  "source": "nominatim",
+  "matched": "Lugano, Switzerland",
+  "website": "fus.edu"
+ },
+ "George Washington University": {
+  "lat": 38.89923,
+  "lon": -77.048363,
+  "website": "https://www.gwu.edu/",
+  "source": "ipeds-exact",
+  "matched": "George Washington University"
+ },
+ "Georgetown University": {
+  "lat": 38.908809,
+  "lon": -77.073463,
+  "website": "www.georgetown.edu/",
+  "source": "ipeds-exact",
+  "matched": "Georgetown University"
+ },
+ "Gettysburg College": {
+  "lat": 39.836597,
+  "lon": -77.236792,
+  "website": "https://www.gettysburg.edu/",
+  "source": "ipeds-exact",
+  "matched": "Gettysburg College"
+ },
+ "Glendale Community College - Arizona": {
+  "lat": 33.570226,
+  "lon": -112.190735,
+  "website": "www.gccaz.edu/",
+  "source": "ipeds-exact",
+  "matched": "Glendale Community College"
+ },
+ "Hampden-Sydney College": {
+  "lat": 37.240615,
+  "lon": -78.464216,
+  "website": "www.hsc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Hampden-Sydney College"
+ },
+ "Hampton University": {
+  "lat": 37.019944,
+  "lon": -76.339161,
+  "website": "www.hamptonu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Hampton University"
+ },
+ "Harvard University": {
+  "lat": 42.374471,
+  "lon": -71.118313,
+  "website": "www.harvard.edu/",
+  "source": "ipeds-exact",
+  "matched": "Harvard University"
+ },
+ "Holy Cross College": {
+  "lat": 41.698996,
+  "lon": -86.253822,
+  "website": "www.hcc-nd.edu/",
+  "source": "ipeds-exact",
+  "matched": "Holy Cross College"
+ },
+ "Howard University": {
+  "lat": 38.922392,
+  "lon": -77.018966,
+  "website": "www.howard.edu/",
+  "source": "ipeds-exact",
+  "matched": "Howard University"
+ },
+ "IE University - Madrid Campus": {
+  "lat": 40.41678,
+  "lon": -3.70351,
+  "source": "nominatim",
+  "matched": "Madrid, Spain",
+  "website": "ie.edu"
+ },
+ "Illinois State University": {
+  "lat": 40.509403,
+  "lon": -88.990058,
+  "website": "illinoisstate.edu/",
+  "source": "ipeds-exact",
+  "matched": "Illinois State University"
+ },
+ "Illinois Wesleyan University": {
+  "lat": 40.489901,
+  "lon": -88.992014,
+  "website": "www.iwu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Illinois Wesleyan University"
+ },
+ "Indiana University-Bloomington": {
+  "lat": 39.16609,
+  "lon": -86.526559,
+  "website": "www.indiana.edu/",
+  "source": "ipeds-exact",
+  "matched": "Indiana University-Bloomington"
+ },
+ "Iowa State University": {
+  "lat": 42.026212,
+  "lon": -93.648504,
+  "website": "https://www.iastate.edu/",
+  "source": "ipeds-exact",
+  "matched": "Iowa State University"
+ },
+ "John Cabot University": {
+  "lat": 41.89024,
+  "lon": 12.47358,
+  "source": "nominatim",
+  "matched": "Rome, Italy",
+  "website": "johncabot.edu"
+ },
+ "John Carroll University": {
+  "lat": 41.490259,
+  "lon": -81.531224,
+  "website": "jcu.edu/",
+  "source": "ipeds-exact",
+  "matched": "John Carroll University"
+ },
+ "Johns Hopkins University": {
+  "lat": 39.328977,
+  "lon": -76.621595,
+  "website": "www.jhu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Johns Hopkins University"
+ },
+ "Kalamazoo College": {
+  "lat": 42.290789,
+  "lon": -85.601857,
+  "website": "https://www.kzoo.edu/",
+  "source": "ipeds-exact",
+  "matched": "Kalamazoo College"
+ },
+ "Lackawanna College": {
+  "lat": 41.411556,
+  "lon": -75.658963,
+  "website": "https://www.lackawanna.edu/",
+  "source": "ipeds-exact",
+  "matched": "Lackawanna College"
+ },
+ "Lake Forest College": {
+  "lat": 42.249574,
+  "lon": -87.827454,
+  "website": "www.lakeforest.edu/",
+  "source": "ipeds-exact",
+  "matched": "Lake Forest College"
+ },
+ "Lawrence University": {
+  "lat": 44.261323,
+  "lon": -88.397822,
+  "website": "https://www.lawrence.edu/",
+  "source": "ipeds-exact",
+  "matched": "Lawrence University"
+ },
+ "Lewis University": {
+  "lat": 41.605432,
+  "lon": -88.079032,
+  "website": "www.lewisu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Lewis University"
+ },
+ "Loras College": {
+  "lat": 42.503908,
+  "lon": -90.679023,
+  "website": "www.loras.edu/",
+  "source": "ipeds-exact",
+  "matched": "Loras College"
+ },
+ "Louisiana State University": {
+  "lat": 30.414986,
+  "lon": -91.178921,
+  "website": "www.lsu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Louisiana State University and Agricultural & Mechanical College"
+ },
+ "Loyola Marymount University": {
+  "lat": 33.97085,
+  "lon": -118.415744,
+  "website": "https://www.lmu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Loyola Marymount University"
+ },
+ "Loyola University Chicago": {
+  "lat": 42.000765,
+  "lon": -87.656872,
+  "website": "https://www.luc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Loyola University Chicago"
+ },
+ "Loyola University Maryland": {
+  "lat": 39.346358,
+  "lon": -76.621872,
+  "website": "https://www.loyola.edu/",
+  "source": "ipeds-exact",
+  "matched": "Loyola University Maryland"
+ },
+ "Marquette University": {
+  "lat": 43.03903,
+  "lon": -87.927961,
+  "website": "www.marquette.edu/",
+  "source": "ipeds-exact",
+  "matched": "Marquette University"
+ },
+ "Maryville University of Saint Louis": {
+  "lat": 38.644774,
+  "lon": -90.505998,
+  "website": "https://www.maryville.edu/",
+  "source": "ipeds-exact",
+  "matched": "Maryville University of Saint Louis"
+ },
+ "Merrimack College": {
+  "lat": 42.668344,
+  "lon": -71.124216,
+  "website": "https://www.merrimack.edu/",
+  "source": "ipeds-exact",
+  "matched": "Merrimack College"
+ },
+ "Miami Dade College": {
+  "lat": 25.777717,
+  "lon": -80.190856,
+  "website": "www.mdc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Miami Dade College"
+ },
+ "Miami University-Oxford": {
+  "lat": 39.507757,
+  "lon": -84.732954,
+  "website": "miamioh.edu/",
+  "source": "ipeds-exact",
+  "matched": "Miami University-Oxford"
+ },
+ "Michigan State University": {
+  "lat": 42.73212,
+  "lon": -84.476111,
+  "website": "https://www.msu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Michigan State University"
+ },
+ "Michigan Technological University": {
+  "lat": 47.11866,
+  "lon": -88.548092,
+  "website": "https://www.mtu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Michigan Technological University"
+ },
+ "Milwaukee School of Engineering": {
+  "lat": 43.045364,
+  "lon": -87.907691,
+  "website": "www.msoe.edu/",
+  "source": "ipeds-exact",
+  "matched": "Milwaukee School of Engineering"
+ },
+ "Mississippi State University": {
+  "lat": 33.454852,
+  "lon": -88.790139,
+  "website": "https://www.msstate.edu/",
+  "source": "ipeds-exact",
+  "matched": "Mississippi State University"
+ },
+ "Morehouse College": {
+  "lat": 33.745982,
+  "lon": -84.414917,
+  "website": "www.morehouse.edu/",
+  "source": "ipeds-exact",
+  "matched": "Morehouse College"
+ },
+ "Norfolk State University": {
+  "lat": 36.848429,
+  "lon": -76.261375,
+  "website": "www.nsu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Norfolk State University"
+ },
+ "North Central College": {
+  "lat": 41.77576,
+  "lon": -88.14279,
+  "website": "northcentralcollege.edu/",
+  "source": "ipeds-exact",
+  "matched": "North Central College"
+ },
+ "North Park University": {
+  "lat": 41.975268,
+  "lon": -87.709948,
+  "website": "www.northpark.edu/",
+  "source": "ipeds-exact",
+  "matched": "North Park University"
+ },
+ "Northeastern Illinois University": {
+  "lat": 41.980399,
+  "lon": -87.718983,
+  "website": "www.neiu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Northeastern Illinois University"
+ },
+ "Northeastern University": {
+  "lat": 42.339992,
+  "lon": -71.088782,
+  "website": "www.northeastern.edu/",
+  "source": "ipeds-exact",
+  "matched": "Northeastern University"
+ },
+ "Northern Illinois University": {
+  "lat": 41.933869,
+  "lon": -88.766428,
+  "website": "www.niu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Northern Illinois University"
+ },
+ "Northwestern University": {
+  "lat": 42.050356,
+  "lon": -87.679858,
+  "website": "www.northwestern.edu/",
+  "source": "ipeds-exact",
+  "matched": "Northwestern University"
+ },
+ "Oakton College": {
+  "lat": 42.061893,
+  "lon": -87.880644,
+  "website": "www.oakton.edu/",
+  "source": "ipeds-exact",
+  "matched": "Oakton College"
+ },
+ "Oberlin College": {
+  "lat": 41.291992,
+  "lon": -82.216795,
+  "website": "www.oberlin.edu/",
+  "source": "ipeds-exact",
+  "matched": "Oberlin College"
+ },
+ "Occidental College": {
+  "lat": 34.127124,
+  "lon": -118.210908,
+  "website": "https://www.oxy.edu/",
+  "source": "ipeds-exact",
+  "matched": "Occidental College"
+ },
+ "Ohio State University-Main Campus": {
+  "lat": 39.999803,
+  "lon": -83.007525,
+  "website": "www.osu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Ohio State University-Main Campus"
+ },
+ "Ohio University-Main Campus": {
+  "lat": 39.326798,
+  "lon": -82.100985,
+  "website": "https://www.ohio.edu/",
+  "source": "ipeds-exact",
+  "matched": "Ohio University-Main Campus"
+ },
+ "Pace University": {
+  "lat": 40.711014,
+  "lon": -74.004719,
+  "website": "www.pace.edu/",
+  "source": "ipeds-exact",
+  "matched": "Pace University"
+ },
+ "Pennsylvania State University - Main Campus": {
+  "lat": 40.7965,
+  "lon": -77.862848,
+  "website": "https://www.psu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Pennsylvania State University-Main Campus"
+ },
+ "Pepperdine University": {
+  "lat": 34.037786,
+  "lon": -118.707077,
+  "website": "www.pepperdine.edu/",
+  "source": "ipeds-exact",
+  "matched": "Pepperdine University"
+ },
+ "Purdue University-Main Campus": {
+  "lat": 40.428206,
+  "lon": -86.914435,
+  "website": "https://www.purdue.edu/",
+  "source": "ipeds-exact",
+  "matched": "Purdue University-Main Campus"
+ },
+ "Queen's University": {
+  "lat": 44.22635,
+  "lon": -76.49576,
+  "source": "nominatim",
+  "matched": "Kingston, Ontario, Canada",
+  "website": "queensu.ca"
+ },
+ "RIT Croatia": {
+  "lat": 42.64206,
+  "lon": 18.10287,
+  "source": "nominatim",
+  "matched": "Dubrovnik, Croatia",
+  "website": "croatia.rit.edu"
+ },
+ "Rhode Island School of Design": {
+  "lat": 41.827114,
+  "lon": -71.409309,
+  "website": "www.risd.edu/",
+  "source": "ipeds-exact",
+  "matched": "Rhode Island School of Design"
+ },
+ "Richmond American University London": {
+  "lat": 51.4935,
+  "lon": -0.2743,
+  "source": "nominatim",
+  "matched": "United Kingdom",
+  "website": "richmond.ac.uk"
+ },
+ "Roosevelt University": {
+  "lat": 41.876055,
+  "lon": -87.624952,
+  "website": "www.roosevelt.edu/",
+  "source": "ipeds-exact",
+  "matched": "Roosevelt University"
+ },
+ "Rose-Hulman Institute of Technology": {
+  "lat": 39.483602,
+  "lon": -87.326749,
+  "website": "https://www.rose-hulman.edu/",
+  "source": "ipeds-exact",
+  "matched": "Rose-Hulman Institute of Technology"
+ },
+ "Saint Leo University": {
+  "lat": 28.336776,
+  "lon": -82.257801,
+  "website": "www.saintleo.edu/",
+  "source": "ipeds-exact",
+  "matched": "Saint Leo University"
+ },
+ "Saint Louis University": {
+  "lat": 38.636801,
+  "lon": -90.2351,
+  "website": "www.slu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Saint Louis University"
+ },
+ "Saint Mary's College": {
+  "lat": 41.707274,
+  "lon": -86.256947,
+  "website": "https://www.saintmarys.edu/",
+  "source": "ipeds-exact",
+  "matched": "Saint Mary's College"
+ },
+ "Saint Norbert College": {
+  "lat": 44.44483,
+  "lon": -88.067812,
+  "website": "www.snc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Saint Norbert College"
+ },
+ "Saint Xavier University": {
+  "lat": 41.707199,
+  "lon": -87.714749,
+  "website": "https://www.sxu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Saint Xavier University"
+ },
+ "San Diego State University": {
+  "lat": 32.77525,
+  "lon": -117.071228,
+  "website": "www.sdsu.edu/",
+  "source": "ipeds-exact",
+  "matched": "San Diego State University"
+ },
+ "Santa Clara University": {
+  "lat": 37.348362,
+  "lon": -121.93784,
+  "website": "www.scu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Santa Clara University"
+ },
+ "Savannah College of Art and Design": {
+  "lat": 32.072964,
+  "lon": -81.09395,
+  "website": "www.scad.edu/",
+  "source": "ipeds-exact",
+  "matched": "Savannah College of Art and Design"
+ },
+ "School of Visual Arts": {
+  "lat": 40.738809,
+  "lon": -73.982359,
+  "website": "www.sva.edu/",
+  "source": "ipeds-exact",
+  "matched": "School of Visual Arts"
+ },
+ "School of the Art Institute of Chicago": {
+  "lat": 41.88105,
+  "lon": -87.625758,
+  "website": "www.saic.edu/",
+  "source": "ipeds-exact",
+  "matched": "School of the Art Institute of Chicago"
+ },
+ "Smith College": {
+  "lat": 42.318111,
+  "lon": -72.638097,
+  "website": "www.smith.edu/",
+  "source": "ipeds-exact",
+  "matched": "Smith College"
+ },
+ "Southern Adventist University": {
+  "lat": 35.048254,
+  "lon": -85.052088,
+  "website": "www.southern.edu/",
+  "source": "ipeds-exact",
+  "matched": "Southern Adventist University"
+ },
+ "Southern Illinois University-Carbondale": {
+  "lat": 37.714193,
+  "lon": -89.217273,
+  "website": "https://siu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Southern Illinois University-Carbondale"
+ },
+ "Southern Methodist University": {
+  "lat": 32.843612,
+  "lon": -96.783365,
+  "website": "https://www.smu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Southern Methodist University"
+ },
+ "Southern Technical College": {
+  "lat": 26.596097,
+  "lon": -81.877644,
+  "website": "www.southerntech.edu/",
+  "source": "ipeds-exact",
+  "matched": "Southern Technical College"
+ },
+ "Spelman College": {
+  "lat": 33.745279,
+  "lon": -84.411527,
+  "website": "www.spelman.edu/",
+  "source": "ipeds-exact",
+  "matched": "Spelman College"
+ },
+ "St Olaf College": {
+  "lat": 44.461529,
+  "lon": -93.182039,
+  "website": "wp.stolaf.edu/",
+  "source": "ipeds-exact",
+  "matched": "St Olaf College"
+ },
+ "Suffolk University": {
+  "lat": 42.357945,
+  "lon": -71.060917,
+  "website": "https://www.suffolk.edu/",
+  "source": "ipeds-exact",
+  "matched": "Suffolk University"
+ },
+ "Swarthmore College": {
+  "lat": 39.905159,
+  "lon": -75.354278,
+  "website": "www.swarthmore.edu/",
+  "source": "ipeds-exact",
+  "matched": "Swarthmore College"
+ },
+ "Syracuse University": {
+  "lat": 43.036644,
+  "lon": -76.133989,
+  "website": "https://www.syracuse.edu/",
+  "source": "ipeds-exact",
+  "matched": "Syracuse University"
+ },
+ "Temple University": {
+  "lat": 39.980546,
+  "lon": -75.156859,
+  "website": "www.temple.edu/",
+  "source": "ipeds-exact",
+  "matched": "Temple University"
+ },
+ "Texas Christian University": {
+  "lat": 32.70961,
+  "lon": -97.364758,
+  "website": "https://www.tcu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Texas Christian University"
+ },
+ "Texas State Technical College": {
+  "lat": 31.639295,
+  "lon": -97.08471,
+  "website": "www.tstc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Texas State Technical College"
+ },
+ "Texas Tech University": {
+  "lat": 33.583448,
+  "lon": -101.874783,
+  "website": "www.ttu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Texas Tech University"
+ },
+ "The American University of Paris": {
+  "lat": 48.86158,
+  "lon": 2.31066,
+  "source": "nominatim",
+  "matched": "Paris, France",
+  "website": "aup.edu"
+ },
+ "The College of Wooster": {
+  "lat": 40.81046,
+  "lon": -81.934674,
+  "website": "https://wooster.edu/",
+  "source": "ipeds-exact",
+  "matched": "The College of Wooster"
+ },
+ "The University of Alabama": {
+  "lat": 33.211875,
+  "lon": -87.545978,
+  "website": "www.ua.edu/",
+  "source": "ipeds-exact",
+  "matched": "The University of Alabama"
+ },
+ "The University of Tampa": {
+  "lat": 27.948455,
+  "lon": -82.46483,
+  "website": "https://www.ut.edu/",
+  "source": "ipeds-exact",
+  "matched": "The University of Tampa"
+ },
+ "The University of Tennessee-Knoxville": {
+  "lat": 35.952082,
+  "lon": -83.925852,
+  "website": "www.utk.edu/",
+  "source": "ipeds-exact",
+  "matched": "The University of Tennessee-Knoxville"
+ },
+ "The University of Texas at Austin": {
+  "lat": 30.282825,
+  "lon": -97.738273,
+  "website": "https://www.utexas.edu/",
+  "source": "ipeds-exact",
+  "matched": "The University of Texas at Austin"
+ },
+ "Triton College": {
+  "lat": 41.916082,
+  "lon": -87.841056,
+  "website": "www.triton.edu/",
+  "source": "ipeds-exact",
+  "matched": "Triton College"
+ },
+ "Tufts University": {
+  "lat": 42.40855,
+  "lon": -71.118293,
+  "website": "https://www.tufts.edu/",
+  "source": "ipeds-exact",
+  "matched": "Tufts University"
+ },
+ "Tulane University of Louisiana": {
+  "lat": 29.940069,
+  "lon": -90.122144,
+  "website": "https://tulane.edu/",
+  "source": "ipeds-exact",
+  "matched": "Tulane University of Louisiana"
+ },
+ "United States Merchant Marine Academy": {
+  "lat": 40.81357,
+  "lon": -73.763004,
+  "website": "https://www.usmma.edu/",
+  "source": "ipeds-exact",
+  "matched": "United States Merchant Marine Academy"
+ },
+ "Universita Cattolica del Sacro Cuore": {
+  "lat": 45.4627,
+  "lon": 9.1766,
+  "source": "nominatim",
+  "matched": "Milano, Italy",
+  "website": "unicatt.it",
+  "name": "Università Cattolica del Sacro Cuore"
+ },
+ "University College Dublin": {
+  "lat": 53.30708,
+  "lon": -6.22296,
+  "source": "nominatim",
+  "matched": "Dublin, Ireland",
+  "website": "ucd.ie"
+ },
+ "University of Amsterdam": {
+  "lat": 52.36813,
+  "lon": 4.8898,
+  "source": "nominatim",
+  "matched": "Amsterdam, Netherlands",
+  "website": "uva.nl"
+ },
+ "University of Arizona": {
+  "lat": 32.232672,
+  "lon": -110.950815,
+  "website": "https://www.arizona.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Arizona"
+ },
+ "University of Arkansas": {
+  "lat": 36.070009,
+  "lon": -94.176981,
+  "website": "https://www.uark.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Arkansas"
+ },
+ "University of California-Berkeley": {
+  "lat": 37.871918,
+  "lon": -122.260463,
+  "website": "www.berkeley.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of California-Berkeley"
+ },
+ "University of California-Los Angeles": {
+  "lat": 34.07178,
+  "lon": -118.442179,
+  "website": "www.ucla.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of California-Los Angeles"
+ },
+ "University of California-Santa Barbara": {
+  "lat": 34.416297,
+  "lon": -119.846426,
+  "website": "www.ucsb.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of California-Santa Barbara"
+ },
+ "University of Cincinnati-Main Campus": {
+  "lat": 39.131159,
+  "lon": -84.51428,
+  "website": "www.uc.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Cincinnati-Main Campus"
+ },
+ "University of Colorado Boulder": {
+  "lat": 40.008781,
+  "lon": -105.270823,
+  "website": "www.colorado.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Colorado Boulder"
+ },
+ "University of Dayton": {
+  "lat": 39.739547,
+  "lon": -84.176113,
+  "website": "https://udayton.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Dayton"
+ },
+ "University of Denver": {
+  "lat": 39.678005,
+  "lon": -104.963259,
+  "website": "www.du.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Denver"
+ },
+ "University of Guelph": {
+  "lat": 43.53279,
+  "lon": -80.225,
+  "source": "nominatim",
+  "matched": "Guelph, Ontario, Canada",
+  "website": "uoguelph.ca"
+ },
+ "University of Illinois Chicago": {
+  "lat": 41.871837,
+  "lon": -87.650503,
+  "website": "www.uic.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Illinois Chicago"
+ },
+ "University of Illinois Springfield": {
+  "lat": 39.729524,
+  "lon": -89.616796,
+  "website": "www.uis.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Illinois Springfield"
+ },
+ "University of Illinois Urbana-Champaign": {
+  "lat": 40.104718,
+  "lon": -88.229114,
+  "website": "www.illinois.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Illinois Urbana-Champaign"
+ },
+ "University of Iowa": {
+  "lat": 41.661935,
+  "lon": -91.536425,
+  "website": "https://uiowa.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Iowa"
+ },
+ "University of Kansas": {
+  "lat": 38.958549,
+  "lon": -95.247567,
+  "website": "https://ku.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Kansas"
+ },
+ "University of Kentucky": {
+  "lat": 38.038911,
+  "lon": -84.504747,
+  "website": "www.uky.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Kentucky"
+ },
+ "University of Louisville": {
+  "lat": 38.216862,
+  "lon": -85.760412,
+  "website": "www.louisville.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Louisville"
+ },
+ "University of Maine": {
+  "lat": 44.899257,
+  "lon": -68.669332,
+  "website": "www.umaine.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Maine"
+ },
+ "University of Maryland-College Park": {
+  "lat": 38.988178,
+  "lon": -76.944721,
+  "website": "www.umd.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Maryland-College Park"
+ },
+ "University of Miami": {
+  "lat": 25.72126,
+  "lon": -80.278662,
+  "website": "www.miami.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Miami"
+ },
+ "University of Michigan-Ann Arbor": {
+  "lat": 42.278374,
+  "lon": -83.73481,
+  "website": "https://umich.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Michigan-Ann Arbor"
+ },
+ "University of Minnesota-Twin Cities": {
+  "lat": 44.972851,
+  "lon": -93.235464,
+  "website": "https://twin-cities.umn.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Minnesota-Twin Cities"
+ },
+ "University of Mississippi": {
+  "lat": 34.365529,
+  "lon": -89.537434,
+  "website": "www.olemiss.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Mississippi"
+ },
+ "University of Missouri-Columbia": {
+  "lat": 38.94531,
+  "lon": -92.328843,
+  "website": "https://missouri.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Missouri-Columbia"
+ },
+ "University of Nebraska-Lincoln": {
+  "lat": 40.817598,
+  "lon": -96.700508,
+  "website": "www.unl.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Nebraska-Lincoln"
+ },
+ "University of Nevada-Reno": {
+  "lat": 39.543642,
+  "lon": -119.815377,
+  "website": "www.unr.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Nevada-Reno"
+ },
+ "University of North Carolina at Chapel Hill": {
+  "lat": 35.911769,
+  "lon": -79.050969,
+  "website": "https://www.unc.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of North Carolina at Chapel Hill"
+ },
+ "University of North Dakota": {
+  "lat": 47.921654,
+  "lon": -97.071738,
+  "website": "https://und.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of North Dakota"
+ },
+ "University of North Florida": {
+  "lat": 30.27194,
+  "lon": -81.509144,
+  "website": "https://www.unf.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of North Florida"
+ },
+ "University of Notre Dame": {
+  "lat": 41.703058,
+  "lon": -86.238959,
+  "website": "www.nd.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Notre Dame"
+ },
+ "University of Oklahoma-Norman Campus": {
+  "lat": 35.209407,
+  "lon": -97.444211,
+  "website": "www.ou.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Oklahoma-Norman Campus"
+ },
+ "University of Oregon": {
+  "lat": 44.045146,
+  "lon": -123.075792,
+  "website": "https://www.uoregon.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Oregon"
+ },
+ "University of Pittsburgh-Pittsburgh Campus": {
+  "lat": 40.444388,
+  "lon": -79.953254,
+  "website": "www.pitt.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Pittsburgh-Pittsburgh Campus"
+ },
+ "University of Rhode Island": {
+  "lat": 41.484691,
+  "lon": -71.527356,
+  "website": "https://web.uri.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Rhode Island"
+ },
+ "University of San Diego": {
+  "lat": 32.770816,
+  "lon": -117.192073,
+  "website": "www.sandiego.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of San Diego"
+ },
+ "University of San Francisco": {
+  "lat": 37.776618,
+  "lon": -122.450477,
+  "website": "https://www.usfca.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of San Francisco"
+ },
+ "University of South Carolina-Columbia": {
+  "lat": 33.996788,
+  "lon": -81.026935,
+  "website": "www.sc.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of South Carolina-Columbia"
+ },
+ "University of South Florida": {
+  "lat": 28.061458,
+  "lon": -82.413232,
+  "website": "www.usf.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of South Florida"
+ },
+ "University of Southern California": {
+  "lat": 34.021281,
+  "lon": -118.284169,
+  "website": "www.usc.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Southern California"
+ },
+ "University of St Thomas": {
+  "lat": 44.943439,
+  "lon": -93.188986,
+  "website": "www.stthomas.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of St Thomas"
+ },
+ "University of Toledo": {
+  "lat": 41.660572,
+  "lon": -83.614714,
+  "website": "www.utoledo.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Toledo"
+ },
+ "University of Toronto": {
+  "lat": 43.66347,
+  "lon": -79.39682,
+  "source": "nominatim",
+  "matched": "Toronto, Ontario, Canada",
+  "website": "utoronto.ca"
+ },
+ "University of Utah": {
+  "lat": 40.762484,
+  "lon": -111.846044,
+  "website": "www.utah.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Utah"
+ },
+ "University of Vermont": {
+  "lat": 44.477325,
+  "lon": -73.196646,
+  "website": "www.uvm.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Vermont"
+ },
+ "University of Virginia-Main Campus": {
+  "lat": 38.035665,
+  "lon": -78.503428,
+  "website": "https://www.virginia.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Virginia-Main Campus"
+ },
+ "University of Washington-Seattle Campus": {
+  "lat": 47.65538,
+  "lon": -122.30514,
+  "website": "https://www.washington.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Washington-Seattle Campus"
+ },
+ "University of Wisconsin-Green Bay": {
+  "lat": 44.532298,
+  "lon": -87.919973,
+  "website": "www.uwgb.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Wisconsin-Green Bay"
+ },
+ "University of Wisconsin-Madison": {
+  "lat": 43.075409,
+  "lon": -89.404098,
+  "website": "www.wisc.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Wisconsin-Madison"
+ },
+ "University of Wisconsin-Milwaukee": {
+  "lat": 43.076848,
+  "lon": -87.880488,
+  "website": "uwm.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Wisconsin-Milwaukee"
+ },
+ "University of Wisconsin-Whitewater": {
+  "lat": 42.835563,
+  "lon": -88.742368,
+  "website": "www.uww.edu/",
+  "source": "ipeds-exact",
+  "matched": "University of Wisconsin-Whitewater"
+ },
+ "Valparaiso University": {
+  "lat": 41.462239,
+  "lon": -87.040172,
+  "website": "https://www.valpo.edu/",
+  "source": "ipeds-exact",
+  "matched": "Valparaiso University"
+ },
+ "Vanderbilt University": {
+  "lat": 36.14659,
+  "lon": -86.803369,
+  "website": "www.vanderbilt.edu/",
+  "source": "ipeds-exact",
+  "matched": "Vanderbilt University"
+ },
+ "Villanova University": {
+  "lat": 40.036463,
+  "lon": -75.340502,
+  "website": "www.villanova.edu/",
+  "source": "ipeds-exact",
+  "matched": "Villanova University"
+ },
+ "Wake Forest University": {
+  "lat": 36.133609,
+  "lon": -80.277446,
+  "website": "www.wfu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Wake Forest University"
+ },
+ "Wayne State College": {
+  "lat": 42.241556,
+  "lon": -97.015122,
+  "website": "https://www.wsc.edu/",
+  "source": "ipeds-exact",
+  "matched": "Wayne State College"
+ },
+ "Wellesley College": {
+  "lat": 42.291554,
+  "lon": -71.306605,
+  "website": "www.wellesley.edu/",
+  "source": "ipeds-exact",
+  "matched": "Wellesley College"
+ },
+ "Western Illinois University": {
+  "lat": 40.468086,
+  "lon": -90.686899,
+  "website": "www.wiu.edu/",
+  "source": "ipeds-exact",
+  "matched": "Western Illinois University"
+ },
+ "Western Michigan University": {
+  "lat": 42.282194,
+  "lon": -85.613759,
+  "website": "https://wmich.edu/",
+  "source": "ipeds-exact",
+  "matched": "Western Michigan University"
+ },
+ "Xavier University": {
+  "lat": 39.149547,
+  "lon": -84.47465,
+  "website": "https://www.xavier.edu/",
+  "source": "ipeds-exact",
+  "matched": "Xavier University"
+ }
+}

@@ -1,0 +1,37 @@
+# Publishes the web/ folder to GitHub Pages on every push to main.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refuse to publish if student data is present
+        run: |
+          if grep -rlE '"(studentId|student id|name)"\s*:' web/data/ ; then
+            echo "Student fields found in web/data; aborting." && exit 1
+          fi
+          test ! -e data/raw/*.xlsx && test ! -e data/raw/*.csv || { echo "Raw export committed; aborting."; exit 1; }
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4

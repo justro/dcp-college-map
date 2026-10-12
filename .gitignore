@@ -1,0 +1,19 @@
+# Raw matriculation exports contain student names and IDs. Never commit them.
+data/raw/*
+!data/raw/README.md
+*.numbers
+*.xlsx
+*.csv
+!data/ipeds-institutions.csv
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

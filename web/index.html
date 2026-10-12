@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Matriculation Map · DePaul College Prep (demo)</title>
+  <meta name="description" content="Demo page for the embeddable map of where DePaul College Prep graduates go to college.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0e406a; --lake: #5fb3e4; --red: #bc312b; --paper: #f6f8fa; --line: #d9e1e8; --ink: #1d2a36; --muted: #5c6b7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--ink); background: #fff;
+      font-family: "Source Sans 3", "Source Sans Pro", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px; line-height: 1.55;
+    }
+    h1, h2, h3 { font-family: "Libre Bodoni", "Bodoni 72", Georgia, serif; font-weight: 500; color: var(--navy); line-height: 1.15; }
+    a { color: var(--navy); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; }
+    pre { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow-x: auto; }
+    .topbar { background: var(--navy); color: #fff; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .topbar .brand { font-family: "Libre Bodoni", Georgia, serif; font-size: 20px; letter-spacing: 0.02em; }
+    .topbar .brand small { display: block; font-family: "Source Sans 3", sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.8; }
+    .topbar nav a { color: #fff; text-decoration: none; margin-left: 18px; font-weight: 600; font-size: 14px; opacity: 0.9; }
+    .demo-banner { background: var(--lake); color: var(--navy); font-size: 14px; padding: 6px 24px; text-align: center; }
+    .demo-banner a { color: inherit; }
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 60px; }
+    .intro { max-width: 760px; }
+    .intro h1 { font-size: 40px; margin: 0 0 10px; }
+    .intro p { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+    .map-wrap { margin: 8px 0 44px; }
+    section { margin-top: 44px; max-width: 820px; }
+    section h2 { font-size: 26px; margin: 0 0 8px; }
+    section p { margin: 0 0 14px; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; } .cols > div { min-width: 0; }
+    @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } .intro h1 { font-size: 30px; } }
+    footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 20px 24px; font-size: 13px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">DePaul College Prep<small>College Planning</small></div>
+    <nav><a href="https://www.depaulprep.org/academics/college-planning">Current page</a><a href="https://github.com/justro/dcp-college-map">Source &amp; docs</a></nav>
+  </header>
+  <div class="demo-banner">Demo page. The map below is the embeddable control; the surrounding page is a stand-in for the school's website.</div>
+
+  <main>
+    <div class="intro">
+      <h1>Where Our Graduates Go</h1>
+      <p>DePaul College Prep graduates enroll at colleges and universities across the country and around the world.
+        Explore the map to see where recent classes have gone: hover a state for a summary, then click it to see every school with a flag.</p>
+    </div>
+
+    <div class="map-wrap">
+      <!-- ========= This is the embed. Copy these two lines into any page. ========= -->
+      <div data-dcp-college-map></div>
+      <script src="dcp-college-map.js" defer></script>
+      <!-- ========================================================================= -->
+    </div>
+
+    <section>
+      <h2>Embedding the map</h2>
+      <p>The control is a single script plus a folder of data and logos. Host the <code>web/</code> folder anywhere
+        that serves static files (it is published to GitHub Pages from this repository), then use either method below.
+        Full instructions, including notes for Finalsite and Blackbaud, are in
+        <a href="https://github.com/justro/dcp-college-map/blob/main/docs/embedding.md">docs/embedding.md</a>.</p>
+      <div class="cols">
+        <div>
+          <h3>Option A · Script tag</h3>
+          <p>Renders directly in the page and inherits the page width. Best when the CMS lets you add raw HTML.</p>
+<pre>&lt;div data-dcp-college-map&gt;&lt;/div&gt;
+&lt;script src="https://justro.github.io/dcp-college-map/dcp-college-map.js" defer&gt;&lt;/script&gt;</pre>
+        </div>
+        <div>
+          <h3>Option B · iframe</h3>
+          <p>Works with any CMS "embed" block, exactly like the current Google My Maps embed.</p>
+<pre>&lt;iframe src="https://justro.github.io/dcp-college-map/embed.html"
+  title="Where DePaul Prep graduates go to college"
+  width="100%" height="760" style="border:0;max-width:100%"
+  loading="lazy"&gt;&lt;/iframe&gt;</pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Keeping it current</h2>
+      <p>Each year, export the matriculation report, drop it in <code>data/raw/</code>, and run <code>scripts/build_data.py</code>.
+        The script aggregates the report to per-school counts (no student names or IDs are ever published), looks up each
+        school's location and logo, and writes <code>web/data/matriculation.json</code>. Commit and push, and the embedded map
+        updates everywhere it is used. See <a href="https://github.com/justro/dcp-college-map/blob/main/docs/refreshing-data.md">docs/refreshing-data.md</a>.</p>
+    </section>
+  </main>
+
+  <footer>Built for DePaul College Prep · Map data from the U.S. Census Bureau and Natural Earth via us-atlas and world-atlas · School locations from IPEDS and OpenStreetMap</footer>
+</body>
+</html>
