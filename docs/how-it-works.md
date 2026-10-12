@@ -13,8 +13,9 @@ There are two halves:
 2. **A web control** (`web/dcp-college-map.js` + `.css`) that runs in visitors' browsers. It loads
    that JSON file and draws the maps. It has no server, no database, and no build step.
 
-Everything in `web/` is static files, so it can be hosted anywhere: GitHub Pages (the default),
-the school's own web host, or a CDN.
+Everything in `web/` is static files. A second script (`scripts/bundle.py`, run automatically at
+the end of the build) packs all of it into the single files in `dist/`, which is what the school
+uploads to its own website. GitHub Pages serves `web/` only as a demo.
 
 ## The data file
 
@@ -74,6 +75,11 @@ State and country totals are not stored; the control adds them up in the browser
    Schools without a logo show their initials in a navy tile.
 6. **Privacy check and write.** The output is checked for unexpected keys, student IDs, and
    name-like strings, then written to `web/data/matriculation.json`.
+7. **Bundle.** `scripts/bundle.py` concatenates D3, topojson-client, the U.S. states and (lighter,
+   110m) world shapes, the data, the stylesheet, and the control into `dist/dcp-college-map.bundle.js`,
+   with every logo shrunk to 64px and inlined as a data URI. It also wraps the same script in a
+   bare page, `dist/dcp-college-map.html`, for iframe use. The control detects the bundle through
+   `window.DCP_COLLEGE_MAP_BUNDLE` and skips all network fetches when it is present.
 
 ### Reference files
 
@@ -89,7 +95,8 @@ State and country totals are not stored; the control adds them up in the browser
 `dcp-college-map.js` is a single self-contained script (no framework, no bundler). When it loads it:
 
 1. Finds its own URL and uses that folder as the base for `data/`, `logos/`, and `vendor/`
-   (override with `data-base="…"` on the container).
+   (override with `data-base="…"` on the container). In the single-file build everything is
+   already in memory and this step is skipped.
 2. Injects its stylesheet and the two brand web fonts (Libre Bodoni as a stand-in for Bodoni URW,
    Source Sans 3 as the web Source Sans Pro) from Google Fonts.
 3. Loads D3 and topojson-client from `vendor/` unless the page already has them.
@@ -139,8 +146,8 @@ That covers current Chrome, Edge, Safari 16+, Firefox 110+, and iOS 16+.
 
 ## Hosting
 
-The repository's GitHub Actions workflow (`.github/workflows/pages.yml`) publishes the `web/`
-folder to GitHub Pages on every push to `main`. GitHub Pages serves files with
-`Access-Control-Allow-Origin: *`, which is what lets the script-tag embed fetch the JSON from a
-different domain. If the school later wants to self-host, copy the whole `web/` folder as-is; the
-control only uses relative paths.
+The school hosts the map itself by uploading a file from `dist/` to its website's file manager;
+see [embedding.md](embedding.md). The repository's GitHub Actions workflow
+(`.github/workflows/pages.yml`) also publishes `web/` to GitHub Pages, but only as a demo and a
+convenient place to preview a data refresh before uploading. The multi-file `web/` folder can be
+copied to any static host too; the control only uses paths relative to its own script.

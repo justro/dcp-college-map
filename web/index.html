@@ -45,7 +45,7 @@
     <div class="brand">DePaul College Prep<small>College Planning</small></div>
     <nav><a href="https://www.depaulprep.org/academics/college-planning">Current page</a><a href="https://github.com/justro/dcp-college-map">Source &amp; docs</a></nav>
   </header>
-  <div class="demo-banner">Demo page. The map below is the embeddable control; the surrounding page is a stand-in for the school's website.</div>
+  <div class="demo-banner">Demo page. The map below is the embeddable control; the surrounding page is a stand-in for the school's website. The school hosts the real one on its own site.</div>
 
   <main>
     <div class="intro">
@@ -63,23 +63,24 @@
 
     <section>
       <h2>Embedding the map</h2>
-      <p>The control is a single script plus a folder of data and logos. Host the <code>web/</code> folder anywhere
-        that serves static files (it is published to GitHub Pages from this repository), then use either method below.
+      <p>The map is delivered as a single self-contained file that the school uploads to its own website's
+        file manager, then references from the College Planning page. No outside hosting is involved.
         Full instructions, including notes for Finalsite and Blackbaud, are in
         <a href="https://github.com/justro/dcp-college-map/blob/main/docs/embedding.md">docs/embedding.md</a>.</p>
       <div class="cols">
         <div>
           <h3>Option A · Script tag</h3>
-          <p>Renders directly in the page and inherits the page width. Best when the CMS lets you add raw HTML.</p>
+          <p>Upload <code>dist/dcp-college-map.bundle.js</code>, then add this where the map should appear.
+            Best when the page editor accepts raw HTML.</p>
 <pre>&lt;div data-dcp-college-map&gt;&lt;/div&gt;
-&lt;script src="https://justro.github.io/dcp-college-map/dcp-college-map.js" defer&gt;&lt;/script&gt;</pre>
+&lt;script src="YOUR-FILE-URL/dcp-college-map.bundle.js" defer&gt;&lt;/script&gt;</pre>
         </div>
         <div>
           <h3>Option B · iframe</h3>
-          <p>Works with any CMS "embed" block, exactly like the current Google My Maps embed.</p>
-<pre>&lt;iframe src="https://justro.github.io/dcp-college-map/embed.html"
+          <p>Upload <code>dist/dcp-college-map.html</code> and embed it exactly like the current Google My Maps iframe.</p>
+<pre>&lt;iframe src="YOUR-FILE-URL/dcp-college-map.html"
   title="Where DePaul Prep graduates go to college"
-  width="100%" height="760" style="border:0;max-width:100%"
+  width="100%" height="780" style="border:0;max-width:100%"
   loading="lazy"&gt;&lt;/iframe&gt;</pre>
         </div>
       </div>
@@ -89,9 +90,10 @@
       <h2>Keeping it current</h2>
       <p>Each year, export the matriculation report, drop it in <code>data/raw/</code>, and run <code>scripts/build_data.py</code>.
         The script aggregates the report to per-school counts (no student names or IDs are ever published), looks up each
-        school's location and logo, and writes <code>web/data/matriculation.json</code>. Commit and push, and the embedded map
-        updates everywhere it is used. See <a href="https://github.com/justro/dcp-college-map/blob/main/docs/refreshing-data.md">docs/refreshing-data.md</a>.</p>
+        school's location and logo, and regenerates the files in <code>dist/</code>. Upload those over the previous copies and
+        the embedded map is updated. See <a href="https://github.com/justro/dcp-college-map/blob/main/docs/refreshing-data.md">docs/refreshing-data.md</a>.</p>
     </section>
+
   </main>
 
   <footer>Built for DePaul College Prep · Map data from the U.S. Census Bureau and Natural Earth via us-atlas and world-atlas · School locations from IPEDS and OpenStreetMap</footer>

@@ -5,8 +5,8 @@ It replaces the Google My Maps embed on the
 [College Planning](https://www.depaulprep.org/academics/college-planning) page and is built to be
 dropped into the school's current Finalsite site or its future Blackbaud site.
 
-**Live demo:** https://justro.github.io/dcp-college-map/
-**Bare embed page (for iframes):** https://justro.github.io/dcp-college-map/embed.html
+**Demo:** https://justro.github.io/dcp-college-map/ (a preview only; the school hosts the real
+thing on its own site, see below)
 
 ![Overview of the map](docs/images/overview.png)
 
@@ -30,10 +30,20 @@ published.** The build script reduces it to per-school counts before anything is
 `web/` folder, and it refuses to write output if any student name or ID slips through. See
 [docs/refreshing-data.md](docs/refreshing-data.md#privacy).
 
+## How the school hosts it
+
+The deliverable is a single self-contained file. Upload `dist/dcp-college-map.bundle.js` (or
+`dist/dcp-college-map.html` for an iframe) to the website's file manager and reference it from the
+College Planning page. No GitHub account, build tooling, or third-party hosting is needed on the
+school's side. Details in [docs/embedding.md](docs/embedding.md).
+
 ## Repository layout
 
 ```
-web/                    Everything that gets published (GitHub Pages serves this folder)
+dist/                   The deliverable: single-file builds to upload to the school's CMS
+  dcp-college-map.bundle.js   Script embed (control + D3 + map shapes + data + logos + CSS)
+  dcp-college-map.html        Same thing as a standalone page, for <iframe> embeds
+web/                    The control as separate files (what the demo page runs; GitHub Pages serves this)
   index.html            Demo page: the control inside a stand-in school page
   embed.html            Bare page for <iframe> embedding
   dcp-college-map.js    The control (vanilla JS + D3)
@@ -41,7 +51,8 @@ web/                    Everything that gets published (GitHub Pages serves this
   data/matriculation.json   Aggregated data (counts per school; no student data)
   logos/                School logos fetched by the build script
   vendor/               D3, topojson-client, and map topologies (no CDN dependency at runtime)
-scripts/build_data.py   Turns the raw report into web/data/matriculation.json
+scripts/build_data.py   Turns the raw report into web/data/matriculation.json, then runs bundle.py
+scripts/bundle.py       Packs web/ into the single files in dist/
 data/
   raw/                  Drop the exported report here (git-ignored)
   overrides.json        Hand fixes: school aliases, coordinates, websites, logos
@@ -54,7 +65,7 @@ docs/                   Documentation for the school's web team
 
 - [How it works](docs/how-it-works.md): architecture, data format, customizing colors and text.
 - [Refreshing the data](docs/refreshing-data.md): the yearly update, step by step.
-- [Embedding](docs/embedding.md): script-tag and iframe embeds, with Finalsite and Blackbaud notes.
+- [Embedding](docs/embedding.md): uploading the file to the CMS and the script-tag and iframe snippets, with Finalsite and Blackbaud notes.
 
 ## Quick start (local preview)
 
@@ -64,8 +75,8 @@ python3 -m http.server 8000
 # open http://localhost:8000/
 ```
 
-No build step is needed to run the control. The only tooling is the Python script that refreshes
-the data file (see the refresh doc).
+No build step is needed to run the control from `web/`. The Python scripts are only used to refresh
+the data and regenerate `dist/` (see the refresh doc).
 
 ## Credits
 

@@ -46,18 +46,23 @@ The script prints what it does. Look for three kinds of lines:
   not get a flag. Fix it in `data/overrides.json` (below) and run again.
 - `WARNING` at the end summarizes anything that needs attention.
 
-Then preview, commit, and push:
+The script finishes by regenerating the single-file builds in `dist/`. Preview them by opening
+`dist/dcp-college-map.html` directly in a browser (double-click it) and clicking around.
 
-```bash
-cd web && python3 -m http.server 8000      # open http://localhost:8000 and click around
-cd ..
-git add web/data web/logos data/geocode-cache.json data/overrides.json
-git commit -m "Update matriculation data for the Class of 2027"
-git push
-```
+Then publish:
 
-GitHub Pages rebuilds in about a minute. Every page that embeds the map picks up the new data
-automatically; nothing on the school website needs to change.
+1. **Upload** `dist/dcp-college-map.bundle.js` and/or `dist/dcp-college-map.html` to the website's
+   file manager, replacing the previous copies and keeping the same file names. See
+   [embedding.md](embedding.md#updating-the-map-each-year), including the note on cache busting.
+2. **Commit** so the repository matches what is live:
+
+   ```bash
+   git add web/data web/logos dist data/geocode-cache.json data/overrides.json
+   git commit -m "Update matriculation data for the Class of 2027"
+   git push
+   ```
+
+   The push also refreshes the GitHub Pages demo, which is handy for checking a build on a phone.
 
 ### Script options
 
@@ -68,6 +73,8 @@ python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-lo
 - With no path, the newest `.xlsx`/`.csv` in `data/raw/` is used.
 - `--no-network` skips geocoding and logo downloads (fine for a re-run when nothing is new).
 - `--refetch-logos` re-downloads every logo instead of keeping the ones already in `web/logos/`.
+- `python3 scripts/bundle.py` on its own regenerates `dist/` from `web/` (for example after editing
+  the CSS or dropping in a better logo).
 
 ## Fixing things by hand: `data/overrides.json`
 
@@ -133,4 +140,4 @@ If you ever see a student name anywhere under `web/`, stop and do not push.
 | A school is matched to the wrong IPEDS institution (check the `->` name in the log) | Add `lat`/`lon` (and `website`) to overrides |
 | Logo is wrong or low quality | Save a better image in `web/logos/` and reference it with `logo` in overrides |
 | Geocoder errors (`nominatim error …`) | Usually rate limiting or no network; re-run later. Cached schools are not re-requested |
-| Map shows old data after pushing | Wait a minute for Pages to deploy, then hard-refresh (Shift+Reload) |
+| Website shows old data after uploading | The site cache is serving the old file; hard-refresh or add `?v=2027` to the embed URL |

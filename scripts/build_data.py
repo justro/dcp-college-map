@@ -7,6 +7,8 @@ Input : data/raw/<file>.xlsx or .csv   (an export of the matriculation report;
 Output: web/data/matriculation.json     (per-school counts only, no names/IDs)
         web/logos/<school-id>.png       (school logos, fetched once and cached)
         data/geocode-cache.json         (lat/lon + website per school, committed)
+        dist/dcp-college-map.bundle.js  (single-file build for uploading to the CMS)
+        dist/dcp-college-map.html       (same, as a standalone page for iframes)
 
 Usage:
     python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-logos]
@@ -507,6 +509,10 @@ def main(argv):
     if unresolved:
         log(f"WARNING: {len(unresolved)} school(s) have no coordinates and will not get a map pin: "
             + "; ".join(unresolved))
+    log("Bundling single-file build...")
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import bundle  # noqa: E402
+    bundle.main()
     log("Done.")
 
 

@@ -1,101 +1,102 @@
 # Embedding the map in the school website
 
-The map is published at **https://justro.github.io/dcp-college-map/** and can be embedded in any
-web page in two ways. Pick whichever your CMS makes easier; both show the same control and both
-update automatically when the data is refreshed.
+The map ships as **one file** that you upload to your website's file manager and then reference
+from a page, the same way you would embed a PDF or a video. Nothing else needs to be hosted and
+no outside service is involved (the only external request is for the two brand web fonts from
+Google Fonts).
 
-## Option A: script tag (preferred when the CMS allows custom HTML)
+There are two flavours of that file in the `dist/` folder of this repository. Download whichever
+fits how your CMS lets you add content:
+
+| File | Use it when | Size |
+| --- | --- | --- |
+| `dist/dcp-college-map.bundle.js` | Your page editor lets you add raw HTML with a `<script>` tag | ~1.4 MB |
+| `dist/dcp-college-map.html` | You want an `<iframe>` (works in any "Embed" block, like the current Google My Maps embed) | ~1.4 MB |
+
+Both contain the control, the map shapes, the data, and the school logos. They are regenerated
+every time the data is refreshed (see [refreshing-data.md](refreshing-data.md)).
+
+## Step 1: upload the file to your site
+
+**Finalsite (current site).** In Composer, open the **Files** (resource manager) area, upload
+`dcp-college-map.bundle.js` and/or `dcp-college-map.html` into a folder such as `college-map`,
+then use the file's **Copy link** action to get its URL. If the resource manager refuses `.js`
+uploads, upload only the `.html` file and use the iframe method below.
+
+**Blackbaud (future site).** In the website's **Files & Media** (resources) manager, upload the
+file(s) and copy the resulting URL in the same way.
+
+**Anywhere else.** Any web space that serves static files works: the school's own web server, a
+Cloudflare Pages or Netlify site, an S3 bucket. Copy the file there and use its URL.
+
+Whatever the host, you end up with a URL such as
+`https://www.depaulprep.org/files/college-map/dcp-college-map.bundle.js`. The examples below use
+`YOUR-FILE-URL` as a placeholder for it.
+
+## Step 2: put it on the page
+
+### Option A: script tag (preferred when the editor allows raw HTML)
 
 ```html
 <div data-dcp-college-map></div>
-<script src="https://justro.github.io/dcp-college-map/dcp-college-map.js" defer></script>
+<script src="YOUR-FILE-URL/dcp-college-map.bundle.js" defer></script>
 ```
 
-The control renders directly in the page, fills the width of whatever column it is placed in, and
-grows to its natural height. Optional attributes on the `<div>`:
+The control renders directly in the page, fills the column it is placed in, and grows to its
+natural height. To change the heading, add `data-title="…"` to the `<div>`.
+
+### Option B: iframe (works everywhere)
 
 ```html
-<div data-dcp-college-map
-     data-title="Where Our Graduates Go"
-     data-base="https://justro.github.io/dcp-college-map/"></div>
-```
-
-- `data-title` changes the heading.
-- `data-base` is only needed if you copy the script somewhere else but want it to keep loading
-  data and logos from the published location.
-
-## Option B: iframe (works everywhere)
-
-```html
-<iframe src="https://justro.github.io/dcp-college-map/embed.html"
+<iframe src="YOUR-FILE-URL/dcp-college-map.html"
         title="Where DePaul Prep graduates go to college"
         width="100%" height="780"
         style="border:0; max-width:100%;"
         loading="lazy"></iframe>
 ```
 
-This is the same mechanism as the current Google My Maps embed, so any CMS block that accepts the
-old iframe accepts this one. The fixed `height` is the only drawback: on a phone the control
-stacks vertically and gets taller than 780px. Two ways to handle that:
-
-1. **Pick a height that fits the layout you care about** (780px is right for a desktop column of
-   700px or more; use about 1400px for a phone-only page) and accept scrolling inside the frame
-   otherwise.
-2. **Auto-size with a few lines of script.** The control sends its height to the parent page
-   whenever it changes:
-
-   ```html
-   <iframe id="dcp-map" src="https://justro.github.io/dcp-college-map/embed.html"
-           title="Where DePaul Prep graduates go to college"
-           width="100%" height="780" style="border:0; max-width:100%;" loading="lazy"></iframe>
-   <script>
-     window.addEventListener("message", function (e) {
-       if (e.origin === "https://justro.github.io" && e.data && e.data.type === "dcp-college-map:height") {
-         document.getElementById("dcp-map").style.height = e.data.height + "px";
-       }
-     });
-   </script>
-   ```
-
-The embed page sends no cookies and loads nothing from the school's domain.
-
-## Notes for the current site (Finalsite)
-
-`depaulprep.org` is served by Finalsite Composer behind Cloudflare. The College Planning page
-already embeds a Google My Maps iframe, so the simplest change is to edit that same content block
-and replace the iframe with Option B. If the page editor offers an "Embed" or "HTML" element,
-Option A also works there.
-
-Finalsite's content filter can strip `<script>` tags from ordinary rich-text blocks. If the script
-embed disappears after saving, use an Embed/HTML element, or fall back to the iframe.
-
-## Notes for Blackbaud (future site)
-
-Blackbaud's school website builder has an **Embed** content type for iframes and a **Custom HTML**
-(sometimes labelled "HTML" or "Code") content type for raw markup:
-
-- **Embed** block: paste the Option B iframe. This is the lowest-risk path.
-- **Custom HTML** block: paste Option A. If Blackbaud strips the `<script>` tag or sandboxes the
-  block, use the iframe instead.
-
-Blackbaud sites are served over HTTPS, as is GitHub Pages, so there are no mixed-content issues.
-If the school's IT team restricts third-party frames with a `Content-Security-Policy`, they will need
-to allow `https://justro.github.io` in `frame-src` (iframe) or `script-src` and `connect-src`
-(script embed).
-
-## Hosting it yourself instead of GitHub Pages
-
-Copy the entire `web/` folder from the repository to any static host (the school's own web space,
-Blackbaud's file manager, S3, Netlify, …) and point the embed at that location:
+This is the same mechanism as the current Google My Maps embed, so the content block that holds
+the old iframe can hold this one. The fixed `height` is the one drawback: on a phone the control
+stacks vertically and gets taller than 780px. Either pick a height for the layout you care most
+about (780px suits a desktop column of 700px or wider; about 1400px for phones) and accept a scroll
+bar inside the frame otherwise, or let the frame size itself with a few lines of script:
 
 ```html
-<div data-dcp-college-map></div>
-<script src="https://www.depaulprep.org/college-map/dcp-college-map.js" defer></script>
+<iframe id="dcp-map" src="YOUR-FILE-URL/dcp-college-map.html"
+        title="Where DePaul Prep graduates go to college"
+        width="100%" height="780" style="border:0; max-width:100%;" loading="lazy"></iframe>
+<script>
+  window.addEventListener("message", function (e) {
+    if (e.data && e.data.type === "dcp-college-map:height") {
+      document.getElementById("dcp-map").style.height = e.data.height + "px";
+    }
+  });
+</script>
 ```
 
-All paths inside the control are relative to the script's own folder, so nothing else changes.
-Keep the folder structure (`data/`, `logos/`, `vendor/`) intact. To update the data later, copy the
-new `web/data/matriculation.json` and `web/logos/` over the old ones.
+The control sends that message whenever its height changes (after loading, after resizing, and
+after switching between the overview and a state).
+
+## Updating the map each year
+
+1. Follow [refreshing-data.md](refreshing-data.md) to produce new files in `dist/`.
+2. Upload them to the file manager **over the old ones, keeping the same file names**, so the
+   page's embed code does not change.
+3. If the page still shows the old data afterwards, the site's cache (depaulprep.org sits behind
+   Cloudflare) is serving the previous copy. Hard-refresh, or add a version tag to the URL in the
+   embed code, e.g. `dcp-college-map.bundle.js?v=2027`, which forces every browser to fetch the new file.
+
+## Notes for the CMS editors
+
+- Finalsite's rich-text editor can strip `<script>` tags. Use an Embed/HTML element, or the iframe.
+- Blackbaud's page builder has an **Embed** content type for iframes and a **Custom HTML** type for
+  raw markup. If the HTML type sandboxes or strips scripts, use the iframe.
+- If the school's IT team enforces a `Content-Security-Policy`, scripts and frames from the site's
+  own domain are normally allowed; a file hosted elsewhere would need that host added to
+  `script-src` or `frame-src`.
+- The control's CSS is scoped under `.dcpcm` and it resets the properties site stylesheets most
+  commonly leak (heading colors, button backgrounds, text transforms), so it should not restyle the
+  rest of the page and vice versa.
 
 ## Checklist after embedding
 
@@ -103,14 +104,22 @@ new `web/data/matriculation.json` and `web/logos/` over the old ones.
 - [ ] Hovering a state shows the tooltip; clicking it zooms in; "Back to map" returns.
 - [ ] Flags show logos (a few schools without a public logo show their initials; that is expected).
 - [ ] The "Class of …" buttons change the counts.
-- [ ] Nothing else on the page is restyled (the control's CSS is scoped under `.dcpcm`).
+- [ ] Nothing else on the page looks different.
 
 ## Troubleshooting
 
 | Problem | Likely cause and fix |
 | --- | --- |
-| Blank box, no map | Script was stripped by the CMS. Use the iframe. |
-| "Sorry, the college map could not be loaded" | The browser could not fetch the data file. Check that `data-base` (if set) ends with `/` and that the site's CSP allows `justro.github.io`. |
-| Map is squashed or the side panel is below the map on desktop | The containing column is narrower than ~760px, so the control stacks. Give it a wider column or accept the stacked layout. |
-| Fonts look different from the rest of the site | Expected: the control loads its own brand fonts (Libre Bodoni and Source Sans 3). Adjust `--dcp-font-title` and `--dcp-font-body` in the CSS if the site should win. |
-| Old data showing | GitHub Pages caches for up to 10 minutes; hard-refresh. |
+| Blank box, no map | The `<script>` was stripped by the editor. Use the iframe. |
+| Browser downloads the file instead of running it | The file manager serves `.js` with the wrong type. Use the `.html` file in an iframe. |
+| "Sorry, the college map could not be loaded" | Only possible with the multi-file version in `web/`; the single-file build has nothing to fetch. Check the URL in the embed code. |
+| Side panel sits below the map on desktop | The column is narrower than about 760px, so the control stacks. Give it a wider column or accept the stacked layout. |
+| Fonts differ from the rest of the site | Expected: the control uses the brand typefaces (Libre Bodoni, Source Sans 3). Change `--dcp-font-title` and `--dcp-font-body` in `web/dcp-college-map.css` and rebuild if the site should win. |
+| Old data after an update | Cache. See "Updating the map each year". |
+
+## The multi-file version
+
+`web/` holds the same control as separate files (script, stylesheet, data JSON, logo images, map
+shapes). It is what the demo page runs and what a developer would edit. It can be hosted as a folder
+if the school ever prefers that; every path inside it is relative, so copying the whole folder to
+any static host and pointing a script tag at `dcp-college-map.js` inside it works the same way.

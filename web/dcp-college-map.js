@@ -12,6 +12,10 @@
  *   data-data="data/matriculation.json"   data file, relative to base
  *
  * Programmatic: DCPCollegeMap.init(element, { base, title, data })
+ *
+ * Single-file build: scripts/bundle.py wraps this file together with D3, the map shapes, the data
+ * and the logos into dist/dcp-college-map.bundle.js, exposing them as window.DCP_COLLEGE_MAP_BUNDLE
+ * so nothing else needs to be hosted alongside it.
  */
 (function () {
   "use strict";
@@ -20,7 +24,7 @@
     var s = document.currentScript || (function () {
       var all = document.getElementsByTagName("script");
       for (var i = all.length - 1; i >= 0; i--) {
-        if (/dcp-college-map(\.min)?\.js/.test(all[i].src || "")) return all[i];
+        if (/dcp-college-map[^\/]*\.js/.test(all[i].src || "")) return all[i];
       }
       return null;
     })();
@@ -71,8 +75,18 @@
     l.rel = "stylesheet"; l.href = href;
     document.head.appendChild(l);
   }
+  function bundle() { return window.DCP_COLLEGE_MAP_BUNDLE || null; }
   function ensureDeps(base) {
-    loadCss(base + "dcp-college-map.css");
+    var B = bundle();
+    if (B && B.css) {
+      if (!document.getElementById("dcpcm-style")) {
+        var st = document.createElement("style");
+        st.id = "dcpcm-style"; st.textContent = B.css;
+        document.head.appendChild(st);
+      }
+    } else {
+      loadCss(base + "dcp-college-map.css");
+    }
     loadCss("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap");
     var p = Promise.resolve();
     if (!window.d3 || !window.d3.geoAlbersUsa) p = p.then(function () { return loadScript(base + "vendor/d3.v7.min.js"); });
@@ -145,12 +159,13 @@
     };
     this.el.title.textContent = this.opts.title;
 
-    var self = this;
-    Promise.all([
+    var self = this, B = bundle();
+    var sources = B && B.data ? [B.data, B.states, B.countries] : [
       fetchJson(this.base + this.opts.data),
       fetchJson(this.base + "vendor/states-10m.json"),
       fetchJson(this.base + "vendor/countries-50m.json"),
-    ]).then(function (res) {
+    ];
+    Promise.all(sources).then(function (res) {
       self.data = res[0];
       self.usTopo = res[1];
       self.worldTopo = res[2];
@@ -525,7 +540,8 @@
   /* ------------------------------------------------------------------ side panel */
   CollegeMap.prototype.logoHtml = function (s, size) {
     if (s.logo) {
-      return '<span class="dcpcm-logo"><img src="' + esc(this.base + s.logo) + '" alt="" loading="lazy" ' +
+      var src = /^(data:|https?:)/.test(s.logo) ? s.logo : this.base + s.logo;
+      return '<span class="dcpcm-logo"><img src="' + esc(src) + '" alt="" loading="lazy" ' +
         'onload="if(this.naturalWidth&&this.naturalWidth<=32)this.classList.add(\'is-tiny\')" ' +
         'onerror="this.parentNode.className=\'dcpcm-logo is-initials\';this.parentNode.textContent=\'' + esc(initials(s.name)) + '\'"></span>';
     }
