@@ -74,7 +74,8 @@ python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-lo
 - `--no-network` skips geocoding and logo downloads (fine for a re-run when nothing is new).
 - `--refetch-logos` re-downloads every logo instead of keeping the ones already in `web/logos/`.
 - `python3 scripts/bundle.py` on its own regenerates `dist/` from `web/` (for example after editing
-  the CSS or dropping in a better logo).
+  the CSS or dropping in a better logo). Run it with the venv active, like the build script; without
+  Pillow it warns and produces a much larger file.
 
 ## Fixing things by hand: `data/overrides.json`
 

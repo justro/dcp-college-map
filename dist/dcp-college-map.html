@@ -473,7 +473,27 @@ window.DCP_COLLEGE_MAP_BUNDLE = {
       ? d3.geoAlbers().rotate([-d3.geoCentroid(sel.feature)[0], 0]).parallels([29.5, 45.5])
       : d3.geoMercator();
     // leave room for the title bar at the top and pins that extend above their point
-    proj.fitExtent([[50, 80], [W - 50, H - 34]], sel.feature);
+    var extent = [[50, 80], [W - 50, H - 34]];
+    proj.fitExtent(extent, sel.feature);
+    if (sel.kind !== "state") {
+      // A country can be far larger than the area its schools occupy (Canada vs. southern Ontario).
+      // If fitting the whole country would leave the schools in a tiny cluster, fit a padded box
+      // around the schools instead; neighbouring countries stay visible as context.
+      var located = schools.filter(function (s) { return s.lat != null && s.lon != null; });
+      if (located.length) {
+        var lons = located.map(function (s) { return s.lon; }), lats = located.map(function (s) { return s.lat; });
+        var cLon = (Math.min.apply(null, lons) + Math.max.apply(null, lons)) / 2;
+        var cLat = (Math.min.apply(null, lats) + Math.max.apply(null, lats)) / 2;
+        var aspect = (extent[1][0] - extent[0][0]) / (extent[1][1] - extent[0][1]);
+        var spanLat = Math.max(5, (Math.max.apply(null, lats) - Math.min.apply(null, lats)) * 1.8);
+        var spanLon = Math.max(spanLat * aspect / Math.cos(cLat * Math.PI / 180),
+                               (Math.max.apply(null, lons) - Math.min.apply(null, lons)) * 1.8);
+        var zoomed = d3.geoMercator().fitExtent(extent, bboxPolygon(
+          [[cLon - spanLon / 2, Math.max(-85, cLat - spanLat / 2)], [cLon + spanLon / 2, Math.min(85, cLat + spanLat / 2)]]));
+        if (zoomed.scale() > proj.scale() * 2.5) proj = zoomed;
+      }
+    }
+    proj.clipExtent([[0, 0], [W, H]]);
     var path = d3.geoPath(proj);
 
     var context = sel.kind === "state" ? this.states : this.countries;
@@ -511,7 +531,9 @@ window.DCP_COLLEGE_MAP_BUNDLE = {
     pin.filter(function (d) { return Math.hypot(d.x - d.tx, d.y - d.ty) > 5; })
       .append("line").attr("class", "leader")
       .attr("x1", 0).attr("y1", 0).attr("x2", function (d) { return d.tx - d.x; }).attr("y2", function (d) { return d.ty - d.y; });
-    pin.append("circle").attr("class", "base").attr("r", 2.2);
+    // the base dot always sits on the school's true location, even when the flag was nudged away
+    pin.append("circle").attr("class", "base").attr("r", 2.2)
+      .attr("cx", function (d) { return d.tx - d.x; }).attr("cy", function (d) { return d.ty - d.y; });
     pin.append("line").attr("class", "pole").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", function (d) { return -d.pole; });
     pin.append("path").attr("class", "flag").attr("d", function (d) {
       // a swallow-tail pennant

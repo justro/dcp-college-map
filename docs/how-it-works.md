@@ -112,9 +112,12 @@ State and country totals are not stored; the control adds them up in the browser
   country is assigned in the build script (`REGIONS`), and the bounding box each inset shows is in
   the JS (`REGION_VIEWS`). Adding a new country means adding it to both lists plus the ISO number
   table (`ISO_NUM`) in the JS.
-- **Detail.** Clicking a state or country cross-fades to a view fitted to that shape. Each school
-  gets a pennant sized by its count. A small force simulation nudges overlapping flags apart (the
-  Chicago cluster, for instance) and draws a dotted leader back to the true location.
+- **Detail.** Clicking a state or country cross-fades to a view fitted to that shape. For a
+  country whose schools sit in one small area (Canada, where every school is in southern Ontario)
+  the view zooms to a padded box around the schools instead, with neighbours drawn for context.
+  Each school gets a pennant sized by its count. A small force simulation nudges overlapping flags
+  apart (the Chicago cluster, for instance); the dot at the foot of each flag always stays on the
+  school's true location, and a dotted leader joins it to the flag when the flag was moved.
 - **Side panel.** Totals and the most-attended schools; in detail view, the full school list for
   the selected place. Hovering a list item highlights its flag, clicking it opens the flag's card.
 

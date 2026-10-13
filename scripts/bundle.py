@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WEB = ROOT / "web"
 DIST = ROOT / "dist"
 LOGO_PX = 64
+_warned_no_pillow = False
 
 
 def logo_data_uri(path):
@@ -37,7 +38,11 @@ def logo_data_uri(path):
         img.save(buf, "PNG", optimize=True)
         raw = buf.getvalue()
     except ImportError:
-        pass  # ship the file as-is
+        global _warned_no_pillow
+        if not _warned_no_pillow:
+            _warned_no_pillow = True
+            print("WARNING: Pillow is not installed, so logos are inlined at full size and the bundle "
+                  "will be much larger. Run: pip install -r scripts/requirements.txt", file=sys.stderr)
     return "data:image/png;base64," + base64.b64encode(raw).decode()
 
 
