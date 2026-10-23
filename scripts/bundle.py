@@ -9,7 +9,7 @@ Writes:
     dist/dcp-college-map.html        the same, as a standalone page for <iframe> embedding
 
 Nothing in dist/ references any other file, so it works from any URL the host gives it.
-Logos are shrunk to 64px and inlined as data URIs; the world map uses the lighter 110m shapes.
+Logos are shrunk to 96px and inlined as data URIs; the world map uses the lighter 110m shapes.
 """
 
 import base64
@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WEB = ROOT / "web"
 DIST = ROOT / "dist"
-LOGO_PX = 64
+LOGO_PX = 96  # the tooltip shows logos at ~45 CSS px, so this stays sharp on 2x screens
 _warned_no_pillow = False
 
 
@@ -35,7 +35,8 @@ def logo_data_uri(path):
         if max(img.size) > LOGO_PX:
             img.thumbnail((LOGO_PX, LOGO_PX), Image.LANCZOS)
         buf = io.BytesIO()
-        img.save(buf, "PNG", optimize=True)
+        # a 256-colour palette is indistinguishable at this size and about a third of the bytes
+        img.quantize(colors=256, method=Image.Quantize.FASTOCTREE).save(buf, "PNG", optimize=True)
         raw = buf.getvalue()
     except ImportError:
         global _warned_no_pillow
@@ -74,7 +75,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Where DePaul Prep Graduates Go to College</title>
+<title>Where DePaul Prep Graduates Attend College</title>
 <meta name="robots" content="noindex">
 <style>html,body{margin:0;padding:0;background:transparent}</style>
 </head>

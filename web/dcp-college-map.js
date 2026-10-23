@@ -54,6 +54,15 @@
     "South America":         { bbox: [[-82, -56], [-34, 13]] },
   };
 
+  // East Coast states too small to hover or click on the overview (DC is a couple of pixels wide).
+  // Each gets a labelled tile out in the Atlantic, north to south, as on election maps.
+  var SMALL_STATES = [
+    ["RI", "Rhode Island"], ["CT", "Connecticut"], ["NJ", "New Jersey"],
+    ["DE", "Delaware"], ["MD", "Maryland"], ["DC", "District of Columbia"],
+  ];
+  var SMALL_CODES = {};
+  SMALL_STATES.forEach(function (s) { SMALL_CODES[s[0]] = true; });
+
   // DePaul College Prep, 3333 N Rockwell St, Chicago
   var HOME = { name: "DePaul Prep", lat: 41.9426, lon: -87.6935, state: "IL" };
 
@@ -197,7 +206,7 @@
     this.countries.forEach(function (f) { this.countryById[String(f.id)] = f; }, this);
 
     // us-atlas states carry FIPS ids + names; map postal codes to features
-    var byName = {};
+    var byName = this.stateByName = {};
     this.states.forEach(function (f) { byName[f.properties.name] = f; });
     this.stateByCode = {};
     var self = this;
@@ -249,7 +258,8 @@
   CollegeMap.prototype.renderYears = function () {
     var self = this, el = this.el.years;
     el.innerHTML = "";
-    var opts = [{ v: "all", label: "All classes" }].concat(this.data.years.map(function (y) {
+    // most recent class first
+    var opts = [{ v: "all", label: "All classes" }].concat(this.data.years.slice().reverse().map(function (y) {
       return { v: y, label: "Class of " + y };
     }));
     opts.forEach(function (o) {
@@ -298,7 +308,8 @@
       .attr("viewBox", "0 0 " + W + " " + H)
       .attr("role", "img")
       .attr("aria-label", "Map of the United States shaded by the number of DePaul Prep graduates attending college in each state");
-    var proj = d3.geoAlbersUsa().fitExtent([[12, 12], [W - 12, H - 36]], { type: "FeatureCollection", features: this.states });
+    // the right margin leaves room in the Atlantic for the small-state tiles
+    var proj = d3.geoAlbersUsa().fitExtent([[12, 12], [W - 36, H - 36]], { type: "FeatureCollection", features: this.states });
     var path = d3.geoPath(proj);
     this.overviewProj = proj;
 
@@ -315,8 +326,9 @@
         var code = self.codeByStateName[f.properties.name];
         return self.color(code ? (t.byState[code] || 0) : 0);
       })
-      .attr("tabindex", function (f) { var c = self.codeByStateName[f.properties.name]; return c && t.byState[c] ? 0 : null; })
-      .attr("role", function (f) { var c = self.codeByStateName[f.properties.name]; return c && t.byState[c] ? "button" : null; })
+      // keyboard users reach the small states through their tiles instead
+      .attr("tabindex", function (f) { var c = self.codeByStateName[f.properties.name]; return c && t.byState[c] && !SMALL_CODES[c] ? 0 : null; })
+      .attr("role", function (f) { var c = self.codeByStateName[f.properties.name]; return c && t.byState[c] && !SMALL_CODES[c] ? "button" : null; })
       .attr("aria-label", function (f) {
         var c = self.codeByStateName[f.properties.name], n = c ? (t.byState[c] || 0) : 0;
         return f.properties.name + ": " + plural(n, "graduate") + (n ? ". Press Enter to see schools." : "");
@@ -331,6 +343,7 @@
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); d3.select(this).dispatch("click"); }
       });
     g.append("path").attr("class", "dcpcm-mesh").attr("d", path(this.stateMesh));
+    this.renderSmallStateTiles(svg, path, W, t);
 
     // home star
     var hp = proj([HOME.lon, HOME.lat]);
@@ -351,6 +364,59 @@
     hint.className = "dcpcm-hint";
     hint.textContent = "Hover a state for details · click to see schools";
     this.el.overview.appendChild(hint);
+  };
+
+  CollegeMap.prototype.renderSmallStateTiles = function (svg, path, W, t) {
+    var d3 = window.d3, self = this;
+    // only states with graduates (in the selected class) get a tile
+    var tiles = SMALL_STATES.map(function (st) {
+      var f = self.stateByName[st[1]], n = t.byState[st[0]] || 0;
+      if (!f || !n) return null;
+      var c = path.centroid(f);
+      return { code: st[0], name: st[1], f: f, n: n, cx: c[0], cy: c[1], right: path.bounds(f)[1][0] };
+    }).filter(Boolean);
+    if (!tiles.length) return;
+
+    // A column just off the NJ/DE/MD coast, centred on the states it labels but kept below Cape Cod.
+    var tw = 26, th = 15, gap = 4, colH = tiles.length * (th + gap) - gap;
+    var coast = d3.max(["New Jersey", "Delaware", "Maryland"], function (n) {
+      return self.stateByName[n] ? path.bounds(self.stateByName[n])[1][0] : -Infinity;
+    });
+    var x = Math.min(W - tw - 6, coast + 14);
+    var ma = this.stateByName.Massachusetts;
+    var y = (d3.min(tiles, function (d) { return d.cy; }) + d3.max(tiles, function (d) { return d.cy; })) / 2 - colH / 2;
+    if (ma) y = Math.max(y, path.bounds(ma)[1][1] + 6);
+    tiles.forEach(function (d, i) { d.x = x; d.y = y + i * (th + gap); });
+
+    // the state shape each tile stands for, looked up once so hovering doesn't rescan the map
+    svg.selectAll("path.dcpcm-state").each(function (f) {
+      tiles.forEach(function (d) { if (d.f === f) d.shape = this; }, this);
+    });
+    var g = svg.append("g").attr("class", "dcpcm-tiles");
+    var tile = g.selectAll("g.dcpcm-tile").data(tiles).join("g")
+      .attr("class", "dcpcm-tile")
+      .attr("tabindex", 0)
+      .attr("role", "button")
+      .attr("aria-label", function (d) { return d.name + ": " + plural(d.n, "graduate") + ". Press Enter to see schools."; })
+      .on("mouseenter", function (e, d) { if (d.shape) d.shape.classList.add("is-hovered"); })
+      .on("mousemove", function (e, d) { self.showRegionTip(e, "state", d.code, d.name); })
+      .on("mouseleave", function (e, d) { if (d.shape) d.shape.classList.remove("is-hovered"); self.hideTip(); })
+      .on("click", function (e, d) { self.select({ kind: "state", code: d.code, name: d.name, feature: d.f }); })
+      .on("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); d3.select(this).dispatch("click"); }
+      });
+    tile.append("line").attr("class", "leader")
+      .attr("x1", function (d) { return d.cx; }).attr("y1", function (d) { return d.cy; })
+      .attr("x2", function (d) { return d.x; }).attr("y2", function (d) { return d.y + th / 2; });
+    tile.append("circle").attr("class", "end").attr("r", 1.6)
+      .attr("cx", function (d) { return d.cx; }).attr("cy", function (d) { return d.cy; });
+    tile.append("rect").attr("rx", 3).attr("width", tw).attr("height", th)
+      .attr("x", function (d) { return d.x; }).attr("y", function (d) { return d.y; })
+      .attr("fill", function (d) { return self.color(d.n); });
+    tile.append("text").attr("x", function (d) { return d.x + tw / 2; }).attr("y", function (d) { return d.y + th / 2; })
+      .attr("dy", "0.35em")
+      .classed("on-dark", function (d) { return d3.hsl(self.color(d.n)).l < 0.55; })
+      .text(function (d) { return d.code; });
   };
 
   CollegeMap.prototype.renderInsets = function () {
@@ -648,8 +714,15 @@
 
   CollegeMap.prototype.showSchoolTip = function (e, s, pinEl, sticky) {
     var self = this;
-    var years = this.year === "all" && Object.keys(s.byYear).length > 1
-      ? Object.keys(s.byYear).sort().map(function (y) { return "’" + String(y).slice(-2) + ": " + s.byYear[y]; }).join(" · ") : "";
+    // With all classes shown, always break the count down by class (newest first) so every school
+    // reads the same way; with one class selected the big number already is that class's count.
+    // Rows with no class year are counted under "unknown"; list those last.
+    var years = this.year === "all"
+      ? "By class: " + Object.keys(s.byYear).sort(function (a, b) {
+          return (/^\d+$/.test(b) ? +b : -1) - (/^\d+$/.test(a) ? +a : -1);
+        }).map(function (y) {
+          return (/^\d{4}$/.test(y) ? "’" + y.slice(-2) : "class unknown") + ": " + s.byYear[y];
+        }).join(" · ") : "";
     var place = s.country === "US" ? s.city + ", " + s.state : (s.city ? s.city + ", " : "") + s.countryName;
     this.el.tip.innerHTML = (sticky ? '<button type="button" class="close" aria-label="Close">×</button>' : "") +
       '<div class="school">' + this.logoHtml(s) + "<div><h5>" + esc(s.name) + '</h5><p class="sub" style="margin:0">' + esc(place) + "</p>" +
@@ -748,7 +821,7 @@
       if (!/\/$/.test(base)) base += "/";
       var opts = {
         base: base,
-        title: options.title || el.getAttribute("data-title") || "Where DePaul Prep Graduates Go to College",
+        title: options.title || el.getAttribute("data-title") || "Where DePaul Prep Graduates Attend College",
         data: options.data || el.getAttribute("data-data") || "data/matriculation.json",
       };
       return ensureDeps(base).then(function () { return new CollegeMap(el, opts); });

@@ -68,16 +68,21 @@ State and country totals are not stored; the control adds them up in the browser
      second, which the script respects.
    - Results are saved to `data/geocode-cache.json`, so later runs only look up new schools.
    - `data/overrides.json` → `schools` always wins, for hand-corrected coordinates.
-5. **Fetch logos.** For each school with a known website, the script looks for a high-resolution
+5. **Fetch logos.** A hand-picked logo in `data/logos/<school-id>.png|svg` (added with
+   `scripts/add_logo.py`) is used when present, unless `data/overrides.json` sets a `logo` for that
+   school, which wins. Otherwise, for each school with a known
+   website, the script looks for a high-resolution
    icon declared in the site's HTML (`apple-touch-icon`, large `icon` links, SVG icons), then falls
-   back to Google's and DuckDuckGo's favicon services. Images are normalized to PNG (SVGs kept as-is)
-   and saved to `web/logos/<school-id>.png`. Existing logos are kept unless `--refetch-logos` is passed.
+   back to Google's and DuckDuckGo's favicon services. Images are normalized to PNG the same way as
+   hand-picked ones (trimmed, squared, at most 192px; SVGs kept as-is) and saved to
+   `web/logos/<school-id>.png`. Existing logos are kept unless `--refetch-logos` is passed.
    Schools without a logo show their initials in a navy tile.
 6. **Privacy check and write.** The output is checked for unexpected keys, student IDs, and
    name-like strings, then written to `web/data/matriculation.json`.
 7. **Bundle.** `scripts/bundle.py` concatenates D3, topojson-client, the U.S. states and (lighter,
    110m) world shapes, the data, the stylesheet, and the control into `dist/dcp-college-map.bundle.js`,
-   with every logo shrunk to 64px and inlined as a data URI. It also wraps the same script in a
+   with every logo shrunk to 96px (sharp on high-density screens), reduced to a 256-colour palette,
+   and inlined as a data URI. It also wraps the same script in a
    bare page, `dist/dcp-college-map.html`, for iframe use. The control detects the bundle through
    `window.DCP_COLLEGE_MAP_BUNDLE` and skips all network fetches when it is present.
 
@@ -88,7 +93,8 @@ State and country totals are not stored; the control adds them up in the browser
 | `data/overrides.json` | Aliases and manual fixes | Yes, this is the place for fixes |
 | `data/geocode-cache.json` | Automatic lookups so far | Rarely; delete an entry to force a re-lookup |
 | `data/ipeds-institutions.csv` | IPEDS directory (HD2023) | No; replace with a newer IPEDS "HD" file if needed |
-| `web/logos/` | Logo images | Yes, drop in a better image and point to it from overrides |
+| `data/logos/` | Hand-picked logos, preferred over downloads | Yes, via `scripts/add_logo.py` |
+| `web/logos/` | Logo images the map uses (copied from `data/logos/` or downloaded) | No; it is rebuilt |
 
 ## The web control
 
@@ -107,7 +113,10 @@ State and country totals are not stored; the control adds them up in the browser
 ### Views
 
 - **Overview.** An Albers USA projection (Alaska and Hawaii inset) shaded with a six-step
-  threshold scale: 0, 1–2, 3–9, 10–29, 30–99, 100+. A red star marks DePaul Prep.
+  threshold scale: 0, 1–2, 3–9, 10–29, 30–99, 100+. A red star marks DePaul Prep. Small East Coast
+  states that are hard to hover or click (`SMALL_STATES` in the JS: RI, CT, NJ, DE, MD, DC) get a
+  labelled tile in the Atlantic, joined to the state by a thin line, but only when they have
+  graduates in the selected class. Clicking a tile opens that state like any other.
 - **Insets.** One cutout per international region that appears in the data. The region for each
   country is assigned in the build script (`REGIONS`), and the bounding box each inset shows is in
   the JS (`REGION_VIEWS`). Adding a new country means adding it to both lists plus the ISO number
@@ -123,7 +132,8 @@ State and country totals are not stored; the control adds them up in the browser
 
 ### Interaction and accessibility
 
-- Hover shows tooltips; click/tap on a flag pins its card (useful on touch screens).
+- Hover shows tooltips; click/tap on a flag pins its card (useful on touch screens). With "All
+  classes" selected, a school's card also breaks its count down by class, newest first.
 - States, countries, and flags are focusable buttons: Tab to them, Enter to activate, Escape to go
   back. An `aria-live` region announces selections.
 - Layout uses CSS container queries, so the control stacks vertically when *it* is narrower than

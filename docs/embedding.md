@@ -49,7 +49,7 @@ natural height. To change the heading, add `data-title="…"` to the `<div>`.
 
 ```html
 <iframe src="YOUR-FILE-URL/dcp-college-map.html"
-        title="Where DePaul Prep graduates go to college"
+        title="Where DePaul Prep graduates attend college"
         width="100%" height="780"
         style="border:0; max-width:100%;"
         loading="lazy"></iframe>
@@ -63,7 +63,7 @@ bar inside the frame otherwise, or let the frame size itself with a few lines of
 
 ```html
 <iframe id="dcp-map" src="YOUR-FILE-URL/dcp-college-map.html"
-        title="Where DePaul Prep graduates go to college"
+        title="Where DePaul Prep graduates attend college"
         width="100%" height="780" style="border:0; max-width:100%;" loading="lazy"></iframe>
 <script>
   window.addEventListener("message", function (e) {

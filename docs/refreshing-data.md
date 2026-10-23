@@ -57,7 +57,7 @@ Then publish:
 2. **Commit** so the repository matches what is live:
 
    ```bash
-   git add web/data web/logos dist data/geocode-cache.json data/overrides.json
+   git add web/data web/logos data/logos dist data/geocode-cache.json data/overrides.json
    git commit -m "Update matriculation data for the Class of 2027"
    git push
    ```
@@ -99,7 +99,10 @@ python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-lo
 - **`aliases`** merges a name in the export into another name. Use it when the same school shows up
   under two spellings.
 - **`schools`** is keyed by the school name as it appears in the export (after aliases). Fields:
-  - `name`: display name (accents, preferred capitalization).
+  - `name`: display name (accents, preferred capitalization). The script already tidies the
+    export's federal (IPEDS) names: campus suffixes such as "-Main Campus" or "-Seattle Campus" are
+    dropped and "St" becomes "St.". Use `name` for anything else ("Miami University-Oxford" is shown
+    as "Miami University" this way).
   - `lat`, `lon`: coordinates, when the automatic lookup is wrong or missing. Google Maps
     right-click → the first item copies them.
   - `website`: domain used to find the logo and (if no coordinates are cached) nothing else.
@@ -107,6 +110,26 @@ python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-lo
     Square PNGs or SVGs around 128–256px look best.
 
 After editing overrides, run the script again. Overrides are applied on every run and always win.
+
+### Better logos: `data/logos/`
+
+Downloaded logos are often small website icons. To use a hand-picked image instead (for example
+one from College Counseling's logo folder):
+
+```bash
+python3 scripts/add_logo.py university-of-iowa ~/Downloads/iowa-hawkeyes.png
+python3 scripts/build_data.py --no-network
+```
+
+The first argument is the school's `id` from `web/data/matriculation.json`. The script trims empty
+margins, centers the logo on a square, scales it to 192px, and saves it as
+`data/logos/<school-id>.png` (SVGs are copied as they are). The build prefers a logo in
+`data/logos/` over a downloaded one, even with `--refetch-logos`; only a `logo` set for the school
+in `data/overrides.json` takes precedence, so remove that entry if you add a hand-picked logo
+instead. PNG, JPEG, GIF, WebP and TIFF
+work; convert Photoshop or Illustrator files to PNG first (on a Mac:
+`sips -s format png logo.psd --out logo.png`). Square marks read better than wide wordmarks, since
+logos are shown in a small square tile.
 
 ### When a school is located in the wrong place
 
@@ -139,6 +162,6 @@ If you ever see a student name anywhere under `web/`, stop and do not push.
 | `No .xlsx or .csv export found` | Put the file in `data/raw/` or pass its path as the first argument |
 | `openpyxl is required` | `pip install -r scripts/requirements.txt`, or export as CSV instead |
 | A school is matched to the wrong IPEDS institution (check the `->` name in the log) | Add `lat`/`lon` (and `website`) to overrides |
-| Logo is wrong or low quality | Save a better image in `web/logos/` and reference it with `logo` in overrides |
+| Logo is wrong or low quality | `python3 scripts/add_logo.py <school-id> <image>`, then re-run the build (see [Better logos](#better-logos-datalogos)) |
 | Geocoder errors (`nominatim error …`) | Usually rate limiting or no network; re-run later. Cached schools are not re-requested |
 | Website shows old data after uploading | The site cache is serving the old file; hard-refresh or add `?v=2027` to the embed URL |
