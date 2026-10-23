@@ -162,6 +162,23 @@
   pointer-events: none;
 }
 
+/* small-state tiles in the Atlantic */
+.dcpcm-tile { outline: none; cursor: pointer; }
+.dcpcm-tile rect { stroke: #b7c6d3; stroke-width: 0.8; transition: stroke 0.15s, stroke-width 0.15s; }
+.dcpcm-tile .leader { stroke: #8fa3b5; stroke-width: 0.7; }
+.dcpcm-tile .end { fill: var(--dcp-navy); }
+.dcpcm-tile text {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-anchor: middle;
+  fill: var(--dcp-navy);
+  pointer-events: none;
+}
+.dcpcm-tile text.on-dark { fill: var(--dcp-white); }
+.dcpcm-tile:hover rect,
+.dcpcm-tile:focus-visible rect { stroke: var(--dcp-lake); stroke-width: 2; }
+
 .dcpcm-legend {
   position: absolute;
   left: 14px;
@@ -447,9 +464,11 @@
   color: var(--dcp-navy);
 }
 .dcpcm-tip .sub { color: var(--dcp-muted); margin: 0 0 6px; }
-.dcpcm-tip ol { margin: 6px 0 0; padding: 0 0 0 18px; }
-.dcpcm-tip ol li { margin: 1px 0; display: flex; justify-content: space-between; gap: 10px; }
-.dcpcm-tip ol li span:last-child { font-weight: 700; color: var(--dcp-navy); }
+.dcpcm-tip ol { margin: 6px 0 0; padding: 0 0 0 18px; text-align: left; }
+.dcpcm-tip ol li { margin: 1px 0; display: flex; justify-content: space-between; gap: 10px; text-align: left; }
+/* the name takes the row's free space so a long, wrapping name stays flush left */
+.dcpcm-tip ol li span:first-child { flex: 1 1 auto; min-width: 0; text-align: left; }
+.dcpcm-tip ol li span:last-child { flex: 0 0 auto; font-weight: 700; color: var(--dcp-navy); }
 .dcpcm-tip .school {
   display: flex;
   gap: 12px;

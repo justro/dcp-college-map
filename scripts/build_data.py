@@ -29,7 +29,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
@@ -40,6 +40,7 @@ OVERRIDES = ROOT / "data" / "overrides.json"
 CACHE = ROOT / "data" / "geocode-cache.json"
 OUT_JSON = ROOT / "web" / "data" / "matriculation.json"
 LOGO_DIR = ROOT / "web" / "logos"
+CURATED_LOGO_DIR = ROOT / "data" / "logos"  # hand-picked logos (scripts/add_logo.py); win over downloads
 
 USER_AGENT = "dcp-college-map-build/1.0 (https://github.com/justro/dcp-college-map)"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
@@ -141,6 +142,25 @@ def slugify(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s[:80]
+
+
+CAMPUS_SUFFIX = re.compile(r"\s*-\s*[A-Z][\w.' ]*? Campus$")
+
+
+def tidy_names(schools, named):
+    """Display names. The export uses IPEDS names, which carry campus qualifiers ("Ohio State
+    University-Main Campus") and drop the period from "St". A qualifier is dropped only when no
+    other school would end up with the same name; in a clash the main campus keeps the short name
+    and the branch campuses keep theirs. Schools in `named` (ids) have a name override; leave them."""
+    short = {s["id"]: CAMPUS_SUFFIX.sub("", s["name"]) for s in schools if s["id"] not in named}
+    uses = Counter(short.get(s["id"], s["name"]) for s in schools)
+    for s in schools:
+        if s["id"] in named:
+            continue
+        name = s["name"]
+        if uses[short[s["id"]]] == 1 or re.search(r"-\s*Main Campus$", name):
+            name = short[s["id"]]
+        s["name"] = re.sub(r"\bSt\b(?!\.)", "St.", name)
 
 
 def http_get(url, timeout=20):
@@ -320,6 +340,7 @@ def nominatim(query):
 def geocode_all(schools, cache, overrides, network):
     ipeds = load_ipeds()
     changed = False
+    named = set()  # ids of schools whose display name comes from overrides
     for s in schools:
         ov = overrides.get(s["name"], {})
         entry = cache.get(s["name"], {})
@@ -352,6 +373,9 @@ def geocode_all(schools, cache, overrides, network):
         s["_logo_override"] = entry.get("logo")
         if "name" in ov:
             s["name"] = ov["name"]
+            named.add(s["id"])
+    # only the display name changes; ids, cache and overrides stay keyed by the export's name
+    tidy_names(schools, named)
     return changed
 
 
@@ -394,18 +418,9 @@ def save_logo(raw, dest):
         dest.write_bytes(raw)
         return dest, 512
     try:
-        from PIL import Image  # optional dependency, see scripts/requirements.txt
-        img = Image.open(io.BytesIO(raw))
-        if getattr(img, "n_frames", 1) > 1:  # .ico with several sizes: take the largest
-            sizes = sorted(getattr(img, "ico", None).sizes()) if hasattr(img, "ico") else []
-            if sizes:
-                img.size = sizes[-1]
-                img.load()
-        img = img.convert("RGBA")
-        if max(img.size) > 256:
-            img.thumbnail((256, 256))
-        img.save(dest, "PNG")
-        return dest, min(img.size)
+        # same trimming and sizing as hand-picked logos; needs Pillow (scripts/requirements.txt)
+        from add_logo import normalize
+        return dest, normalize(io.BytesIO(raw), dest)
     except ImportError:
         if raw[:8] == b"\x89PNG\r\n\x1a\n":
             dest.write_bytes(raw)
@@ -421,7 +436,14 @@ def fetch_logos(schools, network, refetch):
         dest = LOGO_DIR / f"{s['id']}.png"
         existing = [p for p in LOGO_DIR.glob(f"{s['id']}.*") if p.suffix in (".png", ".svg", ".jpg", ".jpeg", ".gif", ".webp")]
         override = s.pop("_logo_override", None)
-        if override and not override.startswith("http"):
+        curated = sorted(CURATED_LOGO_DIR.glob(f"{s['id']}.*")) if not override else []
+        if curated:
+            for old in existing:
+                old.unlink(missing_ok=True)
+            dest = LOGO_DIR / curated[0].name
+            dest.write_bytes(curated[0].read_bytes())
+            existing = [dest]
+        elif override and not override.startswith("http"):
             existing = [LOGO_DIR / override] if (LOGO_DIR / override).exists() else []
         elif network and (refetch or not existing):
             sources = []

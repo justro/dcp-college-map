@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12",
+ "generated": "2026-10-22",
  "source": "college_matriculation_summary_202609211435.xlsx",
  "years": [
   "2024",
@@ -90,7 +90,7 @@
    "lat": 41.661935,
    "lon": -91.536425,
    "website": "uiowa.edu",
-   "logo": "logos/university-of-iowa.svg"
+   "logo": "logos/university-of-iowa.png"
   },
   {
    "id": "marquette-university",
@@ -111,7 +111,7 @@
    "lat": 43.03903,
    "lon": -87.927961,
    "website": "marquette.edu",
-   "logo": "logos/marquette-university.png"
+   "logo": "logos/marquette-university.svg"
   },
   {
    "id": "depaul-university",
@@ -136,7 +136,7 @@
   },
   {
    "id": "miami-university-oxford",
-   "name": "Miami University-Oxford",
+   "name": "Miami University",
    "city": "Oxford",
    "state": "OH",
    "country": "US",
@@ -153,7 +153,7 @@
    "lat": 39.507757,
    "lon": -84.732954,
    "website": "miamioh.edu",
-   "logo": "logos/miami-university-oxford.png"
+   "logo": "logos/miami-university-oxford.svg"
   },
   {
    "id": "michigan-state-university",
@@ -279,7 +279,7 @@
    "lat": 38.958549,
    "lon": -95.247567,
    "website": "ku.edu",
-   "logo": "logos/university-of-kansas.png"
+   "logo": "logos/university-of-kansas.svg"
   },
   {
    "id": "university-of-arizona",
@@ -321,7 +321,7 @@
    "lat": 39.739547,
    "lon": -84.176113,
    "website": "udayton.edu",
-   "logo": "logos/university-of-dayton.png"
+   "logo": "logos/university-of-dayton.svg"
   },
   {
    "id": "university-of-colorado-boulder",
@@ -346,7 +346,7 @@
   },
   {
    "id": "purdue-university-main-campus",
-   "name": "Purdue University-Main Campus",
+   "name": "Purdue University",
    "city": "West Lafayette",
    "state": "IN",
    "country": "US",
@@ -404,7 +404,7 @@
    "lat": 25.72126,
    "lon": -80.278662,
    "website": "miami.edu",
-   "logo": null
+   "logo": "logos/university-of-miami.png"
   },
   {
    "id": "university-of-notre-dame",
@@ -657,7 +657,7 @@
   },
   {
    "id": "ohio-state-university-main-campus",
-   "name": "Ohio State University-Main Campus",
+   "name": "Ohio State University",
    "city": "Columbus",
    "state": "OH",
    "country": "US",
@@ -677,7 +677,7 @@
   },
   {
    "id": "pennsylvania-state-university-main-campus",
-   "name": "Pennsylvania State University - Main Campus",
+   "name": "Pennsylvania State University",
    "city": "University Park",
    "state": "PA",
    "country": "US",
@@ -715,7 +715,7 @@
    "lat": 38.636801,
    "lon": -90.2351,
    "website": "slu.edu",
-   "logo": "logos/saint-louis-university.svg"
+   "logo": "logos/saint-louis-university.png"
   },
   {
    "id": "san-diego-state-university",
@@ -735,7 +735,7 @@
    "lat": 32.77525,
    "lon": -117.071228,
    "website": "sdsu.edu",
-   "logo": "logos/san-diego-state-university.svg"
+   "logo": "logos/san-diego-state-university.png"
   },
   {
    "id": "syracuse-university",
@@ -756,7 +756,7 @@
    "lat": 43.036644,
    "lon": -76.133989,
    "website": "syracuse.edu",
-   "logo": "logos/syracuse-university.svg"
+   "logo": "logos/syracuse-university.png"
   },
   {
    "id": "the-university-of-tampa",
@@ -780,7 +780,7 @@
   },
   {
    "id": "tulane-university-of-louisiana",
-   "name": "Tulane University of Louisiana",
+   "name": "Tulane University",
    "city": "New Orleans",
    "state": "LA",
    "country": "US",
@@ -818,7 +818,7 @@
    "lat": 42.282194,
    "lon": -85.613759,
    "website": "wmich.edu",
-   "logo": "logos/western-michigan-university.svg"
+   "logo": "logos/western-michigan-university.png"
   },
   {
    "id": "creighton-university",
@@ -983,11 +983,11 @@
    "lat": 39.678005,
    "lon": -104.963259,
    "website": "du.edu",
-   "logo": "logos/university-of-denver.svg"
+   "logo": "logos/university-of-denver.png"
   },
   {
    "id": "american-university-district-of-columbia",
-   "name": "American University - District of Columbia",
+   "name": "American University",
    "city": "Washington",
    "state": "DC",
    "country": "US",
@@ -1022,7 +1022,7 @@
    "lat": 42.351118,
    "lon": -71.107942,
    "website": "bu.edu",
-   "logo": "logos/boston-university.png"
+   "logo": "logos/boston-university.svg"
   },
   {
    "id": "college-of-charleston",
@@ -1143,7 +1143,7 @@
    "lat": 42.026212,
    "lon": -93.648504,
    "website": "iastate.edu",
-   "logo": "logos/iowa-state-university.svg"
+   "logo": "logos/iowa-state-university.png"
   },
   {
    "id": "lake-forest-college",
@@ -1183,7 +1183,7 @@
    "lat": 43.045364,
    "lon": -87.907691,
    "website": "msoe.edu",
-   "logo": "logos/milwaukee-school-of-engineering.svg"
+   "logo": "logos/milwaukee-school-of-engineering.png"
   },
   {
    "id": "north-central-college",
@@ -1263,7 +1263,7 @@
    "lat": 44.44483,
    "lon": -88.067812,
    "website": "snc.edu",
-   "logo": "logos/saint-norbert-college.svg"
+   "logo": "logos/saint-norbert-college.png"
   },
   {
    "id": "southern-illinois-university-carbondale",
@@ -1306,7 +1306,7 @@
   },
   {
    "id": "st-olaf-college",
-   "name": "St Olaf College",
+   "name": "St. Olaf College",
    "city": "Northfield",
    "state": "MN",
    "country": "US",
@@ -1322,7 +1322,7 @@
    "lat": 44.461529,
    "lon": -93.182039,
    "website": "wp.stolaf.edu",
-   "logo": "logos/st-olaf-college.png"
+   "logo": "logos/st-olaf-college.svg"
   },
   {
    "id": "tufts-university",
@@ -1422,7 +1422,7 @@
    "lat": 43.076848,
    "lon": -87.880488,
    "website": "uwm.edu",
-   "logo": "logos/university-of-wisconsin-milwaukee.svg"
+   "logo": "logos/university-of-wisconsin-milwaukee.png"
   },
   {
    "id": "western-illinois-university",
@@ -1482,7 +1482,7 @@
    "lat": 40.696896,
    "lon": -89.616786,
    "website": "bradley.edu",
-   "logo": "logos/bradley-university.svg"
+   "logo": "logos/bradley-university.png"
   },
   {
    "id": "central-michigan-university",
@@ -1601,7 +1601,7 @@
    "lat": 38.89923,
    "lon": -77.048363,
    "website": "gwu.edu",
-   "logo": null
+   "logo": "logos/george-washington-university.png"
   },
   {
    "id": "hampton-university",
@@ -1624,7 +1624,7 @@
   },
   {
    "id": "ie-university-madrid-campus",
-   "name": "IE University - Madrid Campus",
+   "name": "IE University",
    "city": "Madrid",
    "state": "",
    "country": "ES",
@@ -1759,7 +1759,7 @@
    "lat": 47.11866,
    "lon": -88.548092,
    "website": "mtu.edu",
-   "logo": "logos/michigan-technological-university.png"
+   "logo": "logos/michigan-technological-university.svg"
   },
   {
    "id": "morehouse-college",
@@ -1798,7 +1798,7 @@
    "lat": 42.339992,
    "lon": -71.088782,
    "website": "northeastern.edu",
-   "logo": "logos/northeastern-university.png"
+   "logo": "logos/northeastern-university.svg"
   },
   {
    "id": "northern-illinois-university",
@@ -1896,7 +1896,7 @@
    "lat": 30.282825,
    "lon": -97.738273,
    "website": "utexas.edu",
-   "logo": "logos/the-university-of-texas-at-austin.png"
+   "logo": "logos/the-university-of-texas-at-austin.svg"
   },
   {
    "id": "university-of-arkansas",
@@ -1993,11 +1993,11 @@
    "lat": 40.817598,
    "lon": -96.700508,
    "website": "unl.edu",
-   "logo": "logos/university-of-nebraska-lincoln.svg"
+   "logo": "logos/university-of-nebraska-lincoln.png"
   },
   {
    "id": "university-of-oklahoma-norman-campus",
-   "name": "University of Oklahoma-Norman Campus",
+   "name": "University of Oklahoma",
    "city": "Norman",
    "state": "OK",
    "country": "US",
@@ -2056,7 +2056,7 @@
   },
   {
    "id": "university-of-st-thomas",
-   "name": "University of St Thomas",
+   "name": "University of St. Thomas",
    "city": "Saint Paul",
    "state": "MN",
    "country": "US",
@@ -2072,11 +2072,11 @@
    "lat": 44.943439,
    "lon": -93.188986,
    "website": "stthomas.edu",
-   "logo": "logos/university-of-st-thomas.svg"
+   "logo": "logos/university-of-st-thomas.png"
   },
   {
    "id": "university-of-virginia-main-campus",
-   "name": "University of Virginia-Main Campus",
+   "name": "University of Virginia",
    "city": "Charlottesville",
    "state": "VA",
    "country": "US",
@@ -2189,7 +2189,7 @@
    "lat": 42.291554,
    "lon": -71.306605,
    "website": "wellesley.edu",
-   "logo": "logos/wellesley-college.svg"
+   "logo": "logos/wellesley-college.png"
   },
   {
    "id": "appalachian-state-university",
@@ -2227,7 +2227,7 @@
    "lat": 38.403529,
    "lon": -98.731648,
    "website": "bartonccc.edu",
-   "logo": "logos/barton-county-community-college.svg"
+   "logo": "logos/barton-county-community-college.png"
   },
   {
    "id": "belmont-university",
@@ -2265,7 +2265,7 @@
    "lat": 37.57202,
    "lon": -84.292893,
    "website": "berea.edu",
-   "logo": "logos/berea-college.svg"
+   "logo": "logos/berea-college.png"
   },
   {
    "id": "bocconi-university",
@@ -2284,7 +2284,7 @@
    "lat": 45.4499,
    "lon": 9.18926,
    "website": "unibocconi.eu",
-   "logo": null
+   "logo": "logos/bocconi-university.png"
   },
   {
    "id": "brown-university",
@@ -2322,7 +2322,7 @@
    "lat": 40.954317,
    "lon": -76.882616,
    "website": "bucknell.edu",
-   "logo": "logos/bucknell-university.svg"
+   "logo": "logos/bucknell-university.png"
   },
   {
    "id": "california-baptist-university",
@@ -2512,7 +2512,7 @@
    "lat": 42.354164,
    "lon": -88.012291,
    "website": "clcillinois.edu",
-   "logo": null
+   "logo": "logos/college-of-lake-county.png"
   },
   {
    "id": "college-of-the-holy-cross",
@@ -2531,7 +2531,7 @@
    "lat": 42.23752,
    "lon": -71.808214,
    "website": "holycross.edu",
-   "logo": "logos/college-of-the-holy-cross.png"
+   "logo": "logos/college-of-the-holy-cross.svg"
   },
   {
    "id": "colorado-college",
@@ -2550,7 +2550,7 @@
    "lat": 38.84886,
    "lon": -104.822697,
    "website": "coloradocollege.edu",
-   "logo": "logos/colorado-college.png"
+   "logo": "logos/colorado-college.svg"
   },
   {
    "id": "colorado-state-university",
@@ -2569,7 +2569,7 @@
    "lat": 40.574805,
    "lon": -105.080732,
    "website": "colostate.edu",
-   "logo": "logos/colorado-state-university.png"
+   "logo": "logos/colorado-state-university.svg"
   },
   {
    "id": "columbia-university-in-the-city-of-new-york",
@@ -2607,7 +2607,7 @@
    "lat": 41.379833,
    "lon": -72.107321,
    "website": "conncoll.edu",
-   "logo": null
+   "logo": "logos/connecticut-college.png"
   },
   {
    "id": "davidson-college",
@@ -2721,7 +2721,7 @@
    "lat": 33.790183,
    "lon": -84.325512,
    "website": "emory.edu",
-   "logo": "logos/emory-university.svg"
+   "logo": "logos/emory-university.png"
   },
   {
    "id": "florida-state-university",
@@ -2816,7 +2816,7 @@
    "lat": 37.240615,
    "lon": -78.464216,
    "website": "hsc.edu",
-   "logo": "logos/hampden-sydney-college.png"
+   "logo": "logos/hampden-sydney-college.svg"
   },
   {
    "id": "harvard-university",
@@ -3067,7 +3067,7 @@
   },
   {
    "id": "ohio-university-main-campus",
-   "name": "Ohio University-Main Campus",
+   "name": "Ohio University",
    "city": "Athens",
    "state": "OH",
    "country": "US",
@@ -3082,7 +3082,7 @@
    "lat": 39.326798,
    "lon": -82.100985,
    "website": "ohio.edu",
-   "logo": "logos/ohio-university-main-campus.svg"
+   "logo": "logos/ohio-university-main-campus.png"
   },
   {
    "id": "pace-university",
@@ -3101,7 +3101,7 @@
    "lat": 40.711014,
    "lon": -74.004719,
    "website": "pace.edu",
-   "logo": "logos/pace-university.svg"
+   "logo": "logos/pace-university.png"
   },
   {
    "id": "queen-s-university",
@@ -3234,7 +3234,7 @@
    "lat": 28.336776,
    "lon": -82.257801,
    "website": "saintleo.edu",
-   "logo": "logos/saint-leo-university.svg"
+   "logo": "logos/saint-leo-university.png"
   },
   {
    "id": "saint-xavier-university",
@@ -3272,7 +3272,7 @@
    "lat": 37.348362,
    "lon": -121.93784,
    "website": "scu.edu",
-   "logo": "logos/santa-clara-university.svg"
+   "logo": "logos/santa-clara-university.png"
   },
   {
    "id": "savannah-college-of-art-and-design",
@@ -3310,7 +3310,7 @@
    "lat": 40.738809,
    "lon": -73.982359,
    "website": "sva.edu",
-   "logo": "logos/school-of-visual-arts.png"
+   "logo": "logos/school-of-visual-arts.svg"
   },
   {
    "id": "smith-college",
@@ -3367,7 +3367,7 @@
    "lat": 26.596097,
    "lon": -81.877644,
    "website": "southerntech.edu",
-   "logo": null
+   "logo": "logos/southern-technical-college.png"
   },
   {
    "id": "spelman-college",
@@ -3386,7 +3386,7 @@
    "lat": 33.745279,
    "lon": -84.411527,
    "website": "spelman.edu",
-   "logo": "logos/spelman-college.png"
+   "logo": "logos/spelman-college.svg"
   },
   {
    "id": "suffolk-university",
@@ -3481,7 +3481,7 @@
    "lat": 33.583448,
    "lon": -101.874783,
    "website": "ttu.edu",
-   "logo": "logos/texas-tech-university.svg"
+   "logo": "logos/texas-tech-university.png"
   },
   {
    "id": "the-american-university-of-paris",
@@ -3538,7 +3538,7 @@
    "lat": 33.211875,
    "lon": -87.545978,
    "website": "ua.edu",
-   "logo": "logos/the-university-of-alabama.svg"
+   "logo": "logos/the-university-of-alabama.png"
   },
   {
    "id": "united-states-merchant-marine-academy",
@@ -3557,7 +3557,7 @@
    "lat": 40.81357,
    "lon": -73.763004,
    "website": "usmma.edu",
-   "logo": null
+   "logo": "logos/united-states-merchant-marine-academy.png"
   },
   {
    "id": "university-of-amsterdam",
@@ -3618,7 +3618,7 @@
   },
   {
    "id": "university-of-cincinnati-main-campus",
-   "name": "University of Cincinnati-Main Campus",
+   "name": "University of Cincinnati",
    "city": "Cincinnati",
    "state": "OH",
    "country": "US",
@@ -3690,7 +3690,7 @@
    "lat": 38.988178,
    "lon": -76.944721,
    "website": "umd.edu",
-   "logo": "logos/university-of-maryland-college-park.png"
+   "logo": "logos/university-of-maryland-college-park.svg"
   },
   {
    "id": "university-of-minnesota-twin-cities",
@@ -3709,7 +3709,7 @@
    "lat": 44.972851,
    "lon": -93.235464,
    "website": "twin-cities.umn.edu",
-   "logo": "logos/university-of-minnesota-twin-cities.png"
+   "logo": "logos/university-of-minnesota-twin-cities.svg"
   },
   {
    "id": "university-of-nevada-reno",
@@ -3728,7 +3728,7 @@
    "lat": 39.543642,
    "lon": -119.815377,
    "website": "unr.edu",
-   "logo": "logos/university-of-nevada-reno.svg"
+   "logo": "logos/university-of-nevada-reno.png"
   },
   {
    "id": "university-of-north-carolina-at-chapel-hill",
@@ -3766,7 +3766,7 @@
    "lat": 47.921654,
    "lon": -97.071738,
    "website": "und.edu",
-   "logo": "logos/university-of-north-dakota.svg"
+   "logo": "logos/university-of-north-dakota.png"
   },
   {
    "id": "university-of-north-florida",
@@ -3789,7 +3789,7 @@
   },
   {
    "id": "university-of-pittsburgh-pittsburgh-campus",
-   "name": "University of Pittsburgh-Pittsburgh Campus",
+   "name": "University of Pittsburgh",
    "city": "Pittsburgh",
    "state": "PA",
    "country": "US",
@@ -3823,7 +3823,7 @@
    "lat": 41.484691,
    "lon": -71.527356,
    "website": "web.uri.edu",
-   "logo": "logos/university-of-rhode-island.svg"
+   "logo": "logos/university-of-rhode-island.png"
   },
   {
    "id": "university-of-san-francisco",
@@ -3842,7 +3842,7 @@
    "lat": 37.776618,
    "lon": -122.450477,
    "website": "usfca.edu",
-   "logo": "logos/university-of-san-francisco.svg"
+   "logo": "logos/university-of-san-francisco.png"
   },
   {
    "id": "university-of-south-florida",
@@ -3880,7 +3880,7 @@
    "lat": 34.021281,
    "lon": -118.284169,
    "website": "usc.edu",
-   "logo": "logos/university-of-southern-california.svg"
+   "logo": "logos/university-of-southern-california.png"
   },
   {
    "id": "university-of-toledo",
@@ -3922,7 +3922,7 @@
   },
   {
    "id": "university-of-washington-seattle-campus",
-   "name": "University of Washington-Seattle Campus",
+   "name": "University of Washington",
    "city": "Seattle",
    "state": "WA",
    "country": "US",
@@ -4032,7 +4032,7 @@
    "lat": 39.149547,
    "lon": -84.47465,
    "website": "xavier.edu",
-   "logo": "logos/xavier-university.svg"
+   "logo": "logos/xavier-university.png"
   }
  ]
 }

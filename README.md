@@ -16,7 +16,9 @@ thing on its own site, see below)
 
 - A U.S. map shaded by how many graduates attend college in each state, with cutout insets for
   international regions (Canada, Europe, and any others that appear in the data).
-- Hover a state or country to see its graduate count and the most-attended schools there.
+- Hover a state or country to see its graduate count and the most-attended schools there. Small
+  East Coast states such as DC and Rhode Island get labelled tiles off the coast so they are easy
+  to hit.
 - Click a state or country to zoom in. Every school gets a flag with its graduate count; hover or
   tap a flag to see the school's logo, location, and count by graduating class.
 - Filter everything by graduating class ("Class of 2026") or show all classes together.
@@ -53,9 +55,11 @@ web/                    The control as separate files (what the demo page runs; 
   vendor/               D3, topojson-client, and map topologies (no CDN dependency at runtime)
 scripts/build_data.py   Turns the raw report into web/data/matriculation.json, then runs bundle.py
 scripts/bundle.py       Packs web/ into the single files in dist/
+scripts/add_logo.py     Adds a hand-picked logo for one school (trimmed, squared, resized)
 data/
   raw/                  Drop the exported report here (git-ignored)
   overrides.json        Hand fixes: school aliases, coordinates, websites, logos
+  logos/                Hand-picked logos; used instead of downloaded ones
   geocode-cache.json    Locations resolved so far (committed so rebuilds are fast and offline)
   ipeds-institutions.csv  U.S. institution directory used to locate schools
 docs/                   Documentation for the school's web team

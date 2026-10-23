@@ -4,6 +4,9 @@
     "Catholic University of the Sacred Heart": "Universita Cattolica del Sacro Cuore"
   },
   "schools": {
+    "Miami University-Oxford": { "name": "Miami University" },
+    "American University - District of Columbia": { "name": "American University" },
+    "Tulane University of Louisiana": { "name": "Tulane University" },
     "Universita Cattolica del Sacro Cuore": { "name": "Università Cattolica del Sacro Cuore", "lat": 45.4627, "lon": 9.1766, "website": "unicatt.it" },
     "Bocconi University": { "website": "unibocconi.eu" },
     "Franklin University Switzerland": { "website": "fus.edu" },
