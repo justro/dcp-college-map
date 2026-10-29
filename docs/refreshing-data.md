@@ -18,6 +18,9 @@ It takes about ten minutes, most of it waiting for the script.
 
   Other columns are fine and are ignored. From Numbers: **File → Export To → CSV…** (or Excel).
 
+- **The number of new graduates going to Arrupe College**, from College Counseling. Maia lists
+  Arrupe students under Loyola, so the export can't show them separately; see
+  [Moving students to another school](#moving-students-to-another-school).
 - Python 3.9 or newer, and this repository cloned locally (`git clone https://github.com/justro/dcp-college-map.git`).
 - An internet connection the first time new schools appear (for geocoding and logos).
 
@@ -35,7 +38,9 @@ python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r scripts/requirements.txt
 
-# 3. Build
+# 3. Add the new class's Arrupe count to "moves" in data/overrides.json (see below)
+
+# 4. Build
 python3 scripts/build_data.py
 ```
 
@@ -110,6 +115,29 @@ python3 scripts/build_data.py [path/to/export.xlsx] [--no-network] [--refetch-lo
     Square PNGs or SVGs around 128–256px look best.
 
 After editing overrides, run the script again. Overrides are applied on every run and always win.
+
+### Moving students to another school
+
+Maia has no profile for Arrupe College, so its students are recorded under Loyola University
+Chicago. College Counseling knows how many there are from Grad Program records, and the `moves`
+list in `data/overrides.json` moves that many students per class from Loyola to Arrupe:
+
+```json
+"moves": [
+  {
+    "from": "Loyola University Chicago",
+    "to": "Arrupe College of Loyola University Chicago",
+    "byYear": { "2024": 0, "2025": 1, "2026": 2 }
+  }
+]
+```
+
+Each year, add the new class to `byYear` (for example `"2027": 3`), using `0` if no one went to
+Arrupe. The numbers are counts only; no student names are involved. If the export has fewer
+Loyola students in a class than you ask to move, the build stops and says so, which usually means
+the count is wrong or was entered under the wrong class. Arrupe's location is set under `schools`
+in the same file, and its logo is in `data/logos/`. The same mechanism works for any other school
+that Maia files under a different name.
 
 ### Better logos: `data/logos/`
 

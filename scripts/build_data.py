@@ -288,6 +288,39 @@ def aggregate(rows, aliases):
     return list(schools.values()), sorted(years)
 
 
+def apply_moves(schools, moves):
+    """Move students from one school to another, class by class, for students the export files
+    under the wrong school (Maia lists Arrupe College students under Loyola). The export can't say
+    which students they are, so the counts come from College Counseling via data/overrides.json.
+    Stops if the export has fewer students to move than asked, since that means the numbers are stale."""
+    by_name = {s["name"]: s for s in schools}
+    for m in moves:
+        src = by_name.get(m["from"])
+        if not src:
+            sys.exit(f"data/overrides.json moves: {m['from']!r} is not in the export")
+        dst = by_name.get(m["to"])
+        if not dst:  # a school the export doesn't list: same place details as the source to start with
+            dst = {**src, "id": slugify(m["to"]), "name": m["to"], "total": 0, "byYear": {}}
+            schools.append(dst)
+            by_name[m["to"]] = dst
+        for year, n in m.get("byYear", {}).items():
+            if not isinstance(n, int) or n < 0:
+                sys.exit(f"data/overrides.json moves: Class of {year} count for {m['to']!r} must be a whole number")
+            have = src["byYear"].get(year, 0)
+            if have < n:
+                sys.exit(f"data/overrides.json moves: can't move {n} Class of {year} student(s) from "
+                         f"{m['from']!r} to {m['to']!r}; the export only has {have}")
+            if n:
+                src["byYear"][year] = have - n
+                dst["byYear"][year] = dst["byYear"].get(year, 0) + n
+                src["total"] -= n
+                dst["total"] += n
+        log(f"  moved {sum(m.get('byYear', {}).values())} student(s) from {m['from']} to {m['to']}")
+    for s in schools:
+        s["byYear"] = {y: n for y, n in sorted(s["byYear"].items()) if n}
+    schools[:] = [s for s in schools if s["total"] > 0]
+
+
 # ----------------------------------------------------------------------------- geocoding
 def load_ipeds():
     by_state = defaultdict(list)
@@ -344,7 +377,8 @@ def geocode_all(schools, cache, overrides, network):
     for s in schools:
         ov = overrides.get(s["name"], {})
         entry = cache.get(s["name"], {})
-        if "lat" not in entry or "lon" not in entry:
+        # look the school up unless the cache or the overrides already place it
+        if ("lat" not in entry or "lon" not in entry) and not ("lat" in ov and "lon" in ov):
             if s["country"] == "US":
                 m, how = match_ipeds(s, ipeds)
                 if m and m["lat"] and m["lon"]:
@@ -506,6 +540,7 @@ def main(argv):
     overrides = json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
     schools, years = aggregate(rows, overrides.get("aliases", {}))
     log(f"  {len(schools)} distinct schools, class years {', '.join(years)}")
+    apply_moves(schools, overrides.get("moves", []))
 
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
     log("Geocoding...")
