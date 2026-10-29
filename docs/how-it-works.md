@@ -57,7 +57,9 @@ State and country totals are not stored; the control adds them up in the browser
    columns (`Student ID`, `Name`, `College Type`, …) are ignored or used only for the school's type.
 2. **Apply aliases.** `data/overrides.json` → `aliases` merges two spellings of the same school
    (for example an Italian and an English name for the same university).
-3. **Aggregate.** One record per school with `total` and `byYear` counts.
+3. **Aggregate.** One record per school with `total` and `byYear` counts. Then `moves` from
+   `data/overrides.json` shifts per-class counts between schools (Arrupe College students, whom
+   Maia lists under Loyola).
 4. **Locate each school.**
    - U.S. schools are matched against `data/ipeds-institutions.csv`, a trimmed copy of the federal
      IPEDS directory (name, city, state, website, latitude, longitude for every U.S. institution).

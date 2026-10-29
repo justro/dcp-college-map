@@ -1,9 +1,18 @@
 {
-  "_comment": "Manual fixes applied on top of the automatic build. 'aliases' maps a name in the export to the canonical school name (the two are merged). 'schools' is keyed by school name and may set lat, lon, website, logo (a URL, or a filename already placed in web/logos/) and name (display name).",
+  "_comment": "Manual fixes applied on top of the automatic build. 'aliases' maps a name in the export to the canonical school name (the two are merged). 'moves' shifts a number of students per class from one school to another (byYear counts). 'schools' is keyed by school name and may set lat, lon, website, logo (a URL, or a filename already placed in web/logos/) and name (display name).",
   "aliases": {
     "Catholic University of the Sacred Heart": "Universita Cattolica del Sacro Cuore"
   },
+  "moves": [
+    {
+      "_comment": "Maia lists Arrupe students under Loyola. Counts per class from College Counseling (Grad Program records); add each new class's count every year.",
+      "from": "Loyola University Chicago",
+      "to": "Arrupe College of Loyola University Chicago",
+      "byYear": { "2024": 0, "2025": 1, "2026": 2 }
+    }
+  ],
   "schools": {
+    "Arrupe College of Loyola University Chicago": { "lat": 41.8973, "lon": -87.6275, "website": "luc.edu" },
     "Miami University-Oxford": { "name": "Miami University" },
     "American University - District of Columbia": { "name": "American University" },
     "Tulane University of Louisiana": { "name": "Tulane University" },

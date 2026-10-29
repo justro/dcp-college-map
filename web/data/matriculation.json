@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22",
+ "generated": "2026-10-28",
  "source": "college_matriculation_summary_202609211435.xlsx",
  "years": [
   "2024",
@@ -219,27 +219,6 @@
    "logo": "logos/university-of-missouri-columbia.png"
   },
   {
-   "id": "loyola-university-chicago",
-   "name": "Loyola University Chicago",
-   "city": "Chicago",
-   "state": "IL",
-   "country": "US",
-   "type": "Private not-for-profit, 4-year or above",
-   "total": 17,
-   "byYear": {
-    "2024": 5,
-    "2025": 5,
-    "2026": 7
-   },
-   "stateName": "Illinois",
-   "countryName": "United States",
-   "region": "United States",
-   "lat": 42.000765,
-   "lon": -87.656872,
-   "website": "luc.edu",
-   "logo": "logos/loyola-university-chicago.png"
-  },
-  {
    "id": "university-of-illinois-chicago",
    "name": "University of Illinois Chicago",
    "city": "Chicago",
@@ -301,6 +280,27 @@
    "lon": -110.950815,
    "website": "arizona.edu",
    "logo": "logos/university-of-arizona.png"
+  },
+  {
+   "id": "loyola-university-chicago",
+   "name": "Loyola University Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 14,
+   "byYear": {
+    "2024": 5,
+    "2025": 4,
+    "2026": 5
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 42.000765,
+   "lon": -87.656872,
+   "website": "luc.edu",
+   "logo": "logos/loyola-university-chicago.png"
   },
   {
    "id": "university-of-dayton",
@@ -1004,6 +1004,26 @@
    "lon": -77.088875,
    "website": "american.edu",
    "logo": "logos/american-university-district-of-columbia.png"
+  },
+  {
+   "id": "arrupe-college-of-loyola-university-chicago",
+   "name": "Arrupe College of Loyola University Chicago",
+   "city": "Chicago",
+   "state": "IL",
+   "country": "US",
+   "type": "Private not-for-profit, 4-year or above",
+   "total": 3,
+   "byYear": {
+    "2025": 1,
+    "2026": 2
+   },
+   "stateName": "Illinois",
+   "countryName": "United States",
+   "region": "United States",
+   "lat": 41.8973,
+   "lon": -87.6275,
+   "website": "luc.edu",
+   "logo": "logos/arrupe-college-of-loyola-university-chicago.png"
   },
   {
    "id": "boston-university",
